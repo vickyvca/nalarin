@@ -55,4 +55,4 @@ python scripts/validate_bank.py
 python scripts/validate-ranking-seed.py
 ```
 
-Generator menggunakan pustaka standar Python dan tidak menghubungi AI atau server. Jangan menyajikan direktori `bank` sebagai aset publik: kunci/pembahasan hanya dikirim setelah sesi selesai. Berkas ini tidak berisi kredensial.
+Generator menggunakan pustaka standar Python dan tidak menghubungi AI atau server. Jangan menyajikan direktori `bank` secara langsung dari frontend/runtime: kunci dan pembahasan hanya dikirim setelah sesi selesai. Berkas ini tidak berisi kredensial.
