@@ -4,6 +4,8 @@ Target awal: kelas 6 SD dan kelas 9 SMP; web demo tersedia di `tka.mdc.web.id`. 
 
 ## Keputusan produk
 
+Pembaruan bank 8 September 2026: total **448 soal**, termasuk tambahan 8 latihan harian Matematika SMP. Rincian tersedia di [SMP-DAILY-V2.md](bank/SMP-DAILY-V2.md). Tambahan ini diperiksa penulis dan validator hitungan; review independen masih menunggu dan soal tidak masuk ranking. Angka 440 pada uraian rilis awal di bawah adalah kondisi sebelum tambahan ini.
+
 - Pendaftaran mandiri, cepat; admin tidak membuatkan akun satu per satu. Jalur utama username + kode masuk 6 angka; tidak bergantung Google OAuth.
 - Latihan harian dapat diulang bebas: simulasi singkat 10 soal per mapel, tanpa batas waktu ketat.
 - Sesi penilaian aplikasi: 30 soal / 75 menit per mapel; maksimal 3 sesi per murid per minggu, total lintas mapel. Hanya sesi ini masuk leaderboard.

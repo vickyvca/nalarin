@@ -34605,5 +34605,655 @@
     "ranked_eligible": true,
     "pack_id": "r9-bi-3",
     "verification": null
+  },
+  {
+    "id": "9-daily-v2-median",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-median",
+    "competency": "data_peluang",
+    "module_id": "smp-data",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Lama perjalanan delapan murid ke sekolah adalah 12, 18, 15, 20, 14, 16, 25, dan 16 menit. Berapa median lama perjalanan tersebut?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "15 menit"
+      },
+      {
+        "id": "B",
+        "text": "16 menit"
+      },
+      {
+        "id": "C",
+        "text": "17 menit"
+      },
+      {
+        "id": "D",
+        "text": "20 menit"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "concept": "Median adalah nilai tengah setelah data diurutkan. Untuk banyak data genap, gunakan rata-rata dua nilai tengah.",
+      "steps": [
+        "Urutkan data: 12, 14, 15, 16, 16, 18, 20, 25.",
+        "Ada delapan data. Dua nilai tengah berada pada urutan ke-4 dan ke-5, keduanya 16.",
+        "Median = (16 + 16) : 2 = 16 menit."
+      ],
+      "option_reasons": {
+        "A": "15 adalah data urutan ke-3, belum berada di tengah.",
+        "B": "16 adalah rata-rata data urutan ke-4 dan ke-5 setelah diurutkan.",
+        "C": "17 diperoleh jika merata-ratakan 20 dan 14 pada daftar awal yang belum diurutkan.",
+        "D": "20 bukan nilai tengah pada daftar yang sudah diurutkan."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_median",
+      "inputs": [
+        12,
+        18,
+        15,
+        20,
+        14,
+        16,
+        25,
+        16
+      ],
+      "option_values": [
+        "15",
+        "16",
+        "17",
+        "20"
+      ]
+    }
+  },
+  {
+    "id": "9-daily-v2-mean-frequency",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-mean-frequency",
+    "competency": "data_peluang",
+    "module_id": "smp-data",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Dalam satu minggu, 4 murid membaca masing-masing 1 buku, 3 murid membaca masing-masing 2 buku, dan 3 murid membaca masing-masing 4 buku. Berapa rata-rata banyak buku yang dibaca per murid?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "7/3 buku"
+      },
+      {
+        "id": "B",
+        "text": "22/3 buku"
+      },
+      {
+        "id": "C",
+        "text": "11/5 buku"
+      },
+      {
+        "id": "D",
+        "text": "10/3 buku"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "concept": "Rata-rata memperhitungkan banyak murid pada setiap kelompok, bukan hanya merata-ratakan tiga jenis jumlah buku.",
+      "steps": [
+        "Jumlah murid = 4 + 3 + 3 = 10.",
+        "Jumlah buku = (4 × 1) + (3 × 2) + (3 × 4) = 22.",
+        "Rata-rata = 22 : 10 = 11/5 buku, atau 2,2 buku per murid."
+      ],
+      "option_reasons": {
+        "A": "7/3 merata-ratakan 1, 2, dan 4 tanpa memperhitungkan jumlah murid tiap kelompok.",
+        "B": "22/3 membagi total buku dengan banyak kelompok, bukan banyak murid.",
+        "C": "11/5 diperoleh dengan membagi 22 buku oleh 10 murid.",
+        "D": "10/3 adalah rata-rata jumlah murid per kelompok, bukan buku per murid."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_weighted_mean",
+      "inputs": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "option_values": [
+        "7/3",
+        "22/3",
+        "11/5",
+        "10/3"
+      ]
+    }
+  },
+  {
+    "id": "9-daily-v2-scale-area",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-scale-area",
+    "competency": "geometri",
+    "module_id": "smp-geometri",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Sebuah taman berbentuk persegi panjang digambar pada denah berskala 1 : 200. Panjang dan lebarnya pada denah adalah 6 cm dan 4 cm. Berapa luas taman sebenarnya?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "24 m²"
+      },
+      {
+        "id": "B",
+        "text": "48 m²"
+      },
+      {
+        "id": "C",
+        "text": "4800 m²"
+      },
+      {
+        "id": "D",
+        "text": "96 m²"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "concept": "Skala panjang diterapkan pada kedua sisi sebelum menghitung luas.",
+      "steps": [
+        "Panjang sebenarnya = 6 × 200 = 1.200 cm = 12 m.",
+        "Lebar sebenarnya = 4 × 200 = 800 cm = 8 m.",
+        "Luas taman = 12 × 8 = 96 m²."
+      ],
+      "option_reasons": {
+        "A": "24 adalah hasil perkalian ukuran pada denah, dengan satuan cm².",
+        "B": "48 dapat muncul jika hanya salah satu sisi diubah menjadi ukuran sebenarnya.",
+        "C": "4800 berasal dari luas denah dikali 200. Faktor skala luas harus diterapkan dua kali dan satuannya diubah.",
+        "D": "96 adalah luas dari ukuran sebenarnya 12 m dan 8 m."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_scaled_area",
+      "inputs": [
+        6,
+        4,
+        200
+      ],
+      "option_values": [
+        "24",
+        "48",
+        "4800",
+        "96"
+      ]
+    }
+  },
+  {
+    "id": "9-daily-v2-tank-refill",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-tank-refill",
+    "competency": "geometri",
+    "module_id": "smp-geometri",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Bak berbentuk balok memiliki ukuran bagian dalam 80 cm × 50 cm × 60 cm. Air mula-mula setinggi 20 cm. Air ditambahkan dengan debit tetap 10 liter per menit tanpa kebocoran. Berapa menit diperlukan agar tinggi air mencapai 50 cm?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "12 menit"
+      },
+      {
+        "id": "B",
+        "text": "20 menit"
+      },
+      {
+        "id": "C",
+        "text": "24 menit"
+      },
+      {
+        "id": "D",
+        "text": "30 menit"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "concept": "Waktu pengisian ditentukan oleh volume air tambahan, bukan seluruh volume bak.",
+      "steps": [
+        "Kenaikan tinggi air = 50 − 20 = 30 cm.",
+        "Volume tambahan = 80 × 50 × 30 = 120.000 cm³ = 120 liter.",
+        "Waktu = 120 : 10 = 12 menit. Tinggi akhir 50 cm masih di bawah tinggi bak 60 cm."
+      ],
+      "option_reasons": {
+        "A": "12 menit cukup untuk menambahkan 120 liter.",
+        "B": "20 menit menghitung pengisian dari kosong hingga 50 cm, padahal sudah ada air.",
+        "C": "24 menit menghitung kapasitas penuh bak dari keadaan kosong.",
+        "D": "30 adalah kenaikan tinggi dalam cm; tinggi tidak langsung menjadi waktu."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_fill_time",
+      "inputs": [
+        80,
+        50,
+        20,
+        50,
+        10
+      ],
+      "option_values": [
+        "12",
+        "20",
+        "24",
+        "30"
+      ]
+    }
+  },
+  {
+    "id": "9-daily-v2-function-table",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-function-table",
+    "competency": "aljabar",
+    "module_id": "smp-aljabar",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Biaya sewa sepeda terdiri atas biaya awal dan biaya per jam yang tetap. Sewa 2 jam berbiaya Rp19.000,00, sedangkan 5 jam berbiaya Rp40.000,00. Berapa biaya sewa selama 4 jam?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "28000 rupiah"
+      },
+      {
+        "id": "B",
+        "text": "33000 rupiah"
+      },
+      {
+        "id": "C",
+        "text": "38000 rupiah"
+      },
+      {
+        "id": "D",
+        "text": "40000 rupiah"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "concept": "Selisih biaya dibagi selisih waktu menghasilkan tarif per jam; biaya awal dibayar satu kali.",
+      "steps": [
+        "Selisih biaya = 40.000 − 19.000 = 21.000 rupiah untuk tambahan 3 jam.",
+        "Tarif per jam = 21.000 : 3 = 7.000 rupiah. Biaya awal = 19.000 − 2 × 7.000 = 5.000 rupiah.",
+        "Biaya 4 jam = 5.000 + 4 × 7.000 = 33.000 rupiah."
+      ],
+      "option_reasons": {
+        "A": "28.000 hanya menghitung empat jam pemakaian, tanpa biaya awal.",
+        "B": "33.000 mencakup biaya awal sekali dan empat jam pemakaian.",
+        "C": "38.000 menggandakan biaya dua jam sehingga biaya awal ikut terhitung dua kali.",
+        "D": "40.000 adalah biaya lima jam, bukan empat jam."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_affine_cost",
+      "inputs": [
+        2,
+        19000,
+        5,
+        40000,
+        4
+      ],
+      "option_values": [
+        "28000",
+        "33000",
+        "38000",
+        "40000"
+      ]
+    }
+  },
+  {
+    "id": "9-daily-v2-budget-capacity",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-budget-capacity",
+    "competency": "aljabar",
+    "module_id": "smp-aljabar",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Panitia memiliki anggaran Rp250.000,00 untuk menyewa alat. Biaya pengiriman Rp40.000,00 dan sewa setiap alat Rp18.000,00. Berapa alat paling banyak yang dapat disewa tanpa melebihi anggaran?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "10 alat"
+      },
+      {
+        "id": "B",
+        "text": "12 alat"
+      },
+      {
+        "id": "C",
+        "text": "11 alat"
+      },
+      {
+        "id": "D",
+        "text": "13 alat"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "concept": "Jumlah barang harus berupa bilangan bulat yang masih memenuhi batas anggaran.",
+      "steps": [
+        "Dana setelah pengiriman = 250.000 − 40.000 = 210.000 rupiah.",
+        "Sebelas alat memerlukan 11 × 18.000 = 198.000 rupiah; dua belas alat memerlukan 216.000 rupiah.",
+        "Total untuk sebelas alat = 238.000 rupiah. Total untuk dua belas alat = 256.000 rupiah, melebihi anggaran. Jadi maksimum 11 alat."
+      ],
+      "option_reasons": {
+        "A": "10 alat dapat disewa, tetapi belum jumlah maksimum karena 11 alat masih terjangkau.",
+        "B": "12 alat menyebabkan total biaya 256.000 rupiah, melewati anggaran.",
+        "C": "11 alat memenuhi batas, sedangkan tambahan satu alat tidak lagi terjangkau.",
+        "D": "13 alat mengabaikan sebagian kebutuhan biaya pengiriman."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_budget",
+      "inputs": [
+        250000,
+        40000,
+        18000
+      ],
+      "option_values": [
+        "10",
+        "12",
+        "11",
+        "13"
+      ]
+    }
+  },
+  {
+    "id": "9-daily-v2-power-growth",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-power-growth",
+    "competency": "bilangan",
+    "module_id": "smp-bilangan",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Dalam sebuah model pertumbuhan, jumlah sel mula-mula 75. Jumlahnya menjadi dua kali lipat setiap 20 menit. Jika pola ini tetap, berapa jumlah sel setelah 1 jam?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "150 sel"
+      },
+      {
+        "id": "B",
+        "text": "225 sel"
+      },
+      {
+        "id": "C",
+        "text": "450 sel"
+      },
+      {
+        "id": "D",
+        "text": "600 sel"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "concept": "Pelipatan berulang memakai perkalian pada setiap periode, bukan penambahan jumlah awal.",
+      "steps": [
+        "Satu jam = 60 menit, sehingga ada 60 : 20 = 3 periode pelipatan.",
+        "Setelah 20 menit ada 150 sel; setelah 40 menit ada 300 sel; setelah 60 menit ada 600 sel.",
+        "Perhitungan ringkasnya 75 × 2³ = 600 sel."
+      ],
+      "option_reasons": {
+        "A": "150 hanya menghitung satu periode pelipatan.",
+        "B": "225 berasal dari 75 × 3, memperlakukan pertumbuhan sebagai penambahan tetap.",
+        "C": "450 berasal dari 75 × 2 × 3, bukan tiga perkalian dengan 2.",
+        "D": "600 adalah hasil pelipatan sebanyak tiga kali."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_growth",
+      "inputs": [
+        75,
+        20,
+        60
+      ],
+      "option_values": [
+        "150",
+        "225",
+        "450",
+        "600"
+      ]
+    }
+  },
+  {
+    "id": "9-daily-v2-relative-frequency",
+    "version": 1,
+    "grade": 9,
+    "subject": "matematika",
+    "family_id": "smp-daily-v2-relative-frequency",
+    "competency": "data_peluang",
+    "module_id": "smp-data",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Sebuah pemutar berwarna diuji 80 kali. Penunjuk berhenti pada merah 28 kali, biru 32 kali, dan kuning 20 kali. Berdasarkan frekuensi relatif hasil percobaan, berapa perkiraan banyak kemunculan kuning dalam 200 putaran berikutnya?",
+    "stimulus_id": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "50 kali"
+      },
+      {
+        "id": "B",
+        "text": "20 kali"
+      },
+      {
+        "id": "C",
+        "text": "40 kali"
+      },
+      {
+        "id": "D",
+        "text": "80 kali"
+      }
+    ],
+    "category_labels": null,
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "concept": "Frekuensi relatif dapat dipakai untuk memperkirakan hasil percobaan berikutnya; hasil sebenarnya tidak harus sama dengan perkiraan.",
+      "steps": [
+        "Frekuensi relatif kuning = 20 : 80 = 1/4.",
+        "Perkiraan pada 200 putaran = 1/4 × 200 = 50 kali.",
+        "Angka 50 adalah perkiraan dari data, bukan kepastian hasil setiap rangkaian putaran."
+      ],
+      "option_reasons": {
+        "A": "50 diperoleh dari frekuensi relatif kuning dikalikan banyak putaran baru.",
+        "B": "20 adalah hasil percobaan lama dengan jumlah putaran yang berbeda.",
+        "C": "40 dapat muncul jika 20 kemunculan keliru dianggap sebagai 20 persen.",
+        "D": "80 adalah banyak putaran awal, bukan perkiraan kemunculan kuning."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali alasan memilih operasi, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S2"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "authored explanation and independently implemented numeric validator"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_frequency",
+      "inputs": [
+        20,
+        80,
+        200
+      ],
+      "option_values": [
+        "50",
+        "20",
+        "40",
+        "80"
+      ]
+    }
   }
 ]

@@ -1,5 +1,11 @@
 # Peta konten dan rencana bank
 
+## Pembaruan latihan SMP — 8 September 2026
+
+Tambahan 8 soal Matematika harian dengan delapan keluarga baru: median, rata-rata berfrekuensi, skala luas, volume air tambahan/debit, tarif linear, batas anggaran bilangan bulat, pertumbuhan berlipat, dan frekuensi relatif. Total kini 448; SMP 228 (118 Matematika, 110 Bahasa Indonesia). Ranking tetap 360 lintas jenjang. Lihat [SMP-DAILY-V2.md](bank/SMP-DAILY-V2.md). Semua tambahan PG, pembahasan per opsi, author_checked, independent_review=pending, ranked_eligible=false. Tidak mengklaim batch ini menutup seluruh kekurangan visual/genre pada audit sebelumnya.
+
+Pemeliharaan: `python scripts/add-smp-daily-v2.py` menambahkan batch secara idempoten tanpa menimpa soal yang ada. Setelah generator/rebuild lain, jalankan kembali penambah ini sebelum validasi dan sync-content. Jika item dengan ID sama berbeda, skrip berhenti agar perubahan harus melalui versi baru secara eksplisit.
+
 ## 1. Ringkasan acuan
 
 Mapel kelas 6/9 adalah Matematika dan Bahasa Indonesia. Tiga bentuk respons: satu pilihan, beberapa pilihan benar, dan kategori per pernyataan. Latihan menekankan memahami, menerapkan, dan bernalar. Bacaan informasi/fiksi dipakai pada kedua jenjang dengan kompleksitas meningkat. Rujukan: S1–S7 pada [SOURCES.md](SOURCES.md).

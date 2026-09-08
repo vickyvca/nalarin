@@ -85,7 +85,27 @@ for q in qs:
     def presented(keys): return {mapping[c] for c in keys}
     # Recompute from raw inputs. Several rules enumerate possibilities instead of
     # repeating the algebraic method used in the learner-facing explanation.
-    if rule=='fraction_sum': expected=F(x[0],x[1])+F(x[2],x[3])
+    if rule=='daily_median':
+        ordered=sorted(x); mid=len(x)//2
+        expected=F(ordered[mid-1]+ordered[mid],2) if len(x)%2==0 else F(ordered[mid])
+    elif rule=='daily_weighted_mean':
+        expanded=[value for value,count in x for _ in range(count)]
+        expected=F(sum(expanded),len(expanded))
+    elif rule=='daily_scaled_area': expected=F(x[0]*x[1]*x[2]**2,10000)
+    elif rule=='daily_fill_time': expected=F(x[0]*x[1]*(x[3]-x[2]),1000*x[4])
+    elif rule=='daily_affine_cost':
+        h1,c1,h2,c2,h=x
+        expected=F(c1)+F((c2-c1)*(h-h1),h2-h1)
+    elif rule=='daily_budget':
+        budget,delivery,unit=x
+        expected=max(n for n in range(budget//unit+1) if delivery+n*unit<=budget)
+    elif rule=='daily_growth':
+        initial,interval,elapsed=x
+        require(elapsed%interval==0,f'{ident} partial growth period')
+        expected=initial
+        for _ in range(elapsed//interval): expected+=expected
+    elif rule=='daily_frequency': expected=F(x[0]*x[2],x[1])
+    elif rule=='fraction_sum': expected=F(x[0],x[1])+F(x[2],x[3])
     elif rule=='fraction_product': expected=sum([F(x[1],x[2]) for _ in range(x[0])])
     elif rule=='gcd': expected=max(n for n in range(1,min(x)+1) if all(z%n==0 for z in x))
     elif rule=='lcm': expected=next(n for n in range(1,x[0]*x[1]+1) if all(n%z==0 for z in x))
