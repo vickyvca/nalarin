@@ -1,6 +1,6 @@
 # Nalarin
 
-Web app persiapan TKA untuk kelas 6 SD dan kelas 9 SMP. Anak bisa daftar dengan username + kode masuk 6 angka, menjalankan latihan harian, melihat pembahasan setelah submit, dan menyimpan progres di SQLite. Tampilan responsif untuk HP dan desktop. Brand produk: **Nalarin**; persona tutor: **Kak Nara**; mesin AI: Mitsuko.
+Web app persiapan TKA untuk kelas 6 SD dan kelas 9 SMP. Anak bisa daftar dengan username + kode masuk 6 angka, menjalankan latihan harian, melihat pembahasan setelah submit, dan menyimpan progres di SQLite. Tampilan responsif untuk HP dan desktop. Brand produk: **Nalarin**; persona tutor: **Kak Nara**; pembahasan AI memakai adapter server.
 
 Live demo: https://tka.mdc.web.id/.
 

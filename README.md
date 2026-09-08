@@ -15,16 +15,15 @@ Target awal: kelas 6 SD dan kelas 9 SMP; web demo tersedia di `tka.mdc.web.id`. 
 
 1. [PRD.md](PRD.md): perilaku aplikasi, aturan penilaian, akses, dan penerimaan.
 2. [CONTENT-PLAN.md](CONTENT-PLAN.md): cakupan materi, rencana paket, dan perluasan bank.
-3. [AI-MITSUKO.md](AI-MITSUKO.md): bukti konektivitas, rancangan integrasi, dan prompt tutor.
-4. [SOURCES.md](SOURCES.md): rujukan resmi dan batas verifikasi.
-5. `bank/questions.json`: bank soal orisinal beserta kunci dan pembahasan.
-6. `bank/passages.json`: bacaan orisinal yang dirujuk soal.
-7. `bank/modules.json`: modul ringkas dengan contoh.
-8. `bank/BANK-SOAL.md`: versi bank yang mudah dibaca manusia; memuat kunci, untuk persiapan/admin.
-9. `bank/QA-REPORT.json`: hasil validasi konten otomatis.
-10. `bank/RANKING-BLUEPRINT.md`: kuota dan checklist pembukaan bank ranking.
-11. [EXECUTION-PLAN.md](EXECUTION-PLAN.md): urutan pengerjaan dan gerbang peluncuran.
-12. `tka-app/`: aplikasi Vite dan API Express/SQLite.
+3. [SOURCES.md](SOURCES.md): rujukan resmi dan batas verifikasi.
+4. `bank/questions.json`: bank soal orisinal beserta kunci dan pembahasan.
+5. `bank/passages.json`: bacaan orisinal yang dirujuk soal.
+6. `bank/modules.json`: modul ringkas dengan contoh.
+7. `bank/BANK-SOAL.md`: versi bank yang mudah dibaca manusia; memuat kunci, untuk persiapan/admin.
+8. `bank/QA-REPORT.json`: hasil validasi konten otomatis.
+9. `bank/RANKING-BLUEPRINT.md`: kuota dan checklist pembukaan bank ranking.
+10. [EXECUTION-PLAN.md](EXECUTION-PLAN.md): urutan pengerjaan dan gerbang peluncuran.
+11. `tka-app/`: aplikasi Vite dan API Express/SQLite.
 
 Bank saat ini berisi 440 soal: 80 soal latihan harian dan 360 soal ranking yang sudah diaudit Luna (90 per jalur: kelas 6/9 × Matematika/Bahasa Indonesia). Masing-masing jalur punya tiga paket editorial berisi 30 soal untuk rotasi sesi resmi. Audit editorial kedua menstandarkan ejaan, instruksi PGK, format rupiah/desimal, bukti bacaan, serta panjang stimulus agar mengikuti rentang indikatif panduan TKA. Angka matematika dibuat bervariasi dengan `family_id` berbeda; variasi angka tetap bukan pengganti kalibrasi empiris. Tingkat kesulitan masih editorial dan belum dikalibrasi dari respons murid. Soal tidak diklaim sebagai arsip ujian TKA atau bocoran.
 
