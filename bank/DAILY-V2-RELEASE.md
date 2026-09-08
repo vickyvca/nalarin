@@ -1,6 +1,8 @@
 # Paket konten harian SD dan SMP
 
-Status: dipersiapkan untuk deploy, belum diaktifkan di server live.
+Status: aktif di https://tka.mdc.web.id/ sejak rilis 20260908-142519.
+
+Verifikasi live: health 456 soal / 15 modul / 360 ranking; SHA-256 konten server sama dengan manifest paket. Baseline 440 soal dan seluruh bacaan/modul server dibandingkan sebelum pemasangan dan identik. Uji API publik kelas 6 dan 9 masing-masing menjalankan 10 soal harian sampai submit, skor 100, dan 10 pembahasan; sesi SD memuat 6 soal baru dan SMP 4 soal baru. Kunci tidak muncul sebelum submit. Backup konten disimpan oleh prosedur rilis. Ini verifikasi API, bukan pemeriksaan visual browser baru.
 
 - 456 soal: 228 SD dan 228 SMP; masing-masing 118 Matematika dan 110 Bahasa Indonesia.
 - 96 soal harian dan 360 ranking. Tambahan 16 soal semuanya Matematika PG harian: 8 SD dan 8 SMP.
