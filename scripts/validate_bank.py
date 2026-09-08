@@ -85,7 +85,13 @@ for q in qs:
     def presented(keys): return {mapping[c] for c in keys}
     # Recompute from raw inputs. Several rules enumerate possibilities instead of
     # repeating the algebraic method used in the learner-facing explanation.
-    if rule=='daily_median':
+    if rule=='daily_fence': expected=sum([x[0],x[1],x[0],x[1]])-x[2]
+    elif rule=='daily_portions': expected=F(x[0]*1000,x[1])
+    elif rule=='daily_sum': expected=sum(x)
+    elif rule=='daily_tiles':
+        require(x[0]%x[2]==0 and x[1]%x[2]==0,f'{ident} tile edges must divide exactly')
+        expected=sum(1 for _ in range(0,x[0],x[2]) for _ in range(0,x[1],x[2]))
+    elif rule=='daily_median':
         ordered=sorted(x); mid=len(x)//2
         expected=F(ordered[mid-1]+ordered[mid],2) if len(x)%2==0 else F(ordered[mid])
     elif rule=='daily_weighted_mean':

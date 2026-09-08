@@ -177,4 +177,3 @@ A: 50 diperoleh dari frekuensi relatif kuning dikalikan banyak putaran baru.
 B: 20 adalah hasil percobaan lama dengan jumlah putaran yang berbeda.
 C: 40 dapat muncul jika 20 kemunculan keliru dianggap sebagai 20 persen.
 D: 80 adalah banyak putaran awal, bukan perkiraan kemunculan kuning.
-

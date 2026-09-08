@@ -143,5 +143,5 @@ if __name__ == '__main__':
         doc += ['', 'Kunci: '+q['answer'][0], '', q['explanation']['concept'], '']
         doc += q['explanation']['steps']
         doc += ['', *[k+': '+v for k,v in q['explanation']['option_reasons'].items()], '']
-    (ROOT/'bank/SMP-DAILY-V2.md').write_text('\n'.join(doc)+'\n', encoding='utf-8')
+    (ROOT/'bank/SMP-DAILY-V2.md').write_text('\n'.join(doc).rstrip()+'\n', encoding='utf-8')
     print(json.dumps(dict(added=len(added), total=len(existing)+len(added))))

@@ -35255,5 +35255,636 @@
         "80"
       ]
     }
+  },
+  {
+    "id": "6-daily-v2-ribbon-sum",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-ribbon-sum",
+    "competency": "bilangan",
+    "module_id": "sd-pecahan",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Sinta menyambung pita sepanjang 3/4 meter dan 2/3 meter. Tidak ada bagian pita yang bertumpuk atau terpotong. Berapa panjang pita setelah disambung?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "5/7 meter"
+      },
+      {
+        "id": "B",
+        "text": "17/12 meter"
+      },
+      {
+        "id": "C",
+        "text": "5/12 meter"
+      },
+      {
+        "id": "D",
+        "text": "1/12 meter"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "concept": "Pecahan dijumlahkan setelah ukuran bagiannya disamakan.",
+      "steps": [
+        "Samakan penyebut menjadi 12: 3/4 = 9/12 dan 2/3 = 8/12.",
+        "Jumlahkan pembilang: 9/12 + 8/12 = 17/12 meter.",
+        "17/12 meter sama dengan 1 5/12 meter. Panjangnya lebih dari satu meter."
+      ],
+      "option_reasons": {
+        "A": "5/7 berasal dari menjumlahkan pembilang dan penyebut langsung; ukuran bagiannya belum disamakan.",
+        "B": "17/12 adalah jumlah 9/12 dan 8/12.",
+        "C": "5/12 memakai penyebut baru, tetapi pembilangnya belum disesuaikan.",
+        "D": "1/12 adalah selisih kedua pita, bukan jumlah panjangnya."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "fraction_sum",
+      "inputs": [
+        3,
+        4,
+        2,
+        3
+      ],
+      "option_values": [
+        "5/7",
+        "17/12",
+        "5/12",
+        "1/12"
+      ]
+    }
+  },
+  {
+    "id": "6-daily-v2-recipe-batches",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-recipe-batches",
+    "competency": "bilangan",
+    "module_id": "sd-pecahan",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Satu adonan kue memerlukan 3/5 kg tepung. Ibu membuat empat adonan dengan resep yang sama. Berapa kilogram tepung yang diperlukan?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "7/5 kg"
+      },
+      {
+        "id": "B",
+        "text": "3/20 kg"
+      },
+      {
+        "id": "C",
+        "text": "12/5 kg"
+      },
+      {
+        "id": "D",
+        "text": "12/20 kg"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "concept": "Bahan untuk beberapa adonan dihitung dengan mengalikan kebutuhan satu adonan.",
+      "steps": [
+        "Setiap adonan memerlukan 3/5 kg tepung.",
+        "Empat adonan memerlukan 3/5 + 3/5 + 3/5 + 3/5 = 12/5 kg.",
+        "12/5 kg sama dengan 2 2/5 kg."
+      ],
+      "option_reasons": {
+        "A": "7/5 berasal dari menambahkan 4 ke pembilang, bukan mengalikan kebutuhan.",
+        "B": "3/20 membagi kebutuhan satu adonan menjadi empat bagian.",
+        "C": "12/5 adalah empat kali kebutuhan tepung satu adonan.",
+        "D": "12/20 sama dengan 3/5, sehingga masih hanya cukup untuk satu adonan."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "fraction_product",
+      "inputs": [
+        4,
+        3,
+        5
+      ],
+      "option_values": [
+        "7/5",
+        "3/20",
+        "12/5",
+        "12/20"
+      ]
+    }
+  },
+  {
+    "id": "6-daily-v2-gift-packs",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-gift-packs",
+    "competency": "bilangan",
+    "module_id": "sd-faktor",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Panitia memiliki 42 pensil dan 30 penghapus. Semua barang akan dibagi ke dalam paket hadiah. Setiap paket berisi jumlah pensil yang sama dan jumlah penghapus yang sama. Berapa paket paling banyak yang dapat dibuat?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "5 paket"
+      },
+      {
+        "id": "B",
+        "text": "7 paket"
+      },
+      {
+        "id": "C",
+        "text": "12 paket"
+      },
+      {
+        "id": "D",
+        "text": "6 paket"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "concept": "Jumlah paket harus membagi habis kedua jenis barang. Jumlah terbanyak adalah FPB.",
+      "steps": [
+        "Faktor 42 adalah 1, 2, 3, 6, 7, 14, 21, dan 42.",
+        "Faktor 30 adalah 1, 2, 3, 5, 6, 10, 15, dan 30. Faktor bersama terbesar adalah 6.",
+        "Enam paket masing-masing berisi 7 pensil dan 5 penghapus, tanpa sisa."
+      ],
+      "option_reasons": {
+        "A": "5 tidak membagi habis 42 pensil.",
+        "B": "7 membagi habis pensil, tetapi tidak membagi habis 30 penghapus.",
+        "C": "12 adalah selisih jumlah barang, bukan pembagi keduanya.",
+        "D": "6 membagi habis kedua jumlah dan merupakan pembagi bersama terbesar."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "gcd",
+      "inputs": [
+        42,
+        30
+      ],
+      "option_values": [
+        "5",
+        "7",
+        "12",
+        "6"
+      ]
+    }
+  },
+  {
+    "id": "6-daily-v2-bus-cycle",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-bus-cycle",
+    "competency": "bilangan",
+    "module_id": "sd-faktor",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Dua bus berangkat bersama dari terminal. Bus A berangkat setiap 12 menit, sedangkan bus B setiap 18 menit. Berapa menit lagi kedua bus akan berangkat bersama untuk pertama kalinya?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "36 menit"
+      },
+      {
+        "id": "B",
+        "text": "6 menit"
+      },
+      {
+        "id": "C",
+        "text": "30 menit"
+      },
+      {
+        "id": "D",
+        "text": "72 menit"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "concept": "Kejadian berulang bertemu kembali pada kelipatan bersama terkecil.",
+      "steps": [
+        "Keberangkatan bus A berikutnya terjadi pada menit ke-12, 24, 36, dan seterusnya.",
+        "Keberangkatan bus B berikutnya terjadi pada menit ke-18, 36, 54, dan seterusnya.",
+        "Kelipatan bersama pertama adalah 36, jadi keduanya berangkat bersama lagi setelah 36 menit."
+      ],
+      "option_reasons": {
+        "A": "36 adalah waktu pertemuan pertama kedua jadwal.",
+        "B": "6 adalah FPB interval, bukan waktu pertemuan jadwal.",
+        "C": "30 menjumlahkan interval; pada menit itu kedua jadwal tidak bertemu.",
+        "D": "72 juga kelipatan bersama, tetapi pertemuan sudah terjadi pada menit ke-36."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "lcm",
+      "inputs": [
+        12,
+        18
+      ],
+      "option_values": [
+        "36",
+        "6",
+        "30",
+        "72"
+      ]
+    }
+  },
+  {
+    "id": "6-daily-v2-garden-border",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-garden-border",
+    "competency": "geometri",
+    "module_id": "sd-bangun",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Kebun berbentuk persegi panjang berukuran 14 m × 9 m. Pagar dipasang mengelilingi kebun, kecuali bukaan pintu sepanjang 2 m. Berapa panjang pagar yang diperlukan?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "46 m"
+      },
+      {
+        "id": "B",
+        "text": "44 m"
+      },
+      {
+        "id": "C",
+        "text": "126 m"
+      },
+      {
+        "id": "D",
+        "text": "42 m"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "concept": "Pagar mengikuti keliling. Bagian pintu yang tidak dipagari dikurangi dari keliling.",
+      "steps": [
+        "Keliling kebun = 14 + 9 + 14 + 9 = 46 m.",
+        "Bukaan pintu sepanjang 2 m tidak diberi pagar.",
+        "Panjang pagar = 46 − 2 = 44 m."
+      ],
+      "option_reasons": {
+        "A": "46 adalah keliling penuh, belum mengurangi bukaan pintu.",
+        "B": "44 adalah keliling setelah dikurangi satu bukaan sepanjang 2 m.",
+        "C": "126 adalah luas kebun dalam m², bukan panjang pagar.",
+        "D": "42 mengurangi bukaan pintu dua kali, padahal hanya ada satu bukaan."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_fence",
+      "inputs": [
+        14,
+        9,
+        2
+      ],
+      "option_values": [
+        "46",
+        "44",
+        "126",
+        "42"
+      ]
+    }
+  },
+  {
+    "id": "6-daily-v2-juice-portions",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-juice-portions",
+    "competency": "geometri",
+    "module_id": "sd-ukuran",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Tersedia 3 liter jus. Jus dituangkan ke gelas yang masing-masing diisi 250 mililiter. Berapa gelas yang dapat diisi jika seluruh jus digunakan tanpa tumpah?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "8 gelas"
+      },
+      {
+        "id": "B",
+        "text": "10 gelas"
+      },
+      {
+        "id": "C",
+        "text": "12 gelas"
+      },
+      {
+        "id": "D",
+        "text": "15 gelas"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "concept": "Samakan satuan volume sebelum membagi ke beberapa wadah.",
+      "steps": [
+        "Satu liter sama dengan 1.000 mililiter. Jadi 3 liter = 3.000 mililiter.",
+        "Banyak gelas = 3.000 : 250 = 12.",
+        "Periksa: 12 × 250 = 3.000 mililiter, tepat sebanyak jus yang tersedia."
+      ],
+      "option_reasons": {
+        "A": "8 gelas hanya memakai 2.000 mililiter dan menyisakan satu liter.",
+        "B": "10 gelas hanya memakai 2.500 mililiter, sehingga masih ada jus.",
+        "C": "12 gelas memakai tepat 3.000 mililiter.",
+        "D": "15 gelas memerlukan 3.750 mililiter, melebihi jumlah jus."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_portions",
+      "inputs": [
+        3,
+        250
+      ],
+      "option_values": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ]
+    }
+  },
+  {
+    "id": "6-daily-v2-library-total",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-library-total",
+    "competency": "data",
+    "module_id": "sd-data",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Buku yang dipinjam dari perpustakaan pada Senin sebanyak 18, Selasa 24, Rabu 15, dan Kamis 23. Berapa jumlah buku yang dipinjam selama empat hari tersebut?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "42 buku"
+      },
+      {
+        "id": "B",
+        "text": "62 buku"
+      },
+      {
+        "id": "C",
+        "text": "81 buku"
+      },
+      {
+        "id": "D",
+        "text": "80 buku"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "concept": "Jumlah seluruh data diperoleh dengan menjumlahkan setiap kelompok tepat satu kali.",
+      "steps": [
+        "Jumlah Senin dan Selasa = 18 + 24 = 42 buku.",
+        "Jumlah Rabu dan Kamis = 15 + 23 = 38 buku.",
+        "Total empat hari = 42 + 38 = 80 buku."
+      ],
+      "option_reasons": {
+        "A": "42 hanya menjumlahkan Senin dan Selasa.",
+        "B": "62 melewatkan data Senin sebanyak 18 buku.",
+        "C": "81 dapat muncul jika data Kamis terbaca 24, padahal tertulis 23.",
+        "D": "80 menjumlahkan keempat hari tepat satu kali."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_sum",
+      "inputs": [
+        18,
+        24,
+        15,
+        23
+      ],
+      "option_values": [
+        "42",
+        "62",
+        "81",
+        "80"
+      ]
+    }
+  },
+  {
+    "id": "6-daily-v2-floor-tiles",
+    "version": 1,
+    "grade": 6,
+    "subject": "matematika",
+    "family_id": "sd-daily-v2-floor-tiles",
+    "competency": "geometri",
+    "module_id": "sd-bangun",
+    "cognitive_level": "aplikasi",
+    "difficulty_editorial": "sedang",
+    "difficulty_calibrated": false,
+    "type": "PG",
+    "stem": "Lantai berbentuk persegi panjang berukuran 4 m × 3 m. Lantai ditutup penuh dengan ubin persegi bersisi 50 cm. Ubin dipasang tanpa celah dan tanpa dipotong. Berapa ubin yang diperlukan?",
+    "stimulus_id": null,
+    "category_labels": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "48 ubin"
+      },
+      {
+        "id": "B",
+        "text": "24 ubin"
+      },
+      {
+        "id": "C",
+        "text": "12 ubin"
+      },
+      {
+        "id": "D",
+        "text": "96 ubin"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "concept": "Hitung banyak ubin sepanjang dan selebar lantai setelah menyamakan satuan.",
+      "steps": [
+        "Ukuran lantai = 400 cm × 300 cm.",
+        "Sepanjang lantai terdapat 400 : 50 = 8 ubin. Selebar lantai terdapat 300 : 50 = 6 ubin.",
+        "Jumlah ubin = 8 × 6 = 48."
+      ],
+      "option_reasons": {
+        "A": "48 adalah delapan baris yang masing-masing berisi enam ubin.",
+        "B": "24 dapat muncul jika luas lantai dibagi panjang sisi ubin, bukan luas ubin.",
+        "C": "12 adalah luas lantai dalam m²; luas satu ubin bukan 1 m².",
+        "D": "96 menghitung jumlah ubin dua kali."
+      },
+      "evidence": [],
+      "next_action": "Coba jelaskan kembali langkahmu, lalu periksa satuan dan hasilnya."
+    },
+    "source": {
+      "kind": "original",
+      "exam_year": null,
+      "framework_ref": "S1"
+    },
+    "review": {
+      "status": "author_checked",
+      "independent_review": "pending",
+      "method": "author solution and numeric recomputation"
+    },
+    "pool": "pilot_daily",
+    "ranked_eligible": false,
+    "verification": {
+      "rule": "daily_tiles",
+      "inputs": [
+        400,
+        300,
+        50
+      ],
+      "option_values": [
+        "48",
+        "24",
+        "12",
+        "96"
+      ]
+    }
   }
 ]

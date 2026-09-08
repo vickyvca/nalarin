@@ -1,24 +1,24 @@
 {
   "status": "PASS",
-  "questions": 448,
+  "questions": 456,
   "counts_by_grade_subject": {
-    "6/matematika": 110,
+    "6/matematika": 118,
     "9/matematika": 118,
     "6/bahasa_indonesia": 110,
     "9/bahasa_indonesia": 110
   },
   "counts_by_type": {
-    "PG": 274,
+    "PG": 282,
     "PGK_MCMA": 88,
     "PGK_CATEGORY": 86
   },
   "pg_key_distribution": {
-    "B": 70,
-    "A": 68,
-    "D": 72,
-    "C": 64
+    "B": 72,
+    "A": 70,
+    "D": 74,
+    "C": 66
   },
-  "math_keys_recomputed": 228,
+  "math_keys_recomputed": 236,
   "text_evidence_spans_checked": 319,
   "passage_word_counts": {
     "sd-bi-payung": 162,
