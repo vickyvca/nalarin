@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T08:01:59.515Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-bi-016",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-016",
+        "answer": [
+          "B"
+        ],
+        "reason": "Teks A menyebutkan percobaan dilakukan selama dua pekan.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-016",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-017",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-017",
+        "answer": [
+          "D"
+        ],
+        "reason": "Teks B mendukung pengurangan sampah, tetapi menambahkan pertimbangan pencucian, antrean, pencatatan, dan perluasan.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-017",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-018",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-018",
+        "answer": [
+          "B"
+        ],
+        "reason": "Teks B menyatakan keterbatasan petugas dapat menyebabkan antrean peminjaman bertambah.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-018",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-019",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-019",
+        "answer": [
+          "B",
+          "D"
+        ],
+        "reason": "Teks A mencatat wadah dipinjam dan dikembalikan; Teks B mencatat waktu antre selama percobaan.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-019",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-020",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-020",
+        "answer": {
+          "A": "Salah",
+          "B": "Benar",
+          "C": "Benar"
+        },
+        "reason": "Belum ada angka hasil; wadah perlu dicuci, dikeringkan, disimpan, dan harapan dibedakan dari pengukuran.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-020",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

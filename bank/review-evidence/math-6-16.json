@@ -1,0 +1,87 @@
+{
+  "reviewed_at": "2026-09-07T07:58:18.343Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-mtk-017",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-017",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Volume = 10 × 6 × 5 = 300 cm³; 300 cm³ = 0,3 liter; menggandakan tinggi menghasilkan 600 cm³.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-017",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-018",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-018",
+        "answer": [
+          "B"
+        ],
+        "reason": "08.40 + 2 jam 35 menit = 11.15.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-018",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-019",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-019",
+        "answer": [
+          "B",
+          "C"
+        ],
+        "reason": "Total = 16 + 24 + 20 + 12 = 72; 24 terbesar, sedangkan 16 < 20 dan 12 < 24.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-019",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-020",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-020",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Keliling = 2(14 + 8) = 44 m; luas = 112 m²; selisih panjang-lebar = 6 m.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-020",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

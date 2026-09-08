@@ -1,0 +1,83 @@
+{
+  "reviewed_at": "2026-09-07T07:57:45.101Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-mtk-013",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-013",
+        "answer": [
+          "A",
+          "B"
+        ],
+        "reason": "4/10 dan 6/15 masing-masing disederhanakan menjadi 2/5; 2/10 dan 5/2 tidak senilai.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-013",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-014",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-014",
+        "answer": [
+          "C"
+        ],
+        "reason": "Jumlah paket maksimum adalah FPB(30,45)=15.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-014",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-015",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-015",
+        "answer": [
+          "A"
+        ],
+        "reason": "Keduanya pertama kali menyala bersama setelah KPK(8,12)=24 menit.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-015",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-016",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-016",
+        "answer": [
+          "D"
+        ],
+        "reason": "Luas persegi panjang = panjang × lebar = 15 × 6 = 90 m².",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-016",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

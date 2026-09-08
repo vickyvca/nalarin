@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T08:06:36.201Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-bi-001",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-001",
+        "answer": [
+          "B"
+        ],
+        "reason": "Bu Sari menyimpan payung temuan di meja petugas.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-001",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-002",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-002",
+        "answer": [
+          "C"
+        ],
+        "reason": "Ciri khusus digunakan untuk memastikan anak itu mengenali payung yang benar.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-002",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-003",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-003",
+        "answer": [
+          "D"
+        ],
+        "reason": "Ungkapan tersebut berarti tokoh aku merasa lega setelah payung dikembalikan.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-003",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-004",
+      "version": 2,
+      "match": true,
+      "blind": {
+        "id": "6-bi-004",
+        "answer": [
+          "A",
+          "C"
+        ],
+        "reason": "Tokoh aku berjanji mengembalikan payung pinjaman dan menyerahkan payung temuan kepada Bu Sari.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-004",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-005",
+      "version": 2,
+      "match": true,
+      "blind": {
+        "id": "6-bi-005",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Tokoh aku menyerahkan payung kepada Bu Sari, tidak membawanya pulang, dan ciri barang membantu menemukan pemiliknya.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-005",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

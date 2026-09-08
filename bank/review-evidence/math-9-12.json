@@ -1,0 +1,82 @@
+{
+  "reviewed_at": "2026-09-07T08:00:44.192Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-mtk-013",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-013",
+        "answer": [
+          "A"
+        ],
+        "reason": "5x + 4 = 49 sehingga 5x = 45 dan x = 9.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-013",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-014",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-014",
+        "answer": [
+          "B"
+        ],
+        "reason": "Diperoleh harga pulpen Rp4.000 dan buku Rp6.000; tiga pulpen plus dua buku = Rp24.000.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-014",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-015",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-015",
+        "answer": [
+          "B"
+        ],
+        "reason": "Barisan aritmetika dengan suku pertama 4 dan beda 5: suku ke-8 = 4 + 7(5) = 39.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-015",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-016",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-016",
+        "answer": [
+          "D"
+        ],
+        "reason": "Sisi miring = √(8² + 15²) = √289 = 17 cm.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-016",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

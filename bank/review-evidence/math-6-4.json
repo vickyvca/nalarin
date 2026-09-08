@@ -1,0 +1,84 @@
+{
+  "reviewed_at": "2026-09-07T07:56:56.462Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-mtk-005",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-005",
+        "answer": [
+          "B"
+        ],
+        "reason": "KPK dari 6 dan 8 adalah 24, jadi keduanya pertama kali menyala bersama lagi setelah 24 menit.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-005",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-006",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-006",
+        "answer": [
+          "C"
+        ],
+        "reason": "Luas persegi panjang = panjang × lebar = 12 × 8 = 96 m².",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-006",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-007",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-007",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Volume = 12 × 5 × 4 = 240 cm³ = 0,24 liter; jika tinggi dilipatgandakan, volume menjadi 480 cm³.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-007",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-008",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-008",
+        "answer": [
+          "C"
+        ],
+        "reason": "07.35 ditambah 1 jam menjadi 08.35, lalu ditambah 45 menit menjadi 09.20.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-008",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

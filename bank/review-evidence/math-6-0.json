@@ -1,0 +1,89 @@
+{
+  "reviewed_at": "2026-09-07T08:02:38.478Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-mtk-001",
+      "version": 2,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-001",
+        "answer": [
+          "B"
+        ],
+        "reason": "1/2 + 1/4 = 2/4 + 1/4 = 3/4 kg.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-001",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-002",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-002",
+        "answer": [
+          "A"
+        ],
+        "reason": "3 × 2/5 = 6/5 meter.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-002",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-003",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-003",
+        "answer": [
+          "B",
+          "D"
+        ],
+        "reason": "6/8 dan 9/12 masing-masing disederhanakan menjadi 3/4.",
+        "issues": [],
+        "raw_answer": {
+          "A": "Salah",
+          "B": "Benar",
+          "C": "Salah",
+          "D": "Benar"
+        }
+      },
+      "editorial": {
+        "id": "6-mtk-003",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-004",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-004",
+        "answer": [
+          "D"
+        ],
+        "reason": "Jumlah paket terbanyak adalah FPB(24, 36) = 12.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-004",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

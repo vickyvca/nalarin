@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T07:58:36.481Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-bi-006",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-006",
+        "answer": [
+          "B"
+        ],
+        "reason": "Buku boleh dibawa pulang selama tiga hari.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-006",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-007",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-007",
+        "answer": [
+          "A"
+        ],
+        "reason": "Perpindahan kotak membuat murid dapat membaca koleksi kelompok lain yang lebih beragam.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-007",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-008",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-008",
+        "answer": [
+          "A"
+        ],
+        "reason": "Koleksi berarti kumpulan buku yang dimiliki.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-008",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-009",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-009",
+        "answer": [
+          "A",
+          "D"
+        ],
+        "reason": "Kartu peminjaman harus memuat nama peminjam dan tanggal peminjaman.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-009",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-010",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-010",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Peminjam melapor jika halaman terlepas; berbagi cerita tidak harus seluruh isi; petugas memeriksa jumlah dan kondisi buku.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-010",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

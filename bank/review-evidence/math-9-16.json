@@ -1,0 +1,86 @@
+{
+  "reviewed_at": "2026-09-07T08:00:59.626Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-mtk-017",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-017",
+        "answer": [
+          "A"
+        ],
+        "reason": "Jumlah empat bilangan = 4×10=40; bilangan keempat = 40−(7+9+11)=13.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-017",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-018",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-018",
+        "answer": [
+          "C",
+          "D"
+        ],
+        "reason": "Total 8: bukan merah 4/8, hijau 1/8, merah 4/8, biru 3/8; benar C dan D.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-018",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-019",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-019",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Translasi memberi P′=(2,2); pencerminan P(-1,4) terhadap sumbu x adalah (-1,-4).",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-019",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-020",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-020",
+        "answer": [
+          "C",
+          "D"
+        ],
+        "reason": "3x+2≤23 berarti x≤7; dari opsi, x=6 dan x=7 memenuhi.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-020",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

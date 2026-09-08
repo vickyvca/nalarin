@@ -1,0 +1,35 @@
+# Local/editor files
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.superdesign/tmp/
+__pycache__/
+*.pyc
+
+# Generated and local runtime files
+work/
+tka-app/node_modules/
+tka-app/dist/
+tka-app/qa/
+tka-app/server/data/
+tka-app/*.tar.gz
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Private deployment material kept outside the public repository
+AI-MITSUKO.md
+RELEASE-CHECKS.md
+tka-app/deploy/release.sh
+tka-app/deploy/content-release.sh
+tka-app/deploy/tka.mdc.web.id
+tka-app/deploy/tka-mdc-api.service
+tka-app/deploy/nalarin-backup.service
+tka-app/deploy/nalarin-backup.timer
+scripts/deploy-*.sh
+
+# Temporary exports and machine-specific review artifacts
+*.log
+*.tmp

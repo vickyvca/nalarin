@@ -1,0 +1,43 @@
+name: Validate Nalarin
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tka-app/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install application dependencies
+        working-directory: tka-app
+        run: npm ci
+
+      - name: Run application tests
+        working-directory: tka-app
+        run: npm test
+
+      - name: Build frontend
+        working-directory: tka-app
+        run: npm run build
+
+      - name: Validate question bank
+        run: python scripts/validate_bank.py
+
+      - name: Validate ranked question bank
+        run: python scripts/validate-ranking-seed.py

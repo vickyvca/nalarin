@@ -1,0 +1,12 @@
+import Database from 'better-sqlite3';
+import fs from 'node:fs';
+import path from 'node:path';
+const dir=process.env.TKA_BACKUP_DIR||'/var/backups/nalarin';
+fs.mkdirSync(dir,{recursive:true,mode:0o700});
+const db=new Database(process.env.TKA_DB_PATH||'/var/lib/tka-mdc/tka.sqlite',{readonly:true});
+const filename=path.join(dir,`nalarin-${new Date().toISOString().replace(/[:.]/g,'-')}.sqlite`);
+await db.backup(filename);db.close();fs.chmodSync(filename,0o600);
+const check=new Database(filename,{readonly:true});if(check.pragma('integrity_check',{simple:true})!=='ok')throw Error('Backup integrity failed');check.close();
+const files=fs.readdirSync(dir).filter(f=>/^nalarin-\d.*\.sqlite$/.test(f)).sort().reverse();
+for(const name of files.slice(14))fs.unlinkSync(path.join(dir,name));
+console.log('Nalarin backup verified');

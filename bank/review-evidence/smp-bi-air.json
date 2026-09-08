@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T08:01:24.430Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-bi-006",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-006",
+        "answer": [
+          "A"
+        ],
+        "reason": "240 − 180 = 60 liter sehari.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-006",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-007",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-007",
+        "answer": [
+          "C"
+        ],
+        "reason": "Jumlah pengunjung dan kegiatan berubah, sehingga faktor selain keran turut memengaruhi pemakaian air.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-007",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-008",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-008",
+        "answer": [
+          "C"
+        ],
+        "reason": "Data belum cukup untuk memisahkan dan memastikan besar pengaruh keran baru.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-008",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-009",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-009",
+        "answer": [
+          "B",
+          "C"
+        ],
+        "reason": "Laporan menyarankan pencatatan jumlah pengunjung dan jenis kegiatan pada pengamatan tambahan.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-009",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-010",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-010",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "A dan C didukung laporan; B salah karena perbaikan keran tetap dianggap masuk akal.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-010",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

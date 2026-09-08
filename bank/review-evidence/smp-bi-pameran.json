@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T08:01:52.981Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-bi-011",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-011",
+        "answer": [
+          "B"
+        ],
+        "reason": "Teks menyatakan bahwa judul dan susunan poster merupakan gagasan Arga.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-011",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-012",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-012",
+        "answer": [
+          "D"
+        ],
+        "reason": "Sinta ingin memperbaiki kesalahan, tetapi takut mengakuinya dan khawatir biaya cetak ulang.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-012",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-013",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-013",
+        "answer": [
+          "B"
+        ],
+        "reason": "Suasana kembali cair berarti hubungan yang sempat tegang menjadi lebih nyaman.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-013",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-014",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-014",
+        "answer": [
+          "C",
+          "D"
+        ],
+        "reason": "Perbaikan dilakukan dengan menambahkan label nama dan peran serta menjelaskan kontribusi teman kepada pengunjung.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-014",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-015",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-015",
+        "answer": {
+          "A": "Benar",
+          "B": "Benar",
+          "C": "Salah"
+        },
+        "reason": "Cerita mengakui kontribusi semua anggota dan membuat pemeriksaan untuk mencegah kesalahan; banyak menggambar tidak membenarkan penghilangan nama.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-015",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

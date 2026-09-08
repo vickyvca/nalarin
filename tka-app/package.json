@@ -1,0 +1,24 @@
+{
+  "name": "tka-mdc-liga-belajar",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node server/test.mjs",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "vite build",
+    "sync-content": "node server/scripts/sync-content.mjs",
+    "check-ranked": "node server/scripts/check-ranked.mjs",
+    "api": "node server/index.mjs",
+    "api:dev": "node --watch server/index.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "express": "^5.1.0"
+  }
+}

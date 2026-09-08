@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-09-07T12:25:01.406087+00:00",
+  "model": "mitsuko->gpt-5.6-luna(max)",
+  "candidate_questions": 360,
+  "candidate_passages": 36,
+  "approved_questions": 360,
+  "review_files": 126,
+  "packs": [
+    "r6-bi-1",
+    "r6-bi-2",
+    "r6-bi-3",
+    "r6-mtk-1",
+    "r6-mtk-2",
+    "r6-mtk-3",
+    "r9-bi-1",
+    "r9-bi-2",
+    "r9-bi-3",
+    "r9-mtk-1",
+    "r9-mtk-2",
+    "r9-mtk-3"
+  ],
+  "difficulty_calibrated": false,
+  "limitations": [
+    "Editorial difficulty has not been calibrated from learner response data."
+  ]
+}

@@ -1,0 +1,10 @@
+const {chromium}=require(process.env.PLAYWRIGHT_PACKAGE||'playwright');
+const fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const out=path.resolve(__dirname,'../work/logo-release/qa');fs.mkdirSync(out,{recursive:true});
+(async()=>{const browser=await chromium.launch({headless:true});try{const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+for(const width of [320,390,1440]){await page.setViewportSize({width,height:900});await page.goto('https://tka.mdc.web.id/');await page.locator('#auth-form').waitFor();const logo=page.locator('.auth-brand img');await logo.evaluate(el=>el.decode());assert.ok(await logo.isVisible());assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,`login-${width}.png`)});}
+const favicon=await page.locator('link[rel="icon"]').getAttribute('href');assert.equal((await page.request.get('https://tka.mdc.web.id'+favicon)).status(),200);
+await page.route('**/api/**',route=>{const p=new URL(route.request().url()).pathname;let data={};if(p==='/api/me')data={user:{learner:{nickname:'Pratinjau',grade:6,ranking_opt_in:true}}};if(p==='/api/progress')data={attempts:[],topics:[]};if(p==='/api/modules')data={modules:[]};if(p==='/api/attempts')data={attempts:[]};return route.fulfill({json:data});});
+for(const width of [390,1440]){await page.setViewportSize({width,height:900});await page.reload();const logo=page.locator(width===390?'.mobile-header .nalarin-logo':'.sidebar .nalarin-logo');await logo.waitFor();await logo.evaluate(el=>el.decode());assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,`shell-${width}.png`)});}
+assert.deepEqual(errors,[]);console.log(JSON.stringify({status:'PASS',login:'live',shell:'live assets with mock user',widths:[320,390,1440],favicon:200,errors}));
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

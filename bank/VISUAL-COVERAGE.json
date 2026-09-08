@@ -1,0 +1,15 @@
+{
+  "illustrated_questions": 53,
+  "by_grade_and_kind": {
+    "6/rectangle": 13,
+    "6/cuboid": 11,
+    "9/right-triangle": 8,
+    "6/square": 9,
+    "9/isosceles": 6,
+    "9/similarity": 6
+  },
+  "new_question_ids": 0,
+  "text_and_keys_changed": false,
+  "grade_origin_weights": "not implemented; no official percentage confirmed",
+  "smp_coverage": "partial: reading repetition and inference labels need revision; graphs, nets, rotations and dilations still missing"
+}

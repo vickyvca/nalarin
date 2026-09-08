@@ -1,0 +1,82 @@
+{
+  "reviewed_at": "2026-09-07T07:59:50.334Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-mtk-001",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-001",
+        "answer": [
+          "B"
+        ],
+        "reason": "Beban kerja 6×12=72 pekerja-hari; 72÷8=9 hari.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-001",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-002",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-002",
+        "answer": [
+          "B"
+        ],
+        "reason": "Harga setelah diskon 20%: 150.000×80%=120.000 rupiah.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-002",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-003",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-003",
+        "answer": [
+          "D"
+        ],
+        "reason": "3x+7=31 berarti 3x=24, sehingga x=8.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-003",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-004",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-004",
+        "answer": [
+          "D"
+        ],
+        "reason": "Dari 2p+b=11.000 dan p+2b=13.000 diperoleh p=3.000, b=5.000; totalnya 19.000 rupiah.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-004",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

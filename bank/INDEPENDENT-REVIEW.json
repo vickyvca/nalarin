@@ -1,0 +1,8 @@
+{
+  "questions": 80,
+  "passed": 80,
+  "needs_review": [],
+  "findings": [],
+  "method": "Mitsuko gateway with response model gpt-5.6-luna(max): separate blind solution and explanation audit. Same model family can share errors; no empirical difficulty calibration.",
+  "ranked_eligible": 0
+}

@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T07:59:19.067Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-bi-016",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-016",
+        "answer": [
+          "B"
+        ],
+        "reason": "Kertas bekas satu sisi ditempatkan di kotak pertama.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-016",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-017",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-017",
+        "answer": [
+          "C"
+        ],
+        "reason": "Contoh membantu murid menentukan kotak yang sesuai untuk setiap jenis kertas.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-017",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-018",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-018",
+        "answer": [
+          "D"
+        ],
+        "reason": "Bacaan menjelaskan pemilahan, penggunaan kembali, dan penanganan kertas bekas di kelas.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-018",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-019",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-019",
+        "answer": [
+          "B",
+          "D"
+        ],
+        "reason": "Buku kecil digunakan untuk rancangan gambar dan hitungan sementara.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-019",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-020",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-020",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Petunjuk meminta murid bertanya saat ragu, melarang kertas basah, dan menjaga kerahasiaan data pribadi.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-020",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

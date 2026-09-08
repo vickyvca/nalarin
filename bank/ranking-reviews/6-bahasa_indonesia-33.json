@@ -1,0 +1,16 @@
+{
+  "model": "mitsuko->gpt-5.6-luna(max)",
+  "reviewed_at": "2026-09-07T11:46:18.327Z",
+  "reviews": [
+    {
+      "id": "r6-bi-3-05",
+      "approved": true,
+      "issues": []
+    },
+    {
+      "id": "r6-bi-3-06",
+      "approved": true,
+      "issues": []
+    }
+  ]
+}

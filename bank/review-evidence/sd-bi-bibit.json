@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T08:03:52.953Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-bi-011",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-011",
+        "answer": [
+          "D"
+        ],
+        "reason": "Teks menyatakan bahwa tinggi tanaman diukur setiap tiga hari.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-011",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-012",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-012",
+        "answer": [
+          "D"
+        ],
+        "reason": "Pengingat membantu tokoh aku mengingat pemeriksaan dan perawatan kedua pot.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-012",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-013",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-013",
+        "answer": [
+          "C"
+        ],
+        "reason": "Tokoh aku awalnya khawatir tanamannya mati, lalu merasa senang ketika daun kembali tegak.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-013",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-014",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-014",
+        "answer": [
+          "A",
+          "D"
+        ],
+        "reason": "Saat tanaman layu, tanah diperiksa dan tanaman disiram dengan air secukupnya.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-014",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-bi-015",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-bi-015",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Tokoh memeriksa sebelum menyimpulkan, Dina tidak menjanjikan pemulihan langsung, dan catatan merekam pengalaman perawatan.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-bi-015",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

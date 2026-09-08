@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-09-07T08:01:12.673Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-bi-001",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-001",
+        "answer": [
+          "A"
+        ],
+        "reason": "Petugas menyatakan layanan peminjaman tetap berjalan di lantai satu.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-001",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-002",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-002",
+        "answer": [
+          "A"
+        ],
+        "reason": "Pengalaman salah membaca jadwal menjelaskan mengapa Nara berhati-hati memeriksa sumber informasi.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-002",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-003",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-003",
+        "answer": [
+          "B"
+        ],
+        "reason": "Pendapat Nara melemah karena terus didesak Damar dan teman-temannya.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-003",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-004",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-004",
+        "answer": [
+          "C",
+          "D"
+        ],
+        "reason": "Petugas menjelaskan ruang baca lantai dua diperbaiki selama tiga hari kerja.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-004",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-bi-005",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-bi-005",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Pesan yang diteruskan belum terverifikasi; Damar akhirnya mengakui kekeliruannya; sumber siaran menunjukkan dasar informasi.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-bi-005",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

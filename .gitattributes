@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.json linguist-language=JSON
+*.mjs linguist-language=JavaScript
+*.svg linguist-generated=false

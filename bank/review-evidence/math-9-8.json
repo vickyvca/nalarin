@@ -1,0 +1,85 @@
+{
+  "reviewed_at": "2026-09-07T08:00:20.423Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "9-mtk-009",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-009",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Translasi menghasilkan (2+4, −3+5)=(6,2); pencerminan P semula terhadap sumbu x menghasilkan (2,3).",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-009",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-010",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-010",
+        "answer": [
+          "B",
+          "C"
+        ],
+        "reason": "2x+3≤15 berarti 2x≤12, sehingga x≤6; nilai 6 dan 5 memenuhi.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-010",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-011",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-011",
+        "answer": [
+          "A"
+        ],
+        "reason": "Total pekerjaan 10×12=120 pekerja-hari. Dengan 15 pekerja, waktunya 120÷15=8 hari.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-011",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "9-mtk-012",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "9-mtk-012",
+        "answer": [
+          "A"
+        ],
+        "reason": "Diskon 15% berarti membayar 85%×Rp200.000=Rp170.000.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "9-mtk-012",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "reviewed_at": "2026-09-07T08:02:38.917Z",
+  "model": "mitsuko",
+  "results": [
+    {
+      "id": "6-mtk-009",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-009",
+        "answer": [
+          "B",
+          "C"
+        ],
+        "reason": "18 terbesar; total 12+18+15+9=54. Kamis 9 tidak melebihi Selasa, dan Senin 12 tidak melebihi Rabu 15.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-009",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-010",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-010",
+        "answer": {
+          "A": "Benar",
+          "B": "Salah",
+          "C": "Benar"
+        },
+        "reason": "Keliling = 2×(16+9)=50 m; luas = 16×9=144 m²; selisih panjang dan lebar = 7 m.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-010",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-011",
+      "version": 2,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-011",
+        "answer": [
+          "C"
+        ],
+        "reason": "2/3 + 1/6 = 4/6 + 1/6 = 5/6 kg.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-011",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    },
+    {
+      "id": "6-mtk-012",
+      "version": 1,
+      "match": true,
+      "blind": {
+        "id": "6-mtk-012",
+        "answer": [
+          "D"
+        ],
+        "reason": "4 × 3/8 = 12/8 = 3/2 meter.",
+        "issues": []
+      },
+      "editorial": {
+        "id": "6-mtk-012",
+        "approved": true,
+        "issues": []
+      },
+      "passed": true
+    }
+  ]
+}

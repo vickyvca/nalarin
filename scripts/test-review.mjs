@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const root=process.env.RANKING_WORK||'/opt/nalarin-ranking-work';
+const questions=JSON.parse(fs.readFileSync(`${root}/ranking-candidates.json`,'utf8'));
+const passages=JSON.parse(fs.readFileSync(`${root}/ranking-passages.json`,'utf8'));
+const q=questions.find(x=>x.id==='r6-bi-1-01');
+const p=passages.find(x=>x.id===q.stimulus_id);
+const body={model:'mitsuko',messages:[{role:'system',content:'Kamu reviewer soal Bahasa Indonesia. Kembalikan JSON tepat {"approved":true,"issues":[]} dan cek kunci terhadap bacaan.'},{role:'user',content:JSON.stringify({passage:p,question:{id:q.id,stem:q.stem,options:q.options,answer:q.answer,evidence:q.explanation.evidence,reasons:q.explanation.option_reasons}})}],max_tokens:1000,reasoning_effort:'low',stream:false};
+const started=Date.now();
+const response=await fetch(process.env.MITSUKO_BASE_URL.replace(/\/$/,'')+'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${process.env.MITSUKO_API_KEY}`},body:JSON.stringify(body),signal:AbortSignal.timeout(300000)});
+const text=await response.text();
+console.log(JSON.stringify({status:response.status,ms:Date.now()-started,chars:text.length,body:text.slice(0,2000)}));

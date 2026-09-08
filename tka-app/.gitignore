@@ -1,0 +1,8 @@
+node_modules/
+qa/
+*.tar.gz
+dist/
+server/data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
