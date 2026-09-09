@@ -2,6 +2,15 @@
 
 Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah adalah kondisi repository saat catatan dibuat, bukan klaim sebagai soal resmi atau bocoran TKA.
 
+## 2026-09-09 — set pose Kak Nara untuk konteks belajar
+
+Commit [`2782224`](https://github.com/vickyvca/nalarin/commit/2782224)
+
+- Menambahkan tujuh pose transparan: menyapa, menjelaskan, berpikir, menyemangati, mengajak mulai, membantu, dan merayakan.
+- Menggunakan pose menyapa di landing page dan tutorial pertama; pose menjelaskan, berpikir, dan merayakan mengikuti konteks belajar.
+- Menyediakan pose tambahan di helper Nara agar layar baru dapat memilih gestur tanpa mengganti alur aplikasi.
+- Menyimpan aset sebagai WebP transparan supaya tetap ringan di HP.
+
 ## 2026-09-09 — pose dan animasi ringan Kak Nara
 
 Commit [`0bc3f40`](https://github.com/vickyvca/nalarin/commit/0bc3f40)
