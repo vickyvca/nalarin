@@ -2,6 +2,15 @@
 
 Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah adalah kondisi repository saat catatan dibuat, bukan klaim sebagai soal resmi atau bocoran TKA.
 
+## 2026-09-09 — Kak Nara menjadi presenter landing page
+
+Commit [`b836ad8`](https://github.com/vickyvca/nalarin/commit/b836ad8)
+
+- Menampilkan artwork Kak Nara langsung di bagian paling atas landing page.
+- Menambahkan balon bicara yang menjelaskan peran Nara sebagai teman belajar.
+- Menampilkan label karakter dan memprioritaskan presenter di layar HP sebelum headline.
+- Menjaga gambar tetap punya alt text dan layout tidak melebar di mobile.
+
 ## 2026-09-09 — copy sederhana dan preview landing
 
 Commit [`5849836`](https://github.com/vickyvca/nalarin/commit/5849836)
@@ -99,4 +108,3 @@ Commit [`49b062b`](https://github.com/vickyvca/nalarin/commit/49b062b)
 Commit [`0f6571e`](https://github.com/vickyvca/nalarin/commit/0f6571e)
 
 - Menambahkan lisensi repository.
-

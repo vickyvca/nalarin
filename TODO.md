@@ -23,7 +23,7 @@ Status terakhir: **9 September 2026**, branch `main`, commit `5849836`.
 - [x] Tanya Kak Nara di materi dan pembahasan melalui adapter Mitsuko.
 - [x] Fallback pembahasan dasar ketika AI lambat atau tidak tersedia.
 - [x] Onboarding pertama, artwork Kak Nara, PWA install prompt, dan UI responsif.
-- [x] Landing page dengan preview latihan, materi, pembahasan, progres, dan ranking.
+- [x] Landing page dengan presenter Kak Nara serta preview latihan, materi, pembahasan, progres, dan ranking.
 - [x] Bank 456 soal: 360 soal ranking dan 96 soal latihan harian.
 - [x] Validator bank, test API, CI, backup, health check, dan rollback release.
 
