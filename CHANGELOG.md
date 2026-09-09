@@ -2,6 +2,15 @@
 
 Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah adalah kondisi repository saat catatan dibuat, bukan klaim sebagai soal resmi atau bocoran TKA.
 
+## 2026-09-09 — pose dan animasi ringan Kak Nara
+
+Commit [`0bc3f40`](https://github.com/vickyvca/nalarin/commit/0bc3f40)
+
+- Menambahkan tiga pose baru: menjelaskan, menyemangati, dan berpikir.
+- Menggunakan pose sesuai konteks: landing, preview materi, beranda, materi, dan pembahasan.
+- Menambahkan gerakan idle ringan dengan dukungan `prefers-reduced-motion` agar tetap nyaman dan mudah diakses.
+- Menggunakan aset WebP transparan supaya ukuran unduhan lebih ringan.
+
 ## 2026-09-09 — Kak Nara menjadi presenter landing page
 
 Commit [`b836ad8`](https://github.com/vickyvca/nalarin/commit/b836ad8)
