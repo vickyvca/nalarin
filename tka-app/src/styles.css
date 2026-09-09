@@ -143,13 +143,3 @@ h3 { font-size:18px; line-height:1.25; }
 @media(prefers-reduced-motion:reduce){.nara-avatar[data-pose]{animation:none!important;will-change:auto}}
 @media(max-width:900px){.home-nara{width:104px;height:140px}.module-ready-nara{width:82px;height:110px}}
 @media(max-width:560px){.module-nara-avatar{width:50px;height:50px}}
-
-/* True 3D Nara: the WebGL canvas is progressive enhancement over the same image fallback. */
-.nara-3d-stage{isolation:isolate;overflow:visible}
-.nara-3d-stage .nara-3d-fallback-image{position:relative;z-index:1;transition:opacity .35s ease}
-.nara-3d-canvas{position:absolute;inset:0;z-index:2;display:none;width:100%;height:100%;pointer-events:none;animation:nara-3d-pop .45s cubic-bezier(.22,1,.36,1)}
-.nara-3d-stage.is-ready .nara-3d-canvas{display:block}
-.nara-3d-stage.is-ready .nara-3d-fallback-image{opacity:0}
-.nara-3d-stage:after{z-index:4;pointer-events:none}
-@keyframes nara-3d-pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
-@media(prefers-reduced-motion:reduce){.nara-3d-stage .nara-3d-fallback-image,.nara-3d-canvas{transition:none;animation:none}}
