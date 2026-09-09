@@ -1,8 +1,10 @@
 # Peta konten dan rencana bank
 
-## Pembaruan latihan SMP — 8 September 2026
+## Status content — 9 September 2026
 
-Tambahan 8 soal Matematika harian dengan delapan keluarga baru: median, rata-rata berfrekuensi, skala luas, volume air tambahan/debit, tarif linear, batas anggaran bilangan bulat, pertumbuhan berlipat, dan frekuensi relatif. Total kini 448; SMP 228 (118 Matematika, 110 Bahasa Indonesia). Ranking tetap 360 lintas jenjang. Lihat [SMP-DAILY-V2.md](bank/SMP-DAILY-V2.md). Semua tambahan PG, pembahasan per opsi, author_checked, independent_review=pending, ranked_eligible=false. Tidak mengklaim batch ini menutup seluruh kekurangan visual/genre pada audit sebelumnya.
+Bank saat ini berisi **456 soal**: 360 soal ranking dan 96 soal latihan harian. Per jalur tersedia 118 Matematika kelas 6, 118 Matematika kelas 9, 110 Bahasa Indonesia kelas 6, dan 110 Bahasa Indonesia kelas 9. Semua jalur ranking memiliki 90 soal yang sudah direview untuk tiga paket simulasi 30 soal. Soal harian tetap `ranked_eligible=false`.
+
+Tambahan harian SMP dan SD tetap dicatat di [SMP-DAILY-V2.md](bank/SMP-DAILY-V2.md), [SD-DAILY-V2.md](bank/SD-DAILY-V2.md), dan [DAILY-V2-RELEASE.md](bank/DAILY-V2-RELEASE.md). Soal tidak diklaim sebagai salinan arsip ujian atau bocoran. Kekurangan visual, genre, dan kalibrasi tingkat kesulitan masih menjadi pekerjaan berikutnya.
 
 Pemeliharaan: `python scripts/add-smp-daily-v2.py` menambahkan batch secara idempoten tanpa menimpa soal yang ada. Setelah generator/rebuild lain, jalankan kembali penambah ini sebelum validasi dan sync-content. Jika item dengan ID sama berbeda, skrip berhenti agar perubahan harus melalui versi baru secara eksplisit.
 
@@ -12,7 +14,7 @@ Mapel kelas 6/9 adalah Matematika dan Bahasa Indonesia. Tiga bentuk respons: sat
 
 Panjang stimulus ranking orisinal saat ini: SD 151–153 kata dengan kalimat 3–7 kata, SMP 203–205 kata dengan kalimat 5–9 kata. Rentang ini mengikuti batas indikatif kerangka membaca TKA. Stimulus awal harian tetap dipertahankan sebagai pool `pilot_daily`. Konteks sekolah, perpustakaan desa, kebun, dan kantin familier untuk anak; semua informasi yang dibutuhkan tersedia dalam soal. Anak tidak perlu pengetahuan tempat tertentu di Jawa Tengah untuk menjawab.
 
-## 2. Paket yang sudah disiapkan
+## 2. Paket ranking dan seed awal
 
 Bank ranking v1 sudah ditambahkan: 360 soal baru, 90 per jalur (kelas 6/9 ×
 Matematika/Bahasa Indonesia), tiga paket × 30 soal per jalur. Seluruh butir
@@ -29,7 +31,7 @@ data respons murid.
 
 Jenis respons: 50 PG, 16 PGK MCMA, 14 PGK kategori. Semua mempunyai konsep, langkah, alasan opsi/pernyataan, modul, dan versi. Keempat bacaan SD terdiri dari dua cerita dan dua informasi; SMP dua cerita, satu informasi tunggal, satu informasi jamak.
 
-80 soal awal tetap berada di pool `pilot_daily`, `ranked_eligible=false`. Pool
+Seed awal 80 soal tetap berada di pool `pilot_daily`, `ranked_eligible=false`. Pool
 ranking berisi 360 soal `ranked_v1`, `ranked_eligible=true` setelah pemeriksaan
 matematika otomatis, validasi struktur, dan review Luna per batch. Belum ada
 kalibrasi menggunakan data murid. Review AI tidak boleh diberi label terjamin
@@ -70,9 +72,9 @@ Kesulitan awal bersifat perkiraan. Setelah pilot, periksa proporsi benar pada re
 ## 5. Target sebelum mengaktifkan sesi penilaian
 
 Target jangka menengah tetap 600 butir yang telah ditinjau AI dan divalidasi:
-150 per jalur, terdiri dari 60 harian + 90 peringkat. Saat ini bagian peringkat
-90 per jalur sudah tersedia; tambahan harian 240 butir masih menjadi pekerjaan
-konten berikutnya.
+150 per jalur, terdiri dari 60 harian + 90 peringkat. Saat ini 90 soal ranking
+per jalur sudah tersedia dan total bank mencapai 456; masih perlu 144 soal
+harian untuk mencapai target 600.
 
 - Pool peringkat cukup untuk membentuk tiga paket 30 sesuai blueprint pada setiap jalur tanpa mengulang butir selama satu minggu. Masing-masing paket matematika harus mempunyai 30 keluarga berbeda; variasi parameter tidak menambah hitungan keluarga.
 - Pool harian dan peringkat tidak berbagi family/stimulus; menukar nama tokoh atau angka saja tidak cukup untuk memisahkannya.
