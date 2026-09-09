@@ -21,6 +21,7 @@ try{
  await a('/auth/register',{username:'testing6',pin:'123456',nickname:'Test 6',grade:6},'POST',201);
  await b('/auth/register',{username:'testing9',pin:'123456',nickname:'Test 9',grade:9},'POST',201);
  await c('/auth/register',{username:'schoolkid',pin:'123456',nickname:'School Kid',grade:6,school:'Sekolah Demo'},'POST',201);
+ await a('/modules/sd-pecahan/tutor',{question:'Kenapa penyebut harus sama?'},'POST',503);
  const schoolVariant=client();await schoolVariant('/auth/register',{username:'schoolkid2',pin:'123456',nickname:'School Kid 2',grade:9,school:'  SEKOLAH   DEMO  '},'POST',201);
  const teacherUser=(await teacher('/auth/teacher/register',{username:'teacher01',pin:'123456',nickname:'Bu Guru',school:'Sekolah Demo',city:'Jawa Tengah'},'POST',201)).user;assert.equal(teacherUser.role,'teacher');assert.equal((await teacher('/teacher/overview')).summary.students,2);
  await a('/auth/register',{username:'testing6',pin:'123456',nickname:'Dup',grade:6},'POST',409);

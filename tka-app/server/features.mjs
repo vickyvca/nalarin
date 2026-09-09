@@ -136,4 +136,32 @@ export function installFeatures(c) {
       res.status(503).json({message:'Kak Nara belum bisa menjawab sekarang. Pembahasan dasar tetap tersedia; coba lagi nanti.'});
     } finally { inFlight.delete(req.session.learner.id); }
   });
+  app.post('/api/modules/:id/tutor',requireLearner,async(req,res)=>{
+    const module=modules.find(item=>item.id===req.params.id&&item.grade===req.session.learner.grade);
+    const question=String(req.body?.question||'').trim().slice(0,500);
+    if(!module)return res.status(404).json({message:'Materi ini belum tersedia untuk kelasmu.'});
+    if(!question)return res.status(400).json({message:'Tulis pertanyaanmu untuk Kak Nara.'});
+    if(!enabled())return res.status(503).json({message:'Kak Nara belum tersedia. Baca ringkasan dan contoh di atas dulu, ya.'});
+    const day=new Date(Date.now()+7*3600000).toISOString().slice(0,10);
+    const key=`module-tutor:${req.session.learner.id}:${day}`;
+    const count=db.prepare('SELECT count FROM request_limits WHERE key=?').get(key)?.count||0;
+    if(count>=20)return res.status(429).json({message:'Batas bantuan Kak Nara hari ini sudah tercapai. Coba lagi besok, ya.'});
+    if(inFlight.has(req.session.learner.id))return res.status(429).json({message:'Kak Nara masih menyiapkan jawaban sebelumnya.'});
+    if(!limit(key,20,86400000)||!limit('tutor:global',200,86400000))return res.status(429).json({message:'Kak Nara sedang istirahat. Baca pembahasan dasar dulu, ya.'});
+    inFlight.add(req.session.learner.id);
+    try{
+      const prompt=fs.readFileSync(new URL('./persona.md',import.meta.url),'utf8');
+      const context={grade:req.session.learner.grade,module:{title:module.title,objective:module.objective,key_points:module.key_points,example:module.example,common_mistake:module.common_mistake},question};
+      const response=await fetch(`${process.env.MITSUKO_BASE_URL.replace(/\/$/,'')}/chat/completions`,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${process.env.MITSUKO_API_KEY}`},body:JSON.stringify({model:process.env.MITSUKO_MODEL||'mitsuko',messages:[{role:'system',content:prompt},{role:'user',content:JSON.stringify(context)}],max_tokens:500,stream:false}),signal:AbortSignal.timeout(45000)});
+      if(!response.ok)throw new Error(`upstream_${response.status}`);
+      const data=await response.json();
+      const answer=data.choices?.[0]?.message?.content;
+      if(typeof answer!=='string'||!answer.trim()||answer.length>8000)throw new Error('empty');
+      res.json({answer});
+    }catch(error){
+      const reason=/^upstream_\d+$/.test(error.message)?error.message:error.name==='TimeoutError'?'timeout':error.message==='empty'?'empty_response':error.name;
+      console.warn('Nalarin module tutor unavailable:',reason);
+      res.status(503).json({message:'Kak Nara belum bisa menjawab sekarang. Coba baca contoh langkahnya lalu ulangi pertanyaanmu nanti.'});
+    }finally{inFlight.delete(req.session.learner.id);}
+  });
 }
