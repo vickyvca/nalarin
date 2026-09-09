@@ -127,3 +127,19 @@ h3 { font-size:18px; line-height:1.25; }
 
 /* Give the three entry points a clear visual role: student, teacher, and install. */
 .landing-nav-actions .button-role-teacher{color:var(--coral-ink);background:var(--pale-coral);border-color:#ffd0c4;box-shadow:0 3px 0 #ffd0c4}.landing-nav-actions .button-role-teacher:hover{background:#ffe4dc}.landing-nav-actions .button-install{color:var(--ochre);background:var(--pale-yellow);border-color:#f2d66b;box-shadow:0 3px 0 #f2d66b}.landing-nav-actions .button-install:hover{background:#ffefb0}.landing-nav-actions .button-role-student{color:#fff;background:var(--blue);border-color:var(--blue);box-shadow:0 3px 0 #b8c5ff}.landing-nav-actions .button-role-student:hover{background:var(--blue-dark)}.button-teacher{color:#fff;background:var(--coral-ink);box-shadow:0 4px 0 #602316}.button-teacher:hover{background:#732b1f;transform:translateY(-2px)}.teacher-auth-card .auth-switch button.selected{color:var(--coral-ink);background:var(--pale-coral);box-shadow:0 3px 0 #ffd0c4}.student-auth-card .auth-switch button.selected{color:var(--blue);background:var(--pale-blue);box-shadow:0 3px 0 #cfd8ff}.public-onboarding-card{border-color:#f2d66b;background:linear-gradient(160deg,#fff,#fffaf0)}.public-onboarding-card .nara-speech{background:#fff7d7;border-color:#f2d66b}.public-onboarding-card .nara-speech .eyebrow{color:var(--ochre)}.public-onboarding-card .nara-note{color:var(--ochre);border-top-color:#efd77e}.public-onboarding-progress span.is-active{background:var(--coral)}
+
+/* Kak Nara motion: gentle idle movement keeps each pose feeling alive without distracting from study. */
+.nara-avatar[data-pose]{transform-origin:50% 88%;will-change:transform}
+.nara-avatar[data-pose="welcome"]{animation:nara-welcome-float 4.8s ease-in-out infinite}
+.nara-avatar[data-pose="explain"]{animation:nara-explain-float 4.2s ease-in-out infinite}
+.nara-avatar[data-pose="cheer"]{animation:nara-cheer-float 3.6s ease-in-out infinite}
+.nara-avatar[data-pose="think"]{animation:nara-think-float 5.2s ease-in-out infinite}
+.nara-box-head{display:flex;align-items:center;gap:9px;margin-bottom:7px}.review-nara-avatar{width:52px;height:52px;flex:0 0 auto;filter:drop-shadow(3px 4px 0 rgba(255,146,122,.17))}.nara-box-head>b{display:block}
+.preview-nara{width:38px;height:38px;object-fit:contain;flex:0 0 auto}.home-nara{width:136px;height:170px;object-fit:contain}.module-ready-nara{width:104px;height:128px;object-fit:contain}.module-nara-avatar{width:58px;height:58px;object-fit:contain}.review-nara-avatar{object-fit:contain}
+@keyframes nara-welcome-float{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-5px) rotate(.6deg)}}
+@keyframes nara-explain-float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-4px) rotate(1deg)}}
+@keyframes nara-cheer-float{0%,100%{transform:translateY(0) rotate(-1deg) scale(1)}50%{transform:translateY(-7px) rotate(1deg) scale(1.015)}}
+@keyframes nara-think-float{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-3px) rotate(-1deg)}}
+@media(prefers-reduced-motion:reduce){.nara-avatar[data-pose]{animation:none!important;will-change:auto}}
+@media(max-width:900px){.home-nara{width:104px;height:140px}.module-ready-nara{width:82px;height:110px}}
+@media(max-width:560px){.module-nara-avatar{width:50px;height:50px}}
