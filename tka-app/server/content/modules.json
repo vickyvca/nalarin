@@ -4,69 +4,69 @@
     "grade": 6,
     "subject": "matematika",
     "title": "Pecahan: samakan bagiannya",
-    "objective": "Menjumlahkan pecahan dan mengenali pecahan senilai.",
+    "objective": "Menjumlahkan pecahan dengan ukuran bagian yang sama.",
     "key_points": [
-      "Penyebut menunjukkan banyak bagian sama besar dalam satu utuh.",
-      "Saat menjumlahkan, samakan penyebut dahulu; pembilang menunjukkan banyak bagian yang diambil.",
-      "Kalikan pembilang dan penyebut dengan angka sama untuk mendapatkan pecahan senilai.",
-      "Perkalian dengan bilangan asli dapat dibayangkan sebagai penjumlahan berulang."
+      "Penyebut menunjukkan jumlah bagian yang sama besar.",
+      "Sebelum menjumlahkan, samakan penyebut. Pembilang menunjukkan bagian yang diambil.",
+      "Kalikan pembilang dan penyebut dengan angka yang sama untuk membuat pecahan senilai.",
+      "Mengalikan pecahan dengan bilangan asli sama seperti menjumlahkannya berulang kali."
     ],
     "example": {
       "question": "Berapa 1/3 + 1/6?",
       "steps": [
-        "Bagi setiap sepertiga menjadi dua bagian: 1/3 = 2/6.",
-        "Tambahkan bagian berukuran sama: 2/6 + 1/6 = 3/6.",
-        "Sederhanakan 3/6 menjadi 1/2. Coba gambarkan enam kotak dan arsir tiga."
+        "Ubah 1/3 menjadi 2/6. Sekarang ukuran bagiannya sama.",
+        "Jumlahkan pembilang: 2/6 + 1/6 = 3/6.",
+        "Sederhanakan 3/6 menjadi 1/2. Bayangkan 3 dari 6 bagian diarsir."
       ]
     },
-    "common_mistake": "Menjumlahkan penyebut menjadi 2/9 membuat ukuran bagian berubah.",
-    "next_action": "Coba latihan pecahan. Periksa ukuran bagian sebelum menghitung."
+    "common_mistake": "Kalau penyebut langsung dijumlahkan menjadi 2/9, ukuran bagiannya berubah. Samakan penyebut dulu.",
+    "next_action": "Coba lima soal pecahan. Sebelum menghitung, cek dulu apakah penyebutnya sudah sama."
   },
   {
     "id": "sd-faktor",
     "grade": 6,
     "subject": "matematika",
     "title": "Pilih FPB atau KPK",
-    "objective": "Memilih cara yang sesuai untuk membagi paket atau mencari jadwal bertemu.",
+    "objective": "Memilih FPB atau KPK sesuai cerita.",
     "key_points": [
-      "Faktor membagi bilangan tanpa sisa; kelipatan diperoleh dengan mengalikan bilangan asli.",
-      "FPB mencari pembagi bersama terbesar, berguna untuk paket seragam sebanyak mungkin.",
-      "KPK mencari kelipatan positif bersama terkecil, berguna untuk kejadian berulang yang bertemu kembali."
+      "Faktor adalah angka yang bisa membagi habis.",
+      "FPB dipakai saat benda dibagi menjadi kelompok yang sama.",
+      "KPK dipakai saat dua kejadian berulang bertemu lagi."
     ],
     "example": {
       "question": "Ada 12 apel dan 18 jeruk. Berapa paket seragam terbanyak tanpa sisa?",
       "steps": [
-        "Faktor 12: 1, 2, 3, 4, 6, 12.",
-        "Faktor 18: 1, 2, 3, 6, 9, 18.",
-        "Faktor bersama terbesar adalah 6. Setiap paket berisi 2 apel dan 3 jeruk.",
-        "Untuk lonceng setiap 4 dan 6 menit, gunakan kelipatan: pertemuan pertama setelah sekarang adalah 12 menit."
+        "Daftar faktor 12: 1, 2, 3, 4, 6, 12.",
+        "Daftar faktor 18: 1, 2, 3, 6, 9, 18.",
+        "Faktor terbesar yang sama adalah 6. Jadi ada 6 paket; tiap paket berisi 2 apel dan 3 jeruk.",
+        "Kalau lonceng berbunyi tiap 4 dan 6 menit, cari KPK: bunyi bersama lagi setelah 12 menit."
       ]
     },
-    "common_mistake": "Menggunakan hasil kali semua angka tanpa memeriksa maksud 'terbanyak' atau 'pertama kali'.",
-    "next_action": "Tandai apakah soal membagi benda atau mengulang kejadian, lalu coba lima soal."
+    "common_mistake": "Jangan langsung mengalikan semua angka. Baca dulu: soalnya tentang membagi benda atau menunggu kejadian bertemu.",
+    "next_action": "Tandai dulu: bagi benda = FPB, bertemu lagi = KPK. Lalu coba lima soal."
   },
   {
     "id": "sd-bangun",
     "grade": 6,
     "subject": "matematika",
     "title": "Luas, keliling, dan ubin",
-    "objective": "Pahami konsep, ikuti contoh, lalu coba latihan terkait.",
+    "objective": "Membedakan luas, keliling, dan banyak ubin.",
     "key_points": [
-      "Keliling mengikuti tepi bangun; luas menutupi bagian dalamnya.",
-      "Pagar dengan bukaan pintu: hitung seluruh keliling, lalu kurangi panjang bukaan satu kali.",
-      "Banyak ubin = luas lantai dibagi luas satu ubin. Samakan satuan panjang sebelum menghitung luas.",
-      "Untuk susunan persegi yang pas, hitung ubin per baris dan jumlah baris, lalu kalikan."
+      "Keliling adalah panjang garis di sekeliling bangun.",
+      "Luas adalah bagian di dalam bangun.",
+      "Luas persegi panjang = panjang × lebar. Keliling = 2 × (panjang + lebar).",
+      "Untuk ubin, samakan satuannya lalu hitung ubin per baris dan per kolom."
     ],
     "example": {
       "question": "Lantai 300 cm × 200 cm ditutup ubin persegi bersisi 50 cm. Berapa ubin yang diperlukan?",
       "steps": [
-        "Sepanjang lantai muat 300 : 50 = 6 ubin.",
-        "Selebar lantai muat 200 : 50 = 4 ubin.",
-        "Totalnya 6 × 4 = 24 ubin. Periksa luas: 24 × 2.500 = 60.000 cm², sama dengan luas lantai."
+        "Sepanjang lantai: 300 ÷ 50 = 6 ubin.",
+        "Selebar lantai: 200 ÷ 50 = 4 ubin.",
+        "Total ubin: 6 × 4 = 24 ubin."
       ]
     },
-    "common_mistake": "Jangan membagi luas lantai dengan panjang sisi ubin. Pembaginya harus luas ubin.",
-    "next_action": "Coba soal materi ini. Setelah selesai, baca alasan setiap pilihan jawaban.",
+    "common_mistake": "Jangan membagi luas lantai dengan panjang sisi ubin. Hitung luas ubin, atau hitung ubin per baris dan kolom.",
+    "next_action": "Coba soal luas dan keliling. Tulis satuan di setiap jawaban.",
     "version": 2
   },
   {
@@ -74,23 +74,23 @@
     "grade": 6,
     "subject": "matematika",
     "title": "Volume, satuan, dan waktu",
-    "objective": "Pahami konsep, ikuti contoh, lalu coba latihan terkait.",
+    "objective": "Mengubah satuan sebelum menghitung.",
     "key_points": [
-      "Satu liter sama dengan 1.000 mililiter dan 1.000 cm³.",
-      "Banyak gelas = volume minuman dibagi isi tiap gelas, dengan satuan yang sama.",
-      "Volume balok = panjang × lebar × tinggi. Gunakan ukuran bagian dalam jika menghitung kapasitas wadah.",
-      "Untuk waktu, satu jam = 60 menit. Ubah semuanya ke menit sebelum menjumlahkan durasi."
+      "1 liter = 1.000 mililiter = 1.000 cm³.",
+      "Banyak gelas = jumlah minuman ÷ isi satu gelas. Satuannya harus sama.",
+      "Volume balok = panjang × lebar × tinggi.",
+      "1 jam = 60 menit. Untuk durasi, ubah semua waktu ke menit."
     ],
     "example": {
       "question": "Ada 2 liter minuman. Tiap gelas diisi 200 mililiter. Berapa gelas dapat diisi?",
       "steps": [
         "Ubah 2 liter menjadi 2.000 mililiter.",
-        "Bagi volume minuman: 2.000 : 200 = 10 gelas.",
-        "Periksa kembali: 10 × 200 mililiter = 2.000 mililiter, sehingga tidak ada sisa."
+        "Bagi volume minuman: 2.000 ÷ 200 = 10 gelas.",
+        "Cek lagi: 10 × 200 mililiter = 2.000 mililiter, jadi tidak ada sisa."
       ]
     },
-    "common_mistake": "Jangan langsung membagi 2 dengan 200; angka itu masih memakai satuan yang berbeda.",
-    "next_action": "Coba soal materi ini. Setelah selesai, baca alasan setiap pilihan jawaban.",
+    "common_mistake": "Jangan membagi 2 liter dengan 200 mililiter sebelum mengubah satuannya.",
+    "next_action": "Coba lima soal ukuran. Lingkari satuan yang dipakai sebelum menghitung.",
     "version": 2
   },
   {
@@ -98,95 +98,96 @@
     "grade": 6,
     "subject": "matematika",
     "title": "Baca data, lalu hitung",
-    "objective": "Pahami konsep, ikuti contoh, lalu coba latihan terkait.",
+    "objective": "Membaca tabel dan piktogram tanpa tertukar.",
     "key_points": [
-      "Baca nama kelompok, waktu, dan satuan data sebelum menghitung.",
-      "Jumlah keseluruhan berarti menjumlahkan semua kelompok yang diminta, masing-masing satu kali.",
-      "Selisih berarti mengurangi nilai yang lebih besar dengan yang lebih kecil.",
-      "Pada piktogram, satu gambar bisa mewakili beberapa benda. Gunakan keterangan nilai tiap gambar."
+      "Baca judul, nama kelompok, waktu, dan satuan.",
+      "Total berarti menjumlahkan data yang ditanya.",
+      "Selisih berarti nilai besar dikurangi nilai kecil.",
+      "Pada piktogram, satu gambar bisa mewakili beberapa benda."
     ],
     "example": {
       "question": "Piktogram menunjukkan Senin 3 gambar buku dan Selasa 5 gambar buku. Satu gambar mewakili 4 buku. Berapa total buku?",
       "steps": [
         "Baca keterangan: setiap gambar mewakili 4 buku.",
         "Senin: 3 × 4 = 12 buku; Selasa: 5 × 4 = 20 buku.",
-        "Totalnya 12 + 20 = 32 buku. Cara lain: (3 + 5) × 4 = 32 buku."
+        "Totalnya 12 + 20 = 32 buku. Bisa juga (3 + 5) × 4 = 32."
       ]
     },
-    "common_mistake": "Delapan adalah banyak gambar, bukan banyak buku. Perhatikan nilai tiap gambar.",
-    "next_action": "Coba soal materi ini. Setelah selesai, baca alasan setiap pilihan jawaban.",
+    "common_mistake": "Delapan adalah jumlah gambar, bukan jumlah buku. Lihat dulu arti satu gambar.",
+    "next_action": "Baca satu tabel baru. Sebutkan total dan data paling besar.",
     "version": 2
   },
   {
     "id": "smp-bilangan",
     "grade": 9,
     "subject": "matematika",
-    "title": "Rasio, persen, dan pertumbuhan",
-    "objective": "Pahami konsep, ikuti contoh, lalu coba latihan terkait.",
+    "title": "Persen dan pertumbuhan",
+    "objective": "Menghitung persen dan pola perubahan.",
     "key_points": [
-      "Persen berarti per seratus. Besar diskon dihitung dari harga awal yang disebutkan.",
-      "Perbandingan senilai membuat kedua besaran berubah dengan faktor yang sama; perbandingan berbalik nilai mempertahankan hasil kali.",
-      "Pertumbuhan dua kali lipat setiap periode berarti mengalikan jumlah sebelumnya dengan 2.",
-      "Hitung banyak periode terlebih dahulu. Jangan mengganti pelipatan dengan penambahan jumlah awal."
+      "Persen berarti bagian dari 100.",
+      "Diskon dihitung dari harga awal. Harga akhir = harga awal − diskon.",
+      "Pada perbandingan senilai, kedua besaran berubah dengan perbandingan yang sama.",
+      "Pada perbandingan berbalik nilai, hasil kali kedua besaran tetap."
     ],
     "example": {
       "question": "Suatu model memiliki 40 sel dan berlipat dua setiap 15 menit. Berapa sel setelah 45 menit?",
       "steps": [
-        "Banyak periode = 45 : 15 = 3.",
+        "Banyak periode: 45 ÷ 15 = 3.",
         "Urutannya: 40 menjadi 80, lalu 160, lalu 320.",
-        "Jadi ada 320 sel. Bentuk pangkatnya 40 × 2³. Model ini menganggap pola pertumbuhan tetap."
+        "Jadi ada 320 sel. Bentuk pangkatnya 40 × 2³."
       ]
     },
-    "common_mistake": "40 × 2 × 3 bukan tiga kali pelipatan. Tiga periode berarti 40 × 2 × 2 × 2.",
-    "next_action": "Coba soal materi ini. Setelah selesai, baca alasan setiap pilihan jawaban.",
+    "common_mistake": "Jika berlipat dua tiga kali, kalikan 2 sebanyak tiga kali. Jangan mengalikan 2 dengan 3.",
+    "next_action": "Sebutkan dulu apa yang tetap dalam soal, baru hitung.",
     "version": 2
   },
   {
     "id": "smp-aljabar",
     "grade": 9,
     "subject": "matematika",
-    "title": "Tarif, persamaan, dan batas anggaran",
-    "objective": "Pahami konsep, ikuti contoh, lalu coba latihan terkait.",
+    "title": "Cerita jadi persamaan",
+    "objective": "Mengubah cerita menjadi persamaan.",
     "key_points": [
-      "Tentukan arti variabel, misalnya x untuk jumlah jam atau barang.",
-      "Tarif dengan biaya awal mengikuti biaya total = biaya awal + tarif per unit × jumlah unit.",
-      "Dari dua pasangan waktu dan biaya, tarif per jam = selisih biaya dibagi selisih jam.",
-      "Untuk batas anggaran, periksa bilangan bulat terbesar yang masih terjangkau. Membulatkan ke atas bisa melampaui anggaran."
+      "Pakai huruf, misalnya x, untuk angka yang belum diketahui.",
+      "Kalau melakukan sesuatu di satu ruas, lakukan juga di ruas lainnya.",
+      "Biaya total = biaya awal + tarif × banyak unit.",
+      "Setelah dapat jawaban, masukkan lagi ke soal untuk mengecek."
     ],
     "example": {
       "question": "Sewa 1 jam berbiaya 12.000 rupiah dan 3 jam berbiaya 26.000 rupiah. Berapa biaya 4 jam jika tarif per jam tetap?",
       "steps": [
         "Tambahan 2 jam menaikkan biaya 14.000 rupiah, jadi tarifnya 7.000 rupiah per jam.",
         "Biaya awal = 12.000 − 7.000 = 5.000 rupiah.",
-        "Biaya 4 jam = 5.000 + 4 × 7.000 = 33.000 rupiah. Periksa model pada 3 jam: 5.000 + 21.000 = 26.000."
+        "Biaya 4 jam = 5.000 + 4 × 7.000 = 33.000 rupiah.",
+        "Cek: 5.000 + 3 × 7.000 = 26.000 rupiah."
       ]
     },
-    "common_mistake": "Biaya awal dibayar satu kali. Menggandakan biaya satu jam ikut menggandakan biaya awal.",
-    "next_action": "Coba soal materi ini. Setelah selesai, baca alasan setiap pilihan jawaban.",
+    "common_mistake": "Biaya awal dibayar sekali. Jangan ikut mengalikannya setiap jam.",
+    "next_action": "Tulis arti x sebelum menghitung, lalu cek jawaban dengan memasukkannya lagi.",
     "version": 2
   },
   {
     "id": "smp-geometri",
     "grade": 9,
     "subject": "matematika",
-    "title": "Ukuran, skala, dan perubahan posisi",
-    "objective": "Pahami konsep, ikuti contoh, lalu coba latihan terkait.",
+    "title": "Bentuk, ukuran, dan posisi",
+    "objective": "Memakai rumus geometri sesuai gambar.",
     "key_points": [
-      "Pythagoras berlaku pada segitiga siku-siku: kuadrat sisi miring sama dengan jumlah kuadrat kedua sisi lainnya.",
-      "Skala 1 : n mengalikan setiap panjang pada denah dengan n. Rasio luas menggunakan n².",
-      "Volume air tambahan = luas alas × kenaikan tinggi air. Waktu pengisian = volume tambahan dibagi debit.",
-      "Translasi menambahkan perpindahan pada koordinat; refleksi terhadap sumbu-x mempertahankan x dan membalik tanda y."
+      "Pythagoras hanya untuk segitiga siku-siku.",
+      "Sisi miring ada di depan sudut siku-siku dan paling panjang.",
+      "Untuk volume air, hitung tambahan volume, bukan seluruh isi bak.",
+      "Translasi menggeser titik; refleksi sumbu-x mengubah tanda y."
     ],
     "example": {
       "question": "Bak beralas 60 cm × 40 cm berisi air setinggi 10 cm. Debit 6 liter per menit. Berapa menit agar air mencapai 35 cm jika bak cukup tinggi?",
       "steps": [
         "Kenaikan tinggi = 35 − 10 = 25 cm.",
         "Volume tambahan = 60 × 40 × 25 = 60.000 cm³ = 60 liter.",
-        "Waktu = 60 : 6 = 10 menit. Gunakan volume tambahan, bukan volume dari dasar hingga 35 cm."
+        "Waktu = 60 ÷ 6 = 10 menit. Hitung volume tambahan, bukan isi bak dari dasar."
       ]
     },
-    "common_mistake": "Skala panjang tidak langsung menjadi skala luas; semua dimensi yang membentuk luas harus ikut berubah.",
-    "next_action": "Coba soal materi ini. Setelah selesai, baca alasan setiap pilihan jawaban.",
+    "common_mistake": "Skala panjang dan skala luas berbeda. Untuk luas, kedua ukuran ikut berubah.",
+    "next_action": "Gambar bentuknya dulu dan tulis ukuran di sisi yang benar.",
     "version": 2
   },
   {
@@ -194,161 +195,161 @@
     "grade": 9,
     "subject": "matematika",
     "title": "Rata-rata, median, dan peluang",
-    "objective": "Pahami konsep, ikuti contoh, lalu coba latihan terkait.",
+    "objective": "Menghitung rata-rata, median, dan peluang.",
     "key_points": [
-      "Rata-rata = total nilai dibagi banyak data. Jika ada frekuensi, kalikan tiap nilai dengan frekuensinya sebelum menjumlahkan.",
-      "Median adalah nilai tengah setelah diurutkan. Untuk banyak data genap, rata-ratakan dua nilai tengah.",
-      "Peluang pada hasil yang sama mungkin = banyak hasil yang diinginkan dibagi seluruh hasil yang mungkin.",
-      "Frekuensi relatif = banyak kemunculan dibagi banyak percobaan. Perkiraan pada percobaan baru tidak menjamin hasil sebenarnya."
+      "Rata-rata = jumlah semua nilai ÷ banyak data.",
+      "Median adalah nilai tengah setelah data diurutkan.",
+      "Kalau datanya genap, median adalah rata-rata dua nilai tengah.",
+      "Peluang = hasil yang diinginkan ÷ semua hasil yang mungkin."
     ],
     "example": {
       "question": "Data lama perjalanan adalah 9, 5, 7, 11, 7, dan 15 menit. Tentukan median dan rata-ratanya.",
       "steps": [
         "Urutkan: 5, 7, 7, 9, 11, 15. Ada enam data.",
-        "Median = (7 + 9) : 2 = 8 menit.",
-        "Jumlah data = 54, sehingga rata-rata = 54 : 6 = 9 menit. Median dan rata-rata dapat berbeda."
+        "Median = (7 + 9) ÷ 2 = 8 menit.",
+        "Jumlah data = 54, jadi rata-rata = 54 ÷ 6 = 9 menit."
       ]
     },
-    "common_mistake": "Jangan mencari median dari daftar yang belum diurutkan atau membagi total nilai dengan jumlah kelompok frekuensi.",
-    "next_action": "Coba soal materi ini. Setelah selesai, baca alasan setiap pilihan jawaban.",
+    "common_mistake": "Urutkan data dulu sebelum mencari median. Jangan membagi total dengan jumlah kelompok yang salah.",
+    "next_action": "Tulis jumlah data atau jumlah kemungkinan sebelum memilih operasi.",
     "version": 2
   },
   {
     "id": "6-bi-tekstual",
     "grade": 6,
     "subject": "bahasa_indonesia",
-    "title": "Cari jawabannya di bacaan",
-    "objective": "Menemukan informasi yang tertulis jelas.",
+    "title": "Cari jawaban di bacaan",
+    "objective": "Menemukan jawaban yang tertulis di bacaan.",
     "key_points": [
-      "Baca pertanyaan: siapa, di mana, kapan, atau apa yang dilakukan.",
-      "Cari kalimat yang membahas hal yang sama.",
-      "Periksa kata pembatas seperti hanya, sebelum, setelah, dan tidak.",
-      "Pilihan yang terdengar masuk akal belum tentu ada dalam teks."
+      "Baca dulu pertanyaannya: siapa, kapan, di mana, atau apa.",
+      "Cari kalimat yang menjawab pertanyaan.",
+      "Perhatikan kata hanya, sebelum, setelah, dan tidak.",
+      "Jawaban yang terdengar masuk akal belum tentu ada di bacaan."
     ],
     "example": {
       "question": "'Lina meminjam buku pada Senin. Buku dikembalikan Kamis.' Kapan Lina mengembalikan buku?",
       "steps": [
         "Pertanyaan menanyakan pengembalian, bukan peminjaman.",
         "Kalimat kedua menyebut Kamis.",
-        "Jawab Kamis dan gunakan kalimat kedua sebagai bukti."
+        "Jawab Kamis dan tunjukkan kalimat kedua sebagai bukti."
       ]
     },
-    "common_mistake": "Memilih tanggal atau tokoh pertama yang terlihat tanpa mencocokkan tindakannya.",
-    "next_action": "Coba menemukan satu kalimat bukti untuk setiap jawaban."
+    "common_mistake": "Jangan memilih tokoh atau tanggal pertama yang terlihat. Cocokkan dengan tindakan di pertanyaan.",
+    "next_action": "Tunjukkan satu kalimat bukti untuk setiap jawaban."
   },
   {
     "id": "6-bi-inferensial",
     "grade": 6,
     "subject": "bahasa_indonesia",
-    "title": "Menarik simpulan sederhana",
-    "objective": "Menghubungkan petunjuk untuk memahami maksud atau perasaan.",
+    "title": "Tarik simpulan dari bacaan",
+    "objective": "Menarik simpulan dari beberapa petunjuk.",
     "key_points": [
-      "Simpulan harus didukung petunjuk dalam cerita.",
-      "Untuk perasaan, lihat tindakan dan perubahan keadaan.",
-      "Untuk ide pokok, pilih gagasan yang mencakup paragraf.",
-      "Ungkapan seperti lega hati menyatakan perasaan, bukan ukuran tubuh."
+      "Simpulan harus punya bukti di cerita.",
+      "Untuk menebak perasaan, lihat tindakan dan perubahan keadaan.",
+      "Ide pokok harus mencakup isi paragraf.",
+      "Ungkapan 'lega hati' berarti perasaan lega, bukan ukuran tubuh."
     ],
     "example": {
       "question": "'Bayu mencari bukunya. Setelah menemukannya, ia tersenyum dan menarik napas panjang.' Apa perasaannya setelah menemukan buku?",
       "steps": [
-        "Sebelumnya ada masalah: buku dicari.",
+        "Sebelumnya ada masalah: Bayu mencari buku.",
         "Masalah selesai dan Bayu tersenyum.",
-        "Perasaan lega paling sesuai dengan gabungan petunjuk itu."
+        "Jadi, perasaan yang paling cocok adalah lega."
       ]
     },
-    "common_mistake": "Menambah kejadian yang tidak diceritakan untuk mendukung pilihan sendiri.",
+    "common_mistake": "Jangan menambah kejadian yang tidak ada di cerita.",
     "next_action": "Sebutkan dua petunjuk sebelum memilih simpulan."
   },
   {
     "id": "6-bi-evaluasi",
     "grade": 6,
     "subject": "bahasa_indonesia",
-    "title": "Menilai tindakan dalam cerita",
-    "objective": "Memilih penilaian yang sesuai kejadian dan aturan teks.",
+    "title": "Nilai tindakan dalam bacaan",
+    "objective": "Menilai tindakan berdasarkan isi bacaan.",
     "key_points": [
-      "Bandingkan penilaian dengan kejadian sebenarnya.",
-      "Bedakan tindakan yang terjadi dan tindakan yang seharusnya dilakukan.",
-      "Nilai setiap pernyataan sendiri; benar pada satu baris tidak membuat baris lain benar.",
-      "Perhatikan apakah kata selalu atau pasti terlalu kuat."
+      "Cocokkan penilaian dengan kejadian di bacaan.",
+      "Bedakan apa yang terjadi dan apa yang seharusnya dilakukan.",
+      "Nilai setiap pernyataan satu per satu.",
+      "Kata selalu dan pasti perlu dicek; bisa jadi terlalu kuat."
     ],
     "example": {
       "question": "'Buku basah harus dilaporkan kepada petugas.' Apakah menyembunyikan buku basah sesuai petunjuk?",
       "steps": [
-        "Petunjuk meminta melapor.",
-        "Menyembunyikan bertentangan dengan melapor.",
-        "Penilaian: tidak sesuai, dengan alasan aturan pada teks."
+        "Petunjuk meminta buku basah dilaporkan.",
+        "Menyembunyikan buku bertentangan dengan petunjuk.",
+        "Jadi, tindakan itu tidak sesuai. Tulis alasannya dari bacaan."
       ]
     },
-    "common_mistake": "Menggunakan pengalaman pribadi yang bertentangan dengan aturan dalam bacaan.",
-    "next_action": "Coba tiga pernyataan benar/salah dan jelaskan alasannya."
+    "common_mistake": "Pakai aturan di bacaan, bukan pengalaman pribadi yang berbeda.",
+    "next_action": "Pilih benar atau salah, lalu tulis alasan dari bacaan."
   },
   {
     "id": "9-bi-tekstual",
     "grade": 9,
     "subject": "bahasa_indonesia",
-    "title": "Temukan informasi dan batasnya",
-    "objective": "Membaca informasi penting dari satu atau beberapa teks secara tepat.",
+    "title": "Cari informasi penting",
+    "objective": "Menemukan informasi dan batasnya.",
     "key_points": [
-      "Tentukan teks mana yang dirujuk pertanyaan.",
-      "Bedakan fakta awal, klarifikasi, dan usulan.",
-      "Pertahankan batas jumlah, waktu, tempat, serta kata hanya.",
-      "Istilah dipahami melalui konteks kalimat di sekitarnya."
+      "Cari teks yang dimaksud pertanyaan.",
+      "Bedakan fakta, penjelasan, dan usulan.",
+      "Perhatikan batas jumlah, waktu, tempat, dan kata hanya.",
+      "Cari arti istilah dari kalimat di sekitarnya."
     ],
     "example": {
       "question": "'Hanya laboratorium lantai dua ditutup tiga hari. Ruang lain tetap dibuka.' Apakah seluruh sekolah tutup?",
       "steps": [
-        "Kata hanya membatasi lokasi penutupan.",
-        "Ruang lain dinyatakan tetap dibuka.",
-        "Klaim seluruh sekolah tutup tidak didukung teks."
+        "Kata hanya membatasi lokasi yang ditutup.",
+        "Ruang lain tetap dibuka.",
+        "Jadi, tidak benar kalau seluruh sekolah ditutup."
       ]
     },
-    "common_mistake": "Memperluas informasi sebagian menjadi semua.",
-    "next_action": "Tandai kata pembatas dalam bacaan berikut dan cocokkan setiap opsi."
+    "common_mistake": "Jangan mengubah informasi sebagian menjadi berlaku untuk semuanya.",
+    "next_action": "Tandai kata pembatas sebelum memilih jawaban."
   },
   {
     "id": "9-bi-inferensial",
     "grade": 9,
     "subject": "bahasa_indonesia",
-    "title": "Hubungkan sebab, tujuan, dan sudut pandang",
-    "objective": "Menarik simpulan dengan bukti yang cukup dan kepastian yang wajar.",
+    "title": "Hubungkan sebab dan tujuan",
+    "objective": "Menarik simpulan yang sesuai bukti.",
     "key_points": [
-      "Kilas balik dapat menjelaskan motivasi tokoh sekarang.",
-      "Dua kejadian bersamaan belum otomatis membuktikan sebab tunggal.",
-      "Bandingkan tujuan dan alasan saat menghubungkan dua teks.",
-      "Prediksi memakai petunjuk; jangan mengubah dapat menjadi pasti."
+      "Kejadian sebelumnya bisa menjelaskan sikap tokoh sekarang.",
+      "Dua kejadian yang bersamaan belum tentu punya satu sebab.",
+      "Saat membandingkan teks, lihat tujuan dan alasannya.",
+      "Prediksi harus memakai petunjuk. 'Mungkin' tidak sama dengan 'pasti'."
     ],
     "example": {
       "question": "'Jumlah pengunjung turun ketika hujan. Pada hari itu toko juga tutup lebih awal.' Apakah hujan pasti satu-satunya penyebab penurunan?",
       "steps": [
-        "Ada dua kondisi yang berubah: cuaca dan jam buka.",
-        "Keduanya mungkin berkaitan dengan jumlah pengunjung.",
-        "Data belum cukup untuk memastikan hujan sebagai satu-satunya sebab."
+        "Ada dua perubahan: cuaca dan jam buka toko.",
+        "Keduanya mungkin memengaruhi jumlah pengunjung.",
+        "Jadi, data belum cukup untuk menyebut hujan sebagai satu-satunya sebab."
       ]
     },
-    "common_mistake": "Menganggap simpulan paling tegas sebagai simpulan paling kuat.",
-    "next_action": "Pilih simpulan yang tidak melampaui bukti dan jelaskan batasnya."
+    "common_mistake": "Simpulan yang paling tegas belum tentu yang paling benar.",
+    "next_action": "Pilih simpulan yang tidak melebihi bukti."
   },
   {
     "id": "9-bi-evaluasi",
     "grade": 9,
     "subject": "bahasa_indonesia",
-    "title": "Periksa kekuatan alasan",
-    "objective": "Menilai klaim, bukti, dan tindakan dalam teks.",
+    "title": "Cek alasan dan buktinya",
+    "objective": "Memeriksa klaim dan bukti dalam bacaan.",
     "key_points": [
-      "Klaim hasil memerlukan data hasil; harapan belum menjadi bukti.",
-      "Periksa asal informasi dan apakah sumber benar-benar mendukung klaim.",
-      "Dukungan terhadap tujuan tidak sama dengan persetujuan terhadap setiap cara.",
-      "Penilaian tokoh harus mempertimbangkan perubahan sikap sampai akhir cerita."
+      "Harapan bukan bukti bahwa hasil sudah terjadi.",
+      "Cek apakah sumber benar-benar mendukung klaim.",
+      "Setuju dengan tujuan tidak berarti semua caranya benar.",
+      "Nilai perubahan sikap tokoh sampai akhir cerita."
     ],
     "example": {
       "question": "'Program baru diharapkan mengurangi antrean. Percobaan baru dimulai besok.' Apakah antrean sudah terbukti berkurang?",
       "steps": [
-        "Penulis menyatakan harapan.",
+        "Penulis baru menyatakan harapan.",
         "Percobaan belum menghasilkan data.",
-        "Belum terbukti; diperlukan catatan sebelum dan sesudah dengan kondisi sebanding."
+        "Jadi, belum terbukti. Kita butuh catatan sebelum dan sesudah."
       ]
     },
-    "common_mistake": "Membaca kata diharapkan sebagai laporan hasil yang sudah terjadi.",
-    "next_action": "Untuk setiap klaim, cari bukti atau tandai bahwa buktinya belum tersedia."
+    "common_mistake": "Kata 'diharapkan' berarti hasilnya belum terbukti.",
+    "next_action": "Untuk setiap klaim, cari bukti atau tandai bahwa datanya belum ada."
   }
 ]
