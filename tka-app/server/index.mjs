@@ -44,6 +44,7 @@ db.exec(`
     nickname TEXT NOT NULL,
     grade INTEGER,
     school TEXT,
+    school_key TEXT,
     city TEXT,
     ranking_opt_in INTEGER NOT NULL DEFAULT 1,
     created_at TEXT NOT NULL,
@@ -102,6 +103,7 @@ for (const statement of [
   'ALTER TABLE accounts ADD COLUMN password_hash TEXT',
   'ALTER TABLE accounts ADD COLUMN recovery_hash TEXT',
   'ALTER TABLE accounts ADD COLUMN role TEXT NOT NULL DEFAULT \'learner\'',
+  'ALTER TABLE learners ADD COLUMN school_key TEXT',
   'ALTER TABLE attempts ADD COLUMN module_id TEXT',
   'ALTER TABLE attempt_questions ADD COLUMN snapshot_json TEXT',
   'ALTER TABLE attempts ADD COLUMN pack_id TEXT',
@@ -118,10 +120,13 @@ db.exec(`CREATE TABLE IF NOT EXISTS teacher_profiles (
   account_id INTEGER NOT NULL UNIQUE REFERENCES accounts(id) ON DELETE CASCADE,
   nickname TEXT NOT NULL,
   school TEXT NOT NULL,
+  school_key TEXT,
   city TEXT,
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL
 )`);
+try { db.exec('ALTER TABLE teacher_profiles ADD COLUMN school_key TEXT'); } catch (error) { if (!String(error.message).includes('duplicate column name')) throw error; }
+db.exec('CREATE INDEX IF NOT EXISTS learners_school_key_idx ON learners(school_key)');
 
 function readJson(fileName, fallback) {
   const filePath = path.join(contentDir, fileName);
@@ -177,6 +182,43 @@ function clearCookie(res, name) {
 function normalizeGrade(value) {
   const grade = Number(value);
   return grade === 6 || grade === 9 ? grade : null;
+}
+
+function normalizeSchoolLabel(value) {
+  const label = String(value || '').normalize('NFKC').trim().replace(/\s+/g, ' ').slice(0, 120);
+  if (!label) return null;
+  return label.replace(/\b(sdn|sd|smp|sma|smk|mtsn|mts|mi|man|ma)\b/gi, (prefix) => {
+    const upper = prefix.toLowerCase();
+    return { sdn: 'SDN', sd: 'SD', smp: 'SMP', sma: 'SMA', smk: 'SMK', mtsn: 'MTsN', mts: 'MTs', mi: 'MI', man: 'MAN', ma: 'MA' }[upper] || prefix;
+  });
+}
+
+function normalizeSchoolKey(value) {
+  const source = normalizeSchoolLabel(value);
+  if (!source) return null;
+  return source.toLocaleUpperCase('id-ID')
+    .replace(/\bSEKOLAH DASAR\b/g, 'SD')
+    .replace(/\bSEKOLAH MENENGAH PERTAMA\b/g, 'SMP')
+    .replace(/\bSEKOLAH MENENGAH ATAS\b/g, 'SMA')
+    .replace(/\bSEKOLAH MENENGAH KEJURUAN\b/g, 'SMK')
+    .replace(/\bMADRASAH TSANAWIYAH\b/g, 'MTS')
+    .replace(/\bMADRASAH IBTIDAIYAH\b/g, 'MI')
+    .replace(/\bSD\s+NEGERI\b/g, 'SDN')
+    .replace(/\bSMP\s+NEGERI\b/g, 'SMPN')
+    .replace(/\bSMA\s+NEGERI\b/g, 'SMAN')
+    .replace(/\bSMK\s+NEGERI\b/g, 'SMKN')
+    .replace(/[.,]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+for (const school of db.prepare('SELECT id, school FROM learners WHERE school IS NOT NULL').all()) {
+  const label = normalizeSchoolLabel(school.school);
+  db.prepare('UPDATE learners SET school = ?, school_key = ? WHERE id = ?').run(label, normalizeSchoolKey(label), school.id);
+}
+for (const school of db.prepare('SELECT id, school FROM teacher_profiles WHERE school IS NOT NULL').all()) {
+  const label = normalizeSchoolLabel(school.school);
+  db.prepare('UPDATE teacher_profiles SET school = ?, school_key = ? WHERE id = ?').run(label, normalizeSchoolKey(label), school.id);
 }
 
 function normalizeUsername(value) {
@@ -304,13 +346,15 @@ function createLocalAccount(username, pin, profile = {}) {
 
 function createLearner(accountId, profile) {
   const timestamp = nowIso();
-  const result = db.prepare('INSERT INTO learners(account_id, nickname, grade, school, city, ranking_opt_in, created_at, updated_at) VALUES(?, ?, ?, ?, ?, ?, ?, ?)').run(accountId, profile.nickname, normalizeGrade(profile.grade), profile.school || null, profile.city || null, profile.ranking_opt_in === false ? 0 : 1, timestamp, timestamp);
+  const school = normalizeSchoolLabel(profile.school);
+  const result = db.prepare('INSERT INTO learners(account_id, nickname, grade, school, school_key, city, ranking_opt_in, created_at, updated_at) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)').run(accountId, profile.nickname, normalizeGrade(profile.grade), school, normalizeSchoolKey(school), profile.city || null, profile.ranking_opt_in === false ? 0 : 1, timestamp, timestamp);
   return learnerRow(result.lastInsertRowid);
 }
 
 function createTeacherProfile(accountId, profile) {
   const timestamp = nowIso();
-  db.prepare('INSERT INTO teacher_profiles(account_id, nickname, school, city, created_at, updated_at) VALUES(?, ?, ?, ?, ?, ?)').run(accountId, profile.nickname, profile.school, profile.city || null, timestamp, timestamp);
+  const school = normalizeSchoolLabel(profile.school);
+  db.prepare('INSERT INTO teacher_profiles(account_id, nickname, school, school_key, city, created_at, updated_at) VALUES(?, ?, ?, ?, ?, ?, ?)').run(accountId, profile.nickname, school, normalizeSchoolKey(school), profile.city || null, timestamp, timestamp);
   return teacherRow(accountId);
 }
 
@@ -571,7 +615,7 @@ app.post('/api/auth/register', (req, res) => {
       const learner = createLearner(account.id, {
         nickname,
         grade,
-        school: String(req.body?.school || '').trim().slice(0, 120) || null,
+        school: normalizeSchoolLabel(req.body?.school),
         city: String(req.body?.city || '').trim().slice(0, 80) || null,
       });
       return { account, learner };
@@ -591,7 +635,7 @@ app.post('/api/auth/teacher/register', (req, res) => {
   const username = normalizeUsername(req.body?.username);
   const pin = normalizePin(req.body?.pin);
   const nickname = String(req.body?.nickname || '').trim().slice(0, 60);
-  const school = String(req.body?.school || '').trim().slice(0, 120);
+  const school = normalizeSchoolLabel(req.body?.school) || '';
   const city = String(req.body?.city || '').trim().slice(0, 80) || null;
   if (!username) return res.status(400).json({ error: 'invalid_username', message: 'Username 4–24 karakter: huruf kecil, angka, titik, strip, atau garis bawah.' });
   if (!pin) return res.status(400).json({ error: 'invalid_pin', message: 'Kode masuk harus tepat 6 angka.' });
@@ -697,7 +741,8 @@ app.put('/api/me/learner', requireSession, (req, res) => {
   let learner = req.session.learner;
   if (!learner) learner = createLearner(req.session.account_id, { nickname, grade, school: req.body?.school, city: req.body?.city, ranking_opt_in: req.body?.ranking_opt_in });
   else {
-    db.prepare('UPDATE learners SET nickname = ?, grade = ?, school = ?, city = ?, ranking_opt_in = ?, updated_at = ? WHERE id = ?').run(nickname, grade, String(req.body?.school||'').slice(0,120)||null, String(req.body?.city||'').slice(0,80)||null, req.body?.ranking_opt_in === false ? 0 : 1, timestamp, learner.id);
+    const school = normalizeSchoolLabel(req.body?.school);
+    db.prepare('UPDATE learners SET nickname = ?, grade = ?, school = ?, school_key = ?, city = ?, ranking_opt_in = ?, updated_at = ? WHERE id = ?').run(nickname, grade, school, normalizeSchoolKey(school), String(req.body?.city||'').trim().slice(0,80)||null, req.body?.ranking_opt_in === false ? 0 : 1, timestamp, learner.id);
     learner = learnerRow(learner.id);
   }
   db.prepare('UPDATE sessions SET learner_id = ? WHERE token_hash = ?').run(learner.id, req.session.token_hash);
@@ -806,8 +851,8 @@ app.get('/api/teacher/overview', requireTeacher, (req, res) => {
       MAX(CASE WHEN a.status IN ('submitted','expired') THEN a.score END) AS best_score,
       MAX(CASE WHEN a.status IN ('submitted','expired') THEN a.submitted_at END) AS last_activity
     FROM learners l LEFT JOIN attempts a ON a.learner_id = l.id
-    WHERE l.school IS NOT NULL AND lower(trim(l.school)) = lower(trim(?))
-    GROUP BY l.id ORDER BY l.grade ASC, average_score DESC, l.nickname ASC`).all(teacher.school).map((student) => ({
+    WHERE l.school_key IS NOT NULL AND l.school_key = ?
+    GROUP BY l.id ORDER BY l.grade ASC, average_score DESC, l.nickname ASC`).all(teacher.school_key || normalizeSchoolKey(teacher.school)).map((student) => ({
       ...student,
       sessions: Number(student.sessions || 0),
       average_score: student.average_score === null ? null : Number(student.average_score),
