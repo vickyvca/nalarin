@@ -4,9 +4,13 @@ function safeLabel(value) {
 
 const naraPoses = {
   welcome: '/brand/nara-character-v2.png',
-  explain: '/brand/nara-character-explain-v1.webp',
-  cheer: '/brand/nara-character-cheer-v1.webp',
-  think: '/brand/nara-character-think-v1.webp',
+  wave: '/brand/nara-poses/nara-character-wave-v1.webp',
+  explain: '/brand/nara-poses/nara-character-explain-tip-v1.webp',
+  cheer: '/brand/nara-poses/nara-character-celebrate-v1.webp',
+  think: '/brand/nara-poses/nara-character-think-v1.webp',
+  encourage: '/brand/nara-poses/nara-character-encourage-v1.webp',
+  invite: '/brand/nara-poses/nara-character-invite-v1.webp',
+  support: '/brand/nara-poses/nara-character-support-v1.webp',
 };
 
 export function naraAvatar(size = 160, className = 'nara-avatar', label = 'Kak Nara', loading = 'eager', pose = 'welcome') {
