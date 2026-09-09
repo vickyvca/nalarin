@@ -2,15 +2,6 @@
 
 Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah adalah kondisi repository saat catatan dibuat, bukan klaim sebagai soal resmi atau bocoran TKA.
 
-## 2026-09-09 — prototipe Kak Nara 3D ringan
-
-Commit [`44c8d07`](https://github.com/vickyvca/nalarin/commit/44c8d07)
-
-- Menambahkan karakter low-poly 3D procedural di hero landing dengan Three.js.
-- Menambahkan gerak idle, kedipan, gerakan tangan bergantian, respons arah pointer, dan pencahayaan lembut.
-- Memuat Three.js secara lazy supaya halaman awal tetap ringan.
-- Menyediakan fallback artwork 2D ketika WebGL tidak tersedia atau pengguna mengaktifkan Reduce Motion.
-
 ## 2026-09-09 — pose dan animasi ringan Kak Nara
 
 Commit [`0bc3f40`](https://github.com/vickyvca/nalarin/commit/0bc3f40)
