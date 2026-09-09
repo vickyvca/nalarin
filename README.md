@@ -20,7 +20,7 @@ Jalur utama memakai username + PIN 6 angka. Orang tua atau murid dapat membuat a
 - **Progres murid:** riwayat sesi, nilai rata-rata, materi yang sudah dicoba, dan perkembangan per mapel.
 - **Ruang guru:** ringkasan murid, sesi selesai, rata-rata, nilai terbaik, dan aktivitas terakhir berdasarkan nama sekolah yang dinormalisasi.
 - **Ranking:** podium umum dan filter sekolah dengan nama panggilan; data hanya berasal dari simulasi mingguan.
-- **Landing dan aplikasi:** landing page berisi presenter Kak Nara dengan pose dan animasi idle ringan, preview latihan, materi, pembahasan, progres, ranking, tombol masuk berdasarkan peran, serta pasang aplikasi PWA.
+- **Landing dan aplikasi:** landing page berisi presenter Kak Nara 3D low-poly dengan animasi idle ringan, fallback artwork 2D, preview latihan, materi, pembahasan, progres, ranking, tombol masuk berdasarkan peran, serta pasang aplikasi PWA.
 - **Operasional:** scoring di server, autosave, lanjutkan sesi, SQLite, health check, backup, rollback release, CI, dan validator bank lokal.
 
 ## Batas produk saat ini
