@@ -2,6 +2,12 @@
 
 Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah adalah kondisi repository saat catatan dibuat, bukan klaim sebagai soal resmi atau bocoran TKA.
 
+## 2026-09-10 — kalibrasi bank dengan contoh resmi TKA
+
+- Menambahkan acuan [contoh resmi TKA](bank/OFFICIAL-TKA-CALIBRATION.md) untuk SD/SMP Matematika dan Bahasa Indonesia.
+- Mencatat profil bentuk soal yang teramati, pola stimulus, dan aturan agar soal Nalarin tetap orisinal.
+- Menambahkan laporan perbandingan profil ke validator tanpa memaksa kuota resmi ke bank yang sudah berjalan.
+
 ## 2026-09-09 — set pose Kak Nara untuk konteks belajar
 
 Commit [`2782224`](https://github.com/vickyvca/nalarin/commit/2782224)

@@ -69,6 +69,88 @@
   "modules": 15,
   "errors": [],
   "warnings": [],
+  "official_sample_profiles": {
+    "SD/matematika": {
+      "observed_sample": {
+        "PG": 18,
+        "PGK_MCMA": 3,
+        "PGK_CATEGORY": 9
+      },
+      "sample_total": 30,
+      "bank_current": {
+        "PG": 74,
+        "PGK_MCMA": 22,
+        "PGK_CATEGORY": 22
+      },
+      "bank_total": 118,
+      "delta_vs_sample": {
+        "PG": 56,
+        "PGK_MCMA": 19,
+        "PGK_CATEGORY": 13
+      },
+      "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
+    },
+    "SD/bahasa_indonesia": {
+      "observed_sample": {
+        "PG": 16,
+        "PGK_MCMA": 6,
+        "PGK_CATEGORY": 8
+      },
+      "sample_total": 30,
+      "bank_current": {
+        "PG": 66,
+        "PGK_MCMA": 22,
+        "PGK_CATEGORY": 22
+      },
+      "bank_total": 110,
+      "delta_vs_sample": {
+        "PG": 50,
+        "PGK_MCMA": 16,
+        "PGK_CATEGORY": 14
+      },
+      "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
+    },
+    "SMP/matematika": {
+      "observed_sample": {
+        "PG": 16,
+        "PGK_MCMA": 7,
+        "PGK_CATEGORY": 7
+      },
+      "sample_total": 30,
+      "bank_current": {
+        "PG": 76,
+        "PGK_MCMA": 22,
+        "PGK_CATEGORY": 20
+      },
+      "bank_total": 118,
+      "delta_vs_sample": {
+        "PG": 60,
+        "PGK_MCMA": 15,
+        "PGK_CATEGORY": 13
+      },
+      "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
+    },
+    "SMP/bahasa_indonesia": {
+      "observed_sample": {
+        "PG": 13,
+        "PGK_MCMA": 10,
+        "PGK_CATEGORY": 7
+      },
+      "sample_total": 30,
+      "bank_current": {
+        "PG": 66,
+        "PGK_MCMA": 22,
+        "PGK_CATEGORY": 22
+      },
+      "bank_total": 110,
+      "delta_vs_sample": {
+        "PG": 53,
+        "PGK_MCMA": 12,
+        "PGK_CATEGORY": 15
+      },
+      "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
+    }
+  },
   "limitations": [
     "Automated checks do not establish pedagogical quality or calibrated difficulty.",
     "Evidence existence is not proof of entailment; see RANKING-REVIEW.json and INDEPENDENT-REVIEW.json for per-question AI review coverage.",

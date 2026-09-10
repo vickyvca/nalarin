@@ -12,12 +12,20 @@ Diperiksa 6 September 2026. Aturan tahun berikutnya perlu diperiksa kembali sebe
 | S6 | [BPMP Kepri: desain dan persiapan TKA 2026](https://bpmpkepri.kemendikdasmen.go.id/berita/webinar-kemendikdasmen-bahas-persiapan-tka-smp-2026-dan-integrasi-an) | 30 soal per mapel, 75 menit untuk SD/SMP |
 | S7 | [Kemendikdasmen: pelaksanaan TKA SMP 2026](https://www.kemendikdasmen.go.id/siaran-pers/15012-tka-smp-gelombang-pertama-berjalan-lancar-sistem-dan-partisipasi-terkendali) | Matematika dan Bahasa Indonesia terpisah dua hari; latihan antarmuka dan survei di luar 75 menit tes |
 | S8 | [Perkaban 047/H/AN/2025, tautan dokumen resmi](https://pusmendik.kemendikdasmen.go.id/tka/page/download_file/783109_47) | Identitas kerangka; tautan lanjutan, belum audit seluruh halaman PDF |
+| S9 | [Daya serap dan contoh TKA](https://tka.kemendikdasmen.go.id/hasiltka/daya-serap) | Pintu masuk resmi ke contoh dan hasil TKA; dipakai untuk menemukan pola contoh, bukan kuota tes |
+| S10 | [Contoh TKA Matematika SD](https://pusmendik.kemendikdasmen.go.id/tka/tka/view/mata-pelajaran-wajib/sd) | Profil bentuk soal, stimulus, dan kompetensi yang teramati pada paket contoh SD |
+| S11 | [Contoh TKA Bahasa Indonesia SD](https://pusmendik.kemendikdasmen.go.id/tka/tka/view/mata-pelajaran-wajib/sd/bahasa-indonesia) | Profil bentuk soal, bacaan, dan kompetensi membaca yang teramati pada paket contoh SD |
+| S12 | [Contoh TKA Matematika SMP](https://pusmendik.kemendikdasmen.go.id/tka/tka/view/mata-pelajaran-wajib/smp) | Profil bentuk soal, stimulus, dan kompetensi yang teramati pada paket contoh SMP |
+| S13 | [Contoh TKA Bahasa Indonesia SMP](https://pusmendik.kemendikdasmen.go.id/tka/tka/view/mata-pelajaran-wajib/smp/Bahasa-Indonesia) | Profil bentuk soal, bacaan, dan kompetensi membaca yang teramati pada paket contoh SMP |
+| S14 | [Kerangka resmi TKA, dokumen 047/H/AN/2025](https://pusmendik.kemendikdasmen.go.id/tka/page/download_file/700298_47) | Kerangka resmi yang dipakai bersama contoh; tautan contoh tidak menetapkan kuota final |
 
 ## Cara pemeriksaan
 
 Laman FAQ dapat dibuka penuh. Sebagian pembukaan langsung laman Pusmendik mengalami 502/timeout, tetapi bagian kerangka dan contoh terbaca melalui hasil indeks pencarian resmi. PDF lengkap belum berhasil diperiksa; jangan menyebut paket ini hasil audit setiap halaman PDF. Soal dan bacaan di bank adalah karya baru, tidak menyalin butir resmi. Rujukan kompetensi adalah pemetaan editorial; tingkat kesulitan belum terkalibrasi pada murid.
 
 FAQ memuat beberapa jenjang sekaligus dan ada jawaban yang tampak salah tempat. Hanya bagian SD/SMP yang konsisten dengan halaman kerangka dipakai. Materi SMA (misalnya trigonometri/kalkulus) tidak dimasukkan.
+
+Halaman contoh resmi yang ditinjau berisi 30 butir per mapel. Komposisi PG, PGK-MCMA, dan PGK-Kategori yang teramati dicatat di [bank/OFFICIAL-TKA-CALIBRATION.md](bank/OFFICIAL-TKA-CALIBRATION.md). Angka tersebut adalah profil contoh untuk kalibrasi editorial, bukan klaim kuota atau bentuk pasti TKA pada pelaksanaan berikutnya.
 
 ## Riwayat ujian
 

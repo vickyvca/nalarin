@@ -25,11 +25,13 @@ Status terakhir: **9 September 2026**, branch `main`, commit `2782224`.
 - [x] Onboarding pertama, artwork Kak Nara, PWA install prompt, dan UI responsif.
 - [x] Landing page dengan presenter Kak Nara, beberapa pose, animasi idle ringan, serta preview latihan, materi, pembahasan, progres, dan ranking.
 - [x] Bank 456 soal: 360 soal ranking dan 96 soal latihan harian.
+- [x] Kalibrasi editorial terhadap contoh resmi TKA dan profil bentuk soal per jenjang/mapel.
 - [x] Validator bank, test API, CI, backup, health check, dan rollback release.
 
 ## Prioritas berikutnya
 
 - [ ] Tambah 144 soal supaya mencapai target 600 butir: 36 soal per jalur untuk empat jalur kelas/mapel.
+- [ ] Gunakan profil contoh resmi saat menulis batch baru; tambah stimulus tabel/grafik/piktogram dan variasi soal kategori tanpa menyalin butir resmi.
 - [ ] Isi celah materi yang masih tersisa: visualisasi bangun SD, operasi aljabar SMP, grafik/data, puisi, dan stimulus visual Bahasa Indonesia.
 - [ ] Jalankan pilot bersama murid nyata dan kumpulkan waktu pengerjaan, jawaban, laporan soal, serta bagian yang membingungkan.
 - [ ] Kalibrasi kesulitan berdasarkan respons murid yang dianonimkan; label sulit saat ini masih bersifat editorial.

@@ -11,6 +11,12 @@ def read(name): return json.loads((BANK/name).read_text(encoding='utf-8'))
 qs,ps,ms=read('questions.json'),read('passages.json'),read('modules.json')
 errors=[]
 warnings=[]
+OFFICIAL_SAMPLE_PROFILES={
+    'SD/matematika': {'PG':18,'PGK_MCMA':3,'PGK_CATEGORY':9},
+    'SD/bahasa_indonesia': {'PG':16,'PGK_MCMA':6,'PGK_CATEGORY':8},
+    'SMP/matematika': {'PG':16,'PGK_MCMA':7,'PGK_CATEGORY':7},
+    'SMP/bahasa_indonesia': {'PG':13,'PGK_MCMA':10,'PGK_CATEGORY':7},
+}
 def require(ok,msg):
     if not ok: errors.append(msg)
 passages={p['id']:p for p in ps}
@@ -183,12 +189,26 @@ for m in ms:
     require(any(q['module_id']==m['id'] for q in qs),f"{m['id']} no question link")
 
 ranked_count=sum(1 for q in qs if q.get('pool')=='ranked_v1')
+official_profile_report={}
+for profile, observed in OFFICIAL_SAMPLE_PROFILES.items():
+    grade, subject=profile.split('/',1)
+    current=Counter(q['type'] for q in qs if str(q['grade'])==('6' if grade=='SD' else '9') and q['subject']==subject)
+    current_counts={kind:current.get(kind,0) for kind in observed}
+    official_profile_report[profile]={
+        'observed_sample': observed,
+        'sample_total': sum(observed.values()),
+        'bank_current': current_counts,
+        'bank_total': sum(current_counts.values()),
+        'delta_vs_sample': {kind:current_counts[kind]-observed[kind] for kind in observed},
+        'interpretation':'Informational editorial comparison; this does not enforce a quota or fail validation.'
+    }
 report={'status':'PASS' if not errors else 'FAIL','questions':len(qs),
         'counts_by_grade_subject':dict(Counter(f"{q['grade']}/{q['subject']}" for q in qs)),
         'counts_by_type':dict(Counter(q['type'] for q in qs)),
         'pg_key_distribution':dict(Counter(q['answer'][0] for q in qs if q['type']=='PG')),
         'math_keys_recomputed':math_checked,'text_evidence_spans_checked':evidence_checked,
         'passage_word_counts':word_counts,'modules':len(ms),'errors':errors,'warnings':warnings,
+        'official_sample_profiles':official_profile_report,
         'limitations':['Automated checks do not establish pedagogical quality or calibrated difficulty.',
                       'Evidence existence is not proof of entailment; see RANKING-REVIEW.json and INDEPENDENT-REVIEW.json for per-question AI review coverage.',
                       f'Ranked pool contains {ranked_count} AI-reviewed questions; difficulty is not calibrated from learner response data.']}

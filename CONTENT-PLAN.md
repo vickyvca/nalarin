@@ -10,7 +10,9 @@ Pemeliharaan: `python scripts/add-smp-daily-v2.py` menambahkan batch secara idem
 
 ## 1. Ringkasan acuan
 
-Mapel kelas 6/9 adalah Matematika dan Bahasa Indonesia. Tiga bentuk respons: satu pilihan, beberapa pilihan benar, dan kategori per pernyataan. Latihan menekankan memahami, menerapkan, dan bernalar. Bacaan informasi/fiksi dipakai pada kedua jenjang dengan kompleksitas meningkat. Rujukan: S1–S7 pada [SOURCES.md](SOURCES.md).
+Mapel kelas 6/9 adalah Matematika dan Bahasa Indonesia. Tiga bentuk respons: satu pilihan, beberapa pilihan benar, dan kategori per pernyataan. Latihan menekankan memahami, menerapkan, dan bernalar. Bacaan informasi/fiksi dipakai pada kedua jenjang dengan kompleksitas meningkat. Rujukan: S1–S14 pada [SOURCES.md](SOURCES.md).
+
+Contoh resmi yang tampil di laman Pusmendik dipakai sebagai kalibrasi bentuk dan gaya, bukan untuk menyalin isi atau mengklaim kuota ujian. Profil 30 butir yang teramati adalah SD Matematika 18/3/9, SD Bahasa Indonesia 16/6/8, SMP Matematika 16/7/7, dan SMP Bahasa Indonesia 13/10/7 (PG/PGK-MCMA/PGK-Kategori). Rincian, pola stimulus, dan aturan provenance ada di [bank/OFFICIAL-TKA-CALIBRATION.md](bank/OFFICIAL-TKA-CALIBRATION.md). Validator hanya melaporkan jarak bank terhadap profil tersebut; paket ranking tetap mengikuti konfigurasi editorial sampai batch baru selesai ditinjau.
 
 Panjang stimulus ranking orisinal saat ini: SD 151–153 kata dengan kalimat 3–7 kata, SMP 203–205 kata dengan kalimat 5–9 kata. Rentang ini mengikuti batas indikatif kerangka membaca TKA. Stimulus awal harian tetap dipertahankan sebagai pool `pilot_daily`. Konteks sekolah, perpustakaan desa, kebun, dan kantin familier untuk anak; semua informasi yang dibutuhkan tersedia dalam soal. Anak tidak perlu pengetahuan tempat tertentu di Jawa Tengah untuk menjawab.
 
