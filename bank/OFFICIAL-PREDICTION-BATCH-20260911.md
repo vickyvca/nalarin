@@ -17,6 +17,8 @@ ujian.
   review independen Mitsuko belum diselesaikan.
 - Bank canonical setelah batch: **496 soal** (360 ranking, 96 latihan harian
   sebelumnya, dan 40 butir pilot baru).
+- Batch ini ikut dirilis ke pool latihan harian pada release `20260911-184603`;
+  status `ranked_eligible: false` tetap berlaku sampai review selesai.
 
 Ranking tidak berubah oleh batch ini. Butir baru hanya boleh dipindahkan ke
 `ranked_v1` setelah kunci, bahasa, pembahasan, bukti bacaan, dan kecocokan

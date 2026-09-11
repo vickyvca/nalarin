@@ -24,7 +24,7 @@ Yang sudah berjalan:
 
 - `npm test` lulus untuk auth, isolasi sekolah, scoring kosong/sebagian/sempurna, resume, modul, idempotensi, rotasi liga tanpa kuota, ranking, pergantian minggu, expiry, CSRF, dan 50 learner serentak.
 - `npm run build` lulus untuk bundle frontend produksi.
-- Validator bank lulus untuk 496 soal, 15 modul, hitungan Matematika, dan bukti bacaan. Empat puluh soal pilot tetap ditahan di `pilot_daily` sampai review selesai.
+- Validator bank lulus untuk 496 soal, 15 modul, hitungan Matematika, dan bukti bacaan. Empat puluh soal pilot tetap berada di `pilot_daily` dan sudah ikut rilis latihan harian; butirnya belum masuk ranking sampai review selesai.
 - Deploy live terakhir diverifikasi lewat health API, service systemd, backup timer, asset bundle, dan content server.
 
 ## Langkah berikutnya

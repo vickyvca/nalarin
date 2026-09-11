@@ -4,7 +4,7 @@ Target awal: kelas 6 SD dan kelas 9 SMP; web demo tersedia di `tka.mdc.web.id`. 
 
 ## Status produk
 
-Nalarin saat ini live di [tka.mdc.web.id](https://tka.mdc.web.id/) dengan **456 soal** pada rilis terakhir. Repository menyiapkan **496 soal**: 360 soal untuk simulasi ranking, 96 soal latihan harian yang sudah berjalan, dan 40 soal pilot prediksi official-pattern yang menunggu review. Komposisi repository menjadi 248 soal kelas 6 SD dan 248 soal kelas 9 SMP. Detail batch baru ada di [OFFICIAL-PREDICTION-BATCH-20260911.md](bank/OFFICIAL-PREDICTION-BATCH-20260911.md); pemeriksaan rilis live terakhir ada di [DAILY-V2-RELEASE.md](bank/DAILY-V2-RELEASE.md) dan [QA-REPORT.json](bank/QA-REPORT.json).
+Nalarin saat ini live di [tka.mdc.web.id](https://tka.mdc.web.id/) pada rilis `20260911-184603` dengan **496 soal**: 360 soal untuk simulasi ranking, 96 soal latihan harian yang sudah berjalan, dan 40 soal pilot prediksi official-pattern di pool latihan harian. Keempat puluh soal pilot masih menunggu review dan belum masuk ranking. Komposisi repository menjadi 248 soal kelas 6 SD dan 248 soal kelas 9 SMP. Detail batch baru ada di [OFFICIAL-PREDICTION-BATCH-20260911.md](bank/OFFICIAL-PREDICTION-BATCH-20260911.md); pemeriksaan rilis historis ada di [DAILY-V2-RELEASE.md](bank/DAILY-V2-RELEASE.md) dan [QA-REPORT.json](bank/QA-REPORT.json).
 
 Jalur utama memakai username + PIN 6 angka. Orang tua atau murid dapat membuat akun sendiri; admin tidak perlu membuatkan akun satu per satu. Nalarin tidak bergantung pada Google OAuth.
 

@@ -24,6 +24,7 @@ Status terakhir: **11 September 2026**, branch `main`.
 - [x] Onboarding pertama, artwork Kak Nara, PWA install prompt, dan UI responsif.
 - [x] Landing page dengan presenter Kak Nara, beberapa pose, animasi idle ringan, serta preview latihan, materi, pembahasan, progres, dan ranking.
 - [x] Bank 496 soal di repository: 360 soal ranking, 96 latihan harian yang sudah berjalan, dan 40 soal pilot prediksi official-pattern.
+- [x] Rilis live `20260911-184603` memakai bank 496 soal dan diverifikasi melalui health API, service, backup timer, serta smoke test liga tanpa batas mingguan.
 - [x] Kalibrasi editorial terhadap contoh resmi TKA dan profil bentuk soal per jenjang/mapel.
 - [x] Batch prediksi official-pattern v1: 10 soal per jalur, empat stimulus orisinal, metadata indikator, dan gerbang review.
 - [x] Validator bank, test API, CI, backup, health check, dan rollback release.

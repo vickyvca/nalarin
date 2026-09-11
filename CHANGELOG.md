@@ -7,6 +7,7 @@ Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah ad
 - Menghapus batas tiga sesi liga per murid per minggu.
 - Menambahkan rotasi ulang paket ranking setelah semua paket unik minggu itu selesai.
 - Memperbarui API progres/leaderboard, tampilan liga, dokumentasi, dan pengujian.
+- Merilis runtime, frontend, dan bank 496 soal ke DevServer pada release `20260911-184603`; health publik dan smoke test liga tanpa batas terverifikasi.
 
 ## 2026-09-11 — batch prediksi official-pattern TKA
 
