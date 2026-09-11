@@ -2,6 +2,12 @@
 
 Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah adalah kondisi repository saat catatan dibuat, bukan klaim sebagai soal resmi atau bocoran TKA.
 
+## 2026-09-11 — Liga bebas dikerjakan
+
+- Menghapus batas tiga sesi liga per murid per minggu.
+- Menambahkan rotasi ulang paket ranking setelah semua paket unik minggu itu selesai.
+- Memperbarui API progres/leaderboard, tampilan liga, dokumentasi, dan pengujian.
+
 ## 2026-09-11 — batch prediksi official-pattern TKA
 
 - Menambahkan 40 soal orisinal baru: 10 SD Matematika, 10 SD Bahasa Indonesia, 10 SMP Matematika, dan 10 SMP Bahasa Indonesia.

@@ -49,7 +49,7 @@ export function installFeatures(c) {
   app.post('/api/attempts/:id/cancel',requireLearner,(req,res)=>{
     const a=attemptRow(req.params.id,req.session.learner.id);
     if(!a) return res.sendStatus(404);
-    if(a.mode==='ranked') return res.status(409).json({message:'Sesi liga yang dimulai tetap memakai kesempatan. Selesaikan atau tunggu waktunya habis.'});
+    if(a.mode==='ranked') return res.status(409).json({message:'Sesi liga yang sudah dimulai tidak bisa dibatalkan. Selesaikan atau tunggu waktunya habis.'});
     db.prepare("UPDATE attempts SET status='cancelled' WHERE id=? AND status='active'").run(a.id);
     res.json({cancelled:true});
   });
@@ -75,7 +75,7 @@ export function installFeatures(c) {
     }
     const summary=['daily','ranked'].map(mode=>{const rows=attempts.filter(a=>a.mode===mode); return {mode,count:rows.length,average:rows.length?rows.reduce((s,a)=>s+a.score,0)/rows.length:null};});
     const topicRows=[...topics.values()].map(({samples,...t})=>{const total=samples.length,correct=samples.reduce((s,x)=>s+x.correct,0),sessions=new Set(samples.map(x=>x.session)).size;return {...t,total,correct,sessions,accuracy:100*correct/total,limited_data:total<10||sessions<2};});
-    res.json({attempts:attempts.map(({id,mode,module_id,subject,score,total_count,correct_count,started_at,submitted_at,correction_note,ranking_invalid})=>({id,mode,module_id,subject,score,total_count,correct_count,started_at,submitted_at,correction_note,ranking_invalid})),summary,topics:topicRows,weekly_remaining:Math.max(0,3-rankedCount(learner.id,weekStartWib()))});
+    res.json({attempts:attempts.map(({id,mode,module_id,subject,score,total_count,correct_count,started_at,submitted_at,correction_note,ranking_invalid})=>({id,mode,module_id,subject,score,total_count,correct_count,started_at,submitted_at,correction_note,ranking_invalid})),summary,topics:topicRows,weekly_remaining:null,weekly_unlimited:true});
   });
   app.post('/api/attempts/:id/report',requireLearner,(req,res)=>{
     const a=attemptRow(req.params.id,req.session.learner.id);
@@ -97,7 +97,7 @@ export function installFeatures(c) {
     if(req.query.school==='mine'&&!school) rows=[];
     let rank=0,previous=null;
     rows=rows.map((r,i)=>{if(r.score!==previous) rank=i+1;previous=r.score;return {rank,nickname:r.nickname,score:r.score,mine:r.learner_id===req.session.learner.id};});
-    res.json({available:packs.length>=3,grade,subject,week_start:weekStartWib(),remaining:Math.max(0,3-rankedCount(req.session.learner.id,weekStartWib())),rows,experimental:true});
+    res.json({available:packs.length>=3,grade,subject,week_start:weekStartWib(),remaining:null,weekly_unlimited:true,rows,experimental:true});
   });
   const enabled=()=>process.env.TKA_TUTOR_ENABLED==='true' && Boolean(process.env.MITSUKO_BASE_URL&&process.env.MITSUKO_API_KEY);
   app.get('/api/tutor/status',requireLearner,(_req,res)=>res.json({enabled:enabled(),display_name:'Kak Nara',daily_limit:20,per_question_limit:5}));

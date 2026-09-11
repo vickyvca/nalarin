@@ -11,7 +11,7 @@ Yang sudah berjalan:
 - akun murid dan guru dibuat sendiri dengan username + PIN 6 angka;
 - kelas 6 SD dan kelas 9 SMP, masing-masing Matematika dan Bahasa Indonesia;
 - latihan harian 10 soal yang bebas diulang;
-- simulasi 30 soal / 75 menit dengan batas tiga sesi per minggu;
+- simulasi liga 30 soal / 75 menit yang bebas dikerjakan;
 - scoring server-side, autosave, lanjutkan sesi, pembahasan, laporan soal, dan progres;
 - ranking mingguan dari sesi simulasi;
 - dashboard guru berdasarkan nama sekolah yang dinormalisasi;
@@ -22,10 +22,10 @@ Yang sudah berjalan:
 
 ## Gerbang yang sudah dilewati
 
-- `npm test` lulus untuk auth, isolasi sekolah, scoring kosong/sebagian/sempurna, resume, modul, idempotensi, kuota, ranking, pergantian minggu, expiry, CSRF, dan 50 learner serentak.
+- `npm test` lulus untuk auth, isolasi sekolah, scoring kosong/sebagian/sempurna, resume, modul, idempotensi, rotasi liga tanpa kuota, ranking, pergantian minggu, expiry, CSRF, dan 50 learner serentak.
 - `npm run build` lulus untuk bundle frontend produksi.
 - Validator bank lulus untuk 496 soal, 15 modul, hitungan Matematika, dan bukti bacaan. Empat puluh soal pilot tetap ditahan di `pilot_daily` sampai review selesai.
-- Deploy live diverifikasi lewat health API, service systemd, backup timer, asset bundle, dan content server.
+- Deploy live terakhir diverifikasi lewat health API, service systemd, backup timer, asset bundle, dan content server.
 
 ## Langkah berikutnya
 

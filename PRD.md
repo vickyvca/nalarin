@@ -12,7 +12,7 @@ Ukuran manfaat: perkembangan pada soal baru dengan kompetensi yang sama; tren sk
 
 Navigasi murid: Beranda, Latihan, Sesi Penilaian, Perkembanganku. Modul dan pembahasan dibuka dari alur ini. Leaderboard berada di hasil sesi dan Perkembanganku; tidak menambah navigasi utama.
 
-Beranda: dua kartu mapel, tombol Latihan Hari Ini, satu saran materi, sisa sesi penilaian minggu ini. Bahasa Indonesia sederhana; HP menjadi perangkat utama. Satu stimulus panjang mempunyai area baca yang tetap dapat diakses saat memilih jawaban. Semua kontrol bisa dipakai keyboard dan status benar/salah tidak bergantung pada warna.
+Beranda: dua kartu mapel, tombol Latihan Hari Ini, satu saran materi, dan pintasan sesi liga. Bahasa Indonesia sederhana; HP menjadi perangkat utama. Satu stimulus panjang mempunyai area baca yang tetap dapat diakses saat memilih jawaban. Semua kontrol bisa dipakai keyboard dan status benar/salah tidak bergantung pada warna.
 
 ## 3. Mode belajar
 
@@ -21,7 +21,7 @@ Beranda: dua kartu mapel, tombol Latihan Hari Ini, satu saran materi, sisa sesi 
 | Cek awal | 10 soal tiap mapel; dua sesi terpisah | Tanpa timer paksa | Sekali; dapat dilewati | Tidak |
 | Latihan Harian | 10 soal satu mapel | Perkiraan 15–25 menit | Bebas setiap hari, dapat diulang | Tidak |
 | Latihan materi/perbaikan | 5 soal satu materi | Tanpa timer paksa | Bebas | Tidak |
-| Sesi Penilaian | 30 soal satu mapel | 75 menit, waktu server | Maksimum 3 per minggu total kedua mapel | Ya |
+| Sesi Penilaian | 30 soal satu mapel | 75 menit, waktu server | Bebas; maksimal satu sesi aktif | Ya |
 
 Latihan Harian adalah simulasi singkat pola TKA. Anak memilih campuran materi atau mengikuti saran. Tidak perlu tombol simulasi tambahan dengan aturan yang membingungkan. Modul opsional 3–5 menit dapat dibuka sebelum latihan/perbaikan. Jawaban dan pembahasan muncul setelah sesi dikumpulkan; sesi penilaian tidak menyediakan tutor, petunjuk, atau kunci saat berjalan.
 
@@ -35,20 +35,19 @@ Sekolah adalah atribut pengelompokan. Nama sekolah yang diketik tidak memberi ak
 
 Persetujuan wali dan pengaturan privasi masuk alur ringkas yang dikerjakan wali, tidak membutuhkan approval admin per akun. Persyaratan yang berlaku untuk layanan anak perlu ditinjau sebelum pendaftaran publik; dokumen ini bukan pendapat hukum. Jangan meminta KTP/NIK/NISN, alamat rumah rinci, atau foto dokumen untuk kebutuhan latihan.
 
-Pisahkan identitas login dari learner_id. Riwayat, kuota, dan leaderboard mengikuti learner_id. Laporan privat hanya untuk akun yang sedang masuk. Pemulihan mandiri memakai kode pemulihan sekali pakai yang diberikan saat daftar dan dapat dibuat ulang dari profil dengan kode masuk saat ini. Pemulihan membatalkan sesi lama dan memberikan kode pemulihan baru. Email dan guardian link belum tersedia; jangan meminta NIK/NISN, alamat rumah rinci, atau foto dokumen.
+Pisahkan identitas login dari learner_id. Riwayat dan leaderboard mengikuti learner_id. Laporan privat hanya untuk akun yang sedang masuk. Pemulihan mandiri memakai kode pemulihan sekali pakai yang diberikan saat daftar dan dapat dibuat ulang dari profil dengan kode masuk saat ini. Pemulihan membatalkan sesi lama dan memberikan kode pemulihan baru. Email dan guardian link belum tersedia; jangan meminta NIK/NISN, alamat rumah rinci, atau foto dokumen.
 
-## 5. Aturan sesi dan kuota
+## 5. Aturan sesi
 
 - Minggu: Senin 00.00 WIB sampai Senin berikutnya 00.00 WIB, interval akhir eksklusif. Simpan timestamp UTC dan week_start Asia/Jakarta.
-- 3 sesi TOTAL per learner per minggu, bukan 3 tiap mapel. Satu sesi = satu mapel. Default terkunci sebagai keputusan produk.
-- Kuota dipakai hanya setelah paket lengkap berhasil disimpan dan sesi aktif terbentuk dalam transaksi. Dua permintaan bersamaan tidak boleh menghasilkan sesi keempat.
+- Sesi penilaian liga bebas dikerjakan setiap saat. Satu sesi = satu mapel; semua sesi valid disimpan untuk progres.
 - Maksimal satu sesi penilaian aktif per learner. Memulai ulang mengembalikan sesi yang sama; idempotency key wajib.
 - Timer 75 menit dihitung server sejak started_at. Menutup browser tidak menghentikan waktu. Gangguan koneksi bisa melanjutkan selama sisa waktu masih ada.
 - Jawaban autosave dan penanda ragu-ragu tersimpan. Reload tidak meroll soal, urutan opsi, atau kunci.
-- Kuota mengikuti minggu MULAI sesi; hasil dan peringkat juga masuk minggu itu. Penutupan minggu final setelah toleransi maksimal durasi sesi terakhir (75 menit). UI boleh menandai peringkat sementara.
-- Submit ulang tidak membuat nilai/kuota ganda. Jawaban setelah submitted/expired ditolak.
-- Gangguan teknis server yang terverifikasi dapat membatalkan sesi dengan audit dan mengembalikan kuota. Menutup browser sendiri tidak mengembalikan kuota.
-- Jangan mengurangi jumlah soal jika bank kurang. Tampilkan sesi penilaian belum tersedia, kuota tidak terpakai, latihan harian tetap ada.
+- Minggu mengikuti waktu MULAI sesi; hasil dan peringkat juga masuk minggu itu. Penutupan minggu final setelah toleransi maksimal durasi sesi terakhir (75 menit). UI boleh menandai peringkat sementara.
+- Submit ulang tidak membuat nilai ganda. Jawaban setelah submitted/expired ditolak.
+- Gangguan teknis server yang terverifikasi dapat membatalkan sesi dengan audit agar sesi itu tidak memengaruhi peringkat. Menutup browser sendiri tidak membatalkan sesi.
+- Jangan mengurangi jumlah soal jika bank kurang. Tampilkan sesi penilaian belum tersedia; latihan harian tetap ada.
 
 ## 6. Penyusunan paket
 
@@ -64,11 +63,11 @@ Nilai per butir = 1 jika seluruh respons butir tepat, 0 jika salah/tidak lengkap
 
 Skor sesi = 100 × total butir benar / total butir. Simpan pecahan/angka mentah; tampilan satu desimal. Ini skor latihan aplikasi, bukan rekonstruksi penskoran resmi TKA. Kategori boleh menampilkan '2 dari 3 pernyataan tepat' sebagai umpan balik walau skor butir 0. Penilaian memakai kode deterministik, bukan output AI.
 
-Jika soal dibatalkan, keluarkan dari pembilang/penyebut untuk seluruh peserta terdampak, hitung ulang, simpan jejak revisi, serta beri pemberitahuan di hasil. Jika lebih dari 10% butir paket dibatalkan, keluarkan sesi dari ranking dan kembalikan kuota dengan alasan teknis tercatat; tetap simpan laporan pembelajaran. Ambang 10% adalah kebijakan aplikasi.
+Jika soal dibatalkan, keluarkan dari pembilang/penyebut untuk seluruh peserta terdampak, hitung ulang, simpan jejak revisi, serta beri pemberitahuan di hasil. Jika lebih dari 10% butir paket dibatalkan, keluarkan sesi dari ranking dengan alasan teknis tercatat; tetap simpan laporan pembelajaran. Ambang 10% adalah kebijakan aplikasi.
 
 ## 8. Leaderboard
 
-Mingguan per jenjang DAN mapel, opsional filter sekolah. Hanya sesi penilaian valid. Nilai terbaik dari maksimal 3 sesi total menjadi nilai per mapel; sesi mapel lain tidak dijumlahkan. Jika belum mengambil mapel tertentu, tidak mendapat peringkat pada mapel itu.
+Mingguan per jenjang DAN mapel, opsional filter sekolah. Hanya sesi penilaian valid. Nilai terbaik dari sesi liga yang selesai menjadi nilai per mapel; sesi mapel lain tidak dijumlahkan. Jika belum mengambil mapel tertentu, tidak mendapat peringkat pada mapel itu.
 
 Bandingkan skor mentah (jangan memakai pembulatan tampilan untuk memecah seri). Skor sama mendapat peringkat sama, pola 1, 1, 3. Waktu pengerjaan tidak memecah seri. Tampilkan nama panggilan/avatar; keikutsertaan dapat dimatikan tanpa menghapus hasil pribadi. Ranking hanya setelah login. Tidak ada klaim pengawasan antikecurangan setara ujian; ini motivasi belajar.
 
@@ -91,8 +90,8 @@ Orang tua melihat profil anak yang tertaut. Admin melihat kesehatan konten/layan
 ## 11. Penerimaan minimum
 
 1. Daftar sendiri dari HP, mengisi profil, lalu mulai latihan tanpa bantuan pemilik.
-2. Harian bisa diulang dan tidak menghabiskan kuota ranking.
-3. Sesi keempat ditolak, termasuk dua tab/dua perangkat; reset minggu WIB benar.
+2. Harian bisa diulang dan tidak masuk ranking liga.
+3. Sesi liga berikutnya dapat dimulai setelah sesi sebelumnya selesai; dua tab/perangkat tetap menerima sesi aktif yang sama.
 4. Refresh/offline singkat memulihkan jawaban dan timer tanpa mengganti paket.
 5. Semua PG/MCMA/kategori dinilai sesuai aturan; nilai tidak berubah karena AI.
 6. Kunci/penjelasan sesi aktif tidak ada di payload klien; API review/tutor memeriksa hak akses dan status sesi.

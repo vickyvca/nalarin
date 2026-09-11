@@ -12,14 +12,14 @@ Jalur utama memakai username + PIN 6 angka. Orang tua atau murid dapat membuat a
 
 - **Belajar mandiri:** pendaftaran murid dan guru, kode pemulihan, profil kelas 6/9, dan panduan pertama bersama Kak Nara.
 - **Latihan harian:** 10 soal per sesi, dapat diulang, dengan soal yang berganti dari bank latihan.
-- **Simulasi mingguan:** 30 soal dalam 75 menit; maksimal tiga sesi per murid per minggu. Hanya sesi ini yang masuk ranking.
+- **Simulasi liga:** 30 soal dalam 75 menit dan bebas dikerjakan. Nilai terbaik tiap murid per mapel dan minggu tampil di ranking.
 - **Bentuk soal:** pilihan ganda, pilihan ganda kompleks, kategori per pernyataan, bacaan, tabel, dan diagram lokal.
 - **Pembahasan:** nilai, langkah pengerjaan, alasan setiap pilihan, materi terkait, laporan soal, dan ajakan mencoba lagi.
 - **Materi singkat:** 15 modul dengan alur **Pahami → Contoh → Coba soal** dan lima soal yang masih satu topik.
 - **Kak Nara:** pertanyaan bebas di materi dan pembahasan melalui adapter Mitsuko, dengan batas pemakaian dan fallback pembahasan dasar.
 - **Progres murid:** riwayat sesi, nilai rata-rata, materi yang sudah dicoba, dan perkembangan per mapel.
 - **Ruang guru:** ringkasan murid, sesi selesai, rata-rata, nilai terbaik, dan aktivitas terakhir berdasarkan nama sekolah yang dinormalisasi.
-- **Ranking:** podium umum dan filter sekolah dengan nama panggilan; data hanya berasal dari simulasi mingguan.
+- **Ranking:** podium umum dan filter sekolah dengan nama panggilan; data hanya berasal dari simulasi liga.
 - **Landing dan aplikasi:** landing page berisi presenter Kak Nara dengan pose dan animasi idle ringan, preview latihan, materi, pembahasan, progres, ranking, tombol masuk berdasarkan peran, serta pasang aplikasi PWA.
 - **Operasional:** scoring di server, autosave, lanjutkan sesi, SQLite, health check, backup, rollback release, CI, dan validator bank lokal.
 
@@ -40,7 +40,7 @@ Jalur utama memakai username + PIN 6 angka. Orang tua atau murid dapat membuat a
 6. `bank/modules.json`: modul ringkas dengan contoh.
 7. `bank/BANK-SOAL.md`: versi bank yang mudah dibaca manusia; memuat kunci, untuk persiapan/admin.
 8. `bank/QA-REPORT.json`: hasil validasi konten otomatis.
-9. `bank/RANKING-BLUEPRINT.md`: kuota dan checklist pembukaan bank ranking.
+9. `bank/RANKING-BLUEPRINT.md`: blueprint dan checklist pembukaan bank ranking.
 10. [bank/OFFICIAL-PREDICTION-BATCH-20260911.md](bank/OFFICIAL-PREDICTION-BATCH-20260911.md): batch prediksi berbasis pola contoh resmi dan gerbang review.
 11. [EXECUTION-PLAN.md](EXECUTION-PLAN.md): urutan pengerjaan dan gerbang peluncuran.
 12. [CHANGELOG.md](CHANGELOG.md): riwayat perubahan dari repository seed sampai versi live sekarang.

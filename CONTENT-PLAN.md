@@ -81,7 +81,7 @@ per jalur sudah tersedia dan total bank mencapai 496; masih perlu 104 soal
 harian untuk mencapai target 600. Empat puluh soal pilot official-pattern
 belum dihitung sebagai soal yang telah ditinjau.
 
-- Pool peringkat cukup untuk membentuk tiga paket 30 sesuai blueprint pada setiap jalur tanpa mengulang butir selama satu minggu. Masing-masing paket matematika harus mempunyai 30 keluarga berbeda; variasi parameter tidak menambah hitungan keluarga.
+- Pool peringkat cukup untuk membentuk tiga paket 30 sesuai blueprint pada setiap jalur tanpa mengulang butir selama tiga sesi pertama dalam satu minggu. Setelah itu paket diputar lagi berdasarkan sesi yang paling lama dipakai. Masing-masing paket matematika harus mempunyai 30 keluarga berbeda; variasi parameter tidak menambah hitungan keluarga.
 - Pool harian dan peringkat tidak berbagi family/stimulus; menukar nama tokoh atau angka saja tidak cukup untuk memisahkannya.
 - Sediakan pemeriksaan bahwa distribusi TOPIK × bentuk × kognitif × kesulitan dapat dipenuhi bersamaan; jumlah total 90 saja belum membuktikan paket dapat dibentuk.
 - Cadangan konten dan rotasi berkala tetap diperlukan; 600 bukan janji bank tidak pernah habis. Latihan harian dapat mengulang dengan jarak waktu ketika perlu.

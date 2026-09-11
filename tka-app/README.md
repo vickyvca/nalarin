@@ -31,6 +31,6 @@ npm run sync-content
 npm run api
 ```
 
-Login memakai username dan kode 6 angka; pemulihan mandiri memakai kode pemulihan yang disimpan saat daftar. API memakai SQLite, penilaian di server, batas tiga sesi liga lintas mapel per minggu, snapshot soal, dan pembahasan setelah submit. Ranking menunggu bank `ranked_eligible` yang memenuhi blueprint. Kak Nara memakai adapter AI server dengan konteks soal saja dan tanpa tools operasional. Konfigurasi dan kunci hanya ada di server. Progres berasal dari sesi nyata; gangguan API menampilkan pesan untuk mencoba lagi.
+Login memakai username dan kode 6 angka; pemulihan mandiri memakai kode pemulihan yang disimpan saat daftar. API memakai SQLite, penilaian di server, sesi liga bebas dikerjakan, snapshot soal, dan pembahasan setelah submit. Ranking menunggu bank `ranked_eligible` yang memenuhi blueprint. Kak Nara memakai adapter AI server dengan konteks soal saja dan tanpa tools operasional. Konfigurasi dan kunci hanya ada di server. Progres berasal dari sesi nyata; gangguan API menampilkan pesan untuk mencoba lagi.
 
 Production deployment files are kept outside the public source package. Use the example environment file as a starting point and keep real credentials on the server.

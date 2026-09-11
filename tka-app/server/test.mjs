@@ -37,14 +37,13 @@ try{
  const result=(await a(`/attempts/${attempt.id}/submit`,{})).attempt;assert.equal(result.score,100);assert.equal(result.review.length,10);
  assert.equal((await a(`/attempts/${attempt.id}/submit`,{})).attempt.score,100);
  await a(`/attempts/${attempt.id}/responses/${attempt.questions[0].id}`,{answer:['A']},'PUT',409);
- assert.ok((await a('/progress')).topics.length>0);
+ const progress=await a('/progress');assert.ok(progress.topics.length>0);assert.equal(progress.weekly_remaining,null);assert.equal(progress.weekly_unlimited,true);
  const sub=(await a('/attempts',{mode:'daily',subject:'matematika',module_id:'sd-pecahan'},'POST',201)).attempt;assert.ok(sub.questions.length<=5);assert.ok(sub.questions.every(q=>q.module_id==='sd-pecahan'));await a(`/attempts/${sub.id}/cancel`,{});
- for(let i=0;i<3;i++){const r=(await a('/attempts',{mode:'ranked',subject:i%2?'bahasa_indonesia':'matematika',idempotency_key:`rank-${i}`},'POST',201)).attempt;assert.equal(r.questions.length,30);await a(`/attempts/${r.id}/submit`,{});}
- await a('/attempts',{mode:'ranked',subject:'matematika'},'POST',429);
+ for(let i=0;i<8;i++){const r=(await a('/attempts',{mode:'ranked',subject:i%2?'bahasa_indonesia':'matematika',idempotency_key:`rank-${i}`},'POST',201)).attempt;assert.equal(r.questions.length,30);await a(`/attempts/${r.id}/submit`,{});}
  const peer=client();await peer('/dev/session',{nickname:'peer6',grade:6});
  const peerRank=(await peer('/attempts',{mode:'ranked',subject:'matematika'},'POST',201)).attempt;
  await peer(`/attempts/${peerRank.id}/submit`,{});
- const ties=(await a('/leaderboard?subject=matematika')).rows;
+ const leaderboard=await a('/leaderboard?subject=matematika');assert.equal(leaderboard.remaining,null);assert.equal(leaderboard.weekly_unlimited,true);const ties=leaderboard.rows;
  assert.equal(ties[0].rank,1);assert.equal(ties[1].rank,1);
  const publicRanking=await fetch('http://127.0.0.1:18189/api/public/leaderboard').then((response)=>response.json());assert.ok(publicRanking.rows.length>=2);assert.ok(publicRanking.rows.every((row)=>row.nickname&&row.grade));
  const weekDb=new Database(dbPath);weekDb.prepare("UPDATE attempts SET week_start='2000-01-03' WHERE learner_id=1 AND mode='ranked'").run();weekDb.close();
@@ -57,6 +56,6 @@ try{
  const first=await fetch('http://127.0.0.1:18189/api/auth/login',{method:'POST',headers:{Origin:'https://evil.example','Content-Type':'application/json'},body:'{}'});assert.equal(first.status,403);
  const load=await Promise.all(Array.from({length:50},async(_,i)=>{const c=client();await c('/dev/session',{nickname:`load-${i}`,grade:i%2?6:9});const r=(await c('/attempts',{subject:'matematika'},'POST',201)).attempt;await c(`/attempts/${r.id}/responses/${r.questions[0].id}`,{answer:r.questions[0].type==='CATEGORY'?{}:[]},'PUT');return true;}));assert.equal(load.length,50);
  const disk=new Database(dbPath);assert.ok(disk.prepare('SELECT COUNT(*) AS n FROM responses').get().n>=60);disk.close();
- console.log('PASS: local auth, teacher overview, public ranking, recovery, isolation, empty/partial/all-correct scoring, resume, module filtering, idempotency, quota, shared ranks, week rollover, expiry, CSRF, 50 concurrent learners.');
+ console.log('PASS: local auth, teacher overview, public ranking, recovery, isolation, empty/partial/all-correct scoring, resume, module filtering, idempotency, unlimited league rotation, shared ranks, week rollover, expiry, CSRF, 50 concurrent learners.');
  console.log(`Isolated test artifacts: ${tmp}`);
 }finally{child.kill();}

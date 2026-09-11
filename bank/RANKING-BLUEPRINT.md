@@ -32,5 +32,5 @@ Checklist yang sudah dilewati:
 
 Keterbatasan yang tetap dicatat: `difficulty_calibrated` masih `false`, jadi
 label mudah/sedang/menantang adalah editorial sampai ada data respons murid.
-Sesi resmi tetap dibatasi maksimal tiga kali per murid per minggu; latihan
+Sesi resmi dapat dikerjakan berkali-kali; latihan
 harian berada di pool `pilot_daily` dan tidak memengaruhi leaderboard.

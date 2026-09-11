@@ -10,8 +10,7 @@ Status terakhir: **11 September 2026**, branch `main`.
 - [x] Kelas 6 SD dan kelas 9 SMP.
 - [x] Matematika dan Bahasa Indonesia.
 - [x] Latihan harian 10 soal yang dapat diulang.
-- [x] Simulasi mingguan 30 soal / 75 menit.
-- [x] Batas tiga sesi simulasi per murid per minggu.
+- [x] Simulasi liga 30 soal / 75 menit, bebas dikerjakan.
 - [x] Leaderboard berdasarkan sesi simulasi.
 - [x] Soal PG, pilihan ganda kompleks, dan kategori per pernyataan.
 - [x] Soal dengan bacaan, tabel, dan diagram lokal.

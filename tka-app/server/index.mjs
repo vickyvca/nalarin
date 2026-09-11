@@ -442,7 +442,10 @@ function selectPackage(grade, subject, mode, learnerId, moduleId = null) {
   if(mode==='ranked'){
     const packs=readyPackages(available,passages,grade,subject);
     const used=new Set(db.prepare("SELECT pack_id FROM attempts WHERE learner_id=? AND mode='ranked' AND week_start=? AND ranking_invalid=0").all(learnerId,weekStartWib()).map(a=>a.pack_id));
-    const candidates=shuffle(packs.filter(p=>!used.has(p.id)));
+    // Use each package once per week when possible, then rotate through the
+    // full package set so ranked sessions remain available without a quota.
+    const freshPacks=packs.filter(p=>!used.has(p.id));
+    const candidates=shuffle(freshPacks.length ? freshPacks : packs);
     const last=new Map(db.prepare("SELECT pack_id,MAX(started_at) AS last FROM attempts WHERE learner_id=? AND mode='ranked' GROUP BY pack_id").all(learnerId).map(a=>[a.pack_id,a.last]));
     candidates.sort((a,b)=>(last.get(a.id)||'').localeCompare(last.get(b.id)||''));
     const chosen=candidates[0];
@@ -561,7 +564,7 @@ function finalizeAttempt(attempt, status = 'submitted') {
   const result = scoreAttempt(attempt);
   const submittedAt = nowIso();
   db.prepare('UPDATE attempts SET status = ?, submitted_at = ?, score = ?, correct_count = ?, total_count = ? WHERE id = ?').run(status, submittedAt, result.score, result.correct, result.total, attempt.id);
-  if(result.voided)db.prepare('UPDATE attempts SET ranking_invalid=?,correction_note=? WHERE id=?').run(Number(result.ranking_invalid),`${result.voided} soal dibatalkan. Nilai dihitung dari ${result.total} soal.${result.ranking_invalid&&attempt.mode==='ranked'?' Sesi dikeluarkan dari peringkat dan kesempatan dikembalikan.':''}`,attempt.id);
+  if(result.voided)db.prepare('UPDATE attempts SET ranking_invalid=?,correction_note=? WHERE id=?').run(Number(result.ranking_invalid),`${result.voided} soal dibatalkan. Nilai dihitung dari ${result.total} soal.${result.ranking_invalid&&attempt.mode==='ranked'?' Sesi dikeluarkan dari peringkat.':''}`,attempt.id);
   return db.prepare('SELECT * FROM attempts WHERE id = ?').get(attempt.id);
 }
 
@@ -775,7 +778,6 @@ app.post('/api/attempts', requireLearner, (req, res) => {
   const weekStart = weekStartWib();
   const active = db.prepare("SELECT * FROM attempts WHERE learner_id = ? AND status = 'active' ORDER BY started_at DESC").all(req.session.learner.id).map(expireIfNeeded).find(a => a.status === 'active');
   if (active) return res.json({ attempt: publicAttempt(active) });
-  if (mode === 'ranked' && rankedCount(req.session.learner.id, weekStart) >= 3) return res.status(429).json({ error: 'weekly_limit_reached', message: 'Kesempatan sesi penilaian minggu ini sudah habis.' });
   const moduleId = mode === 'daily' ? String(req.body?.module_id || '') || null : null;
   const packageData = selectPackage(req.session.learner.grade, subject, mode, req.session.learner.id, moduleId);
   if (!packageData.total) return res.status(409).json({ message: 'Soal materi ini belum tersedia.' });

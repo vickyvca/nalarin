@@ -26,7 +26,7 @@ export function voidQuestion(db,id,version,reason){
    const items=db.prepare('SELECT snapshot_json FROM attempt_questions WHERE attempt_id=? ORDER BY position').all(a.id).map(q=>({question:JSON.parse(q.snapshot_json)}));
    const responses=new Map(db.prepare('SELECT * FROM responses WHERE attempt_id=?').all(a.id).map(r=>[r.question_id,{value:JSON.parse(r.answer_json)}]));
    const result=calculateScore(items,responses,voided);
-   const note=`${result.voided} soal dibatalkan setelah pemeriksaan. Nilai dihitung dari ${result.total} soal.${result.ranking_invalid&&a.mode==='ranked'?' Sesi dikeluarkan dari peringkat dan kesempatan dikembalikan.':''}`;
+   const note=`${result.voided} soal dibatalkan setelah pemeriksaan. Nilai dihitung dari ${result.total} soal.${result.ranking_invalid&&a.mode==='ranked'?' Sesi dikeluarkan dari peringkat.':''}`;
    db.prepare('UPDATE attempts SET score=?,correct_count=?,total_count=?,ranking_invalid=?,correction_note=? WHERE id=?').run(['submitted','expired'].includes(a.status)?result.score:a.score,result.correct,result.total,Number(result.ranking_invalid),note,a.id);
    db.prepare('INSERT INTO score_adjustments(attempt_id,question_id,question_version,previous_score,new_score,reason,created_at) VALUES(?,?,?,?,?,?,?)').run(a.id,id,version,a.score,result.score,reason,now);
   }
