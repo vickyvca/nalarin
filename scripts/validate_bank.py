@@ -94,6 +94,10 @@ for q in qs:
     if rule=='daily_fence': expected=sum([x[0],x[1],x[0],x[1]])-x[2]
     elif rule=='daily_portions': expected=F(x[0]*1000,x[1])
     elif rule=='daily_sum': expected=sum(x)
+    elif rule=='division':
+        dividend, divisor = x
+        require(divisor>0 and dividend%divisor==0,f'{ident} division must be exact and positive')
+        expected=dividend//divisor
     elif rule=='daily_tiles':
         require(x[0]%x[2]==0 and x[1]%x[2]==0,f'{ident} tile edges must divide exactly')
         expected=sum(1 for _ in range(0,x[0],x[2]) for _ in range(0,x[1],x[2]))
@@ -108,6 +112,10 @@ for q in qs:
     elif rule=='daily_affine_cost':
         h1,c1,h2,c2,h=x
         expected=F(c1)+F((c2-c1)*(h-h1),h2-h1)
+    elif rule=='ceiling_units':
+        amount, unit = x
+        require(amount>=0 and unit>0,f'{ident} ceiling inputs must be nonnegative and positive')
+        expected=(amount+unit-1)//unit
     elif rule=='daily_budget':
         budget,delivery,unit=x
         expected=max(n for n in range(budget//unit+1) if delivery+n*unit<=budget)
@@ -132,6 +140,17 @@ for q in qs:
         w,d,n=x; expected=next(F(t) for t in range(1,1000) if n*t==w*d)
     elif rule=='discount': expected=F(x[0])-F(x[0])*F(x[1],100)
     elif rule=='linear': expected=next(F(n) for n in range(-1000,1001) if x[0]*n+x[1]==x[2])
+    elif rule=='linear_table':
+        pairs, target = x[:-1], x[-1]
+        require(len(pairs)>=2,f'{ident} linear table needs two pairs')
+        slopes=[]
+        for (x1,y1),(x2,y2) in zip(pairs,pairs[1:]):
+            require(x2!=x1,f'{ident} linear table has repeated x')
+            slopes.append(F(y2-y1,x2-x1))
+        require(len(set(slopes))==1,f'{ident} linear table slopes disagree')
+        slope=slopes[0]
+        intercept=F(pairs[0][1])-slope*pairs[0][0]
+        expected=slope*target+intercept
     elif rule=='spldv':
         u,vv=x
         candidates=[]
@@ -160,6 +179,19 @@ for q in qs:
     elif rule=='data_mcma':
         predicates=[sum(x)==v['total_claim'], x[1]>max(x[0],x[2],x[3]),x[0]>x[2],x[3]>x[1]]
         require(presented([chr(65+i) for i,t in enumerate(predicates) if t])==set(q['answer']),f'{ident} data key mismatch')
+    elif rule=='data_summary_mcma':
+        predicates=[sum(x)<v['total_less_than'], x[1]==max(x), x[1]>x[2], len(x)==v['day_count_claim']]
+        require(presented([chr(65+i) for i,t in enumerate(predicates) if t])==set(q['answer']),f'{ident} data summary key mismatch')
+    elif rule=='stats_mcma':
+        ordered=sorted(x)
+        mid=len(ordered)//2
+        median=F(ordered[mid-1]+ordered[mid],2) if len(ordered)%2==0 else F(ordered[mid])
+        mean=F(sum(ordered),len(ordered))
+        counts=Counter(ordered)
+        mode=max(counts, key=counts.get)
+        actual=[median, max(ordered)-min(ordered), mean, F(mode)]
+        correct=[chr(65+i) for i,claim in enumerate(v['claims']) if F(claim)==actual[i]]
+        require(presented(correct)==set(q['answer']),f'{ident} statistics key mismatch')
     elif rule=='volume_category':
         cubes=sum(1 for _ in range(x[0]) for _ in range(x[1]) for _ in range(x[2]))
         expected_cat=[v['assertions'][0]==cubes,F(v['assertions'][1])==F(cubes,1000),v['assertions'][2]==2*cubes]

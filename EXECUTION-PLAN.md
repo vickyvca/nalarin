@@ -1,6 +1,6 @@
 # Rencana eksekusi Nalarin
 
-Status ini menggantikan rencana tahap awal. Snapshot terakhir: **9 September 2026**, commit [`5849836`](https://github.com/vickyvca/nalarin/commit/5849836).
+Status ini menggantikan rencana tahap awal. Snapshot terakhir: **11 September 2026**, setelah batch prediksi official-pattern v1.
 
 ## Kondisi sekarang
 
@@ -18,24 +18,25 @@ Yang sudah berjalan:
 - 15 modul dengan alur Pahami → Contoh → Coba soal;
 - Kak Nara berbasis adapter Mitsuko dengan fallback pembahasan dasar;
 - onboarding, PWA install prompt, landing preview, dan UI mobile;
-- bank 456 soal, validator lokal, CI, health check, backup, dan rollback.
+- bank 496 soal di repository (360 ranking, 96 harian yang berjalan, 40 pilot prediksi), validator lokal, CI, health check, backup, dan rollback.
 
 ## Gerbang yang sudah dilewati
 
 - `npm test` lulus untuk auth, isolasi sekolah, scoring kosong/sebagian/sempurna, resume, modul, idempotensi, kuota, ranking, pergantian minggu, expiry, CSRF, dan 50 learner serentak.
 - `npm run build` lulus untuk bundle frontend produksi.
-- Validator bank lulus untuk 456 soal, 15 modul, hitungan Matematika, dan bukti bacaan.
+- Validator bank lulus untuk 496 soal, 15 modul, hitungan Matematika, dan bukti bacaan. Empat puluh soal pilot tetap ditahan di `pilot_daily` sampai review selesai.
 - Deploy live diverifikasi lewat health API, service systemd, backup timer, asset bundle, dan content server.
 
 ## Langkah berikutnya
 
-1. Tambahkan 144 soal menuju target 600: 36 soal tambahan untuk setiap jalur kelas/mapel.
-2. Isi celah materi dan stimulus visual yang masih tercatat di [CONTENT-PLAN.md](CONTENT-PLAN.md).
-3. Jalankan pilot murid nyata; kumpulkan waktu pengerjaan, jawaban, laporan soal, dan pertanyaan ke Nara.
-4. Kalibrasi kesulitan berdasarkan respons yang dianonimkan. Jangan mengubah label hanya karena soal terlihat panjang.
-5. Review penggunaan tutor Mitsuko secara berkala: akurasi, bahasa anak, timeout, kuota, dan biaya.
-6. Tambahkan ringkasan topik dan filter yang membantu guru menentukan materi yang perlu diulang.
-7. Tambahkan monitor operasional untuk health API, backup, error rate, kapasitas disk, dan umur release.
+1. Selesaikan review editorial dan review independen Mitsuko untuk batch prediksi official-pattern.
+2. Tambahkan 104 soal yang sudah ditinjau menuju target 600: 26 soal tambahan untuk setiap jalur kelas/mapel.
+3. Isi celah materi dan stimulus visual yang masih tercatat di [CONTENT-PLAN.md](CONTENT-PLAN.md).
+4. Jalankan pilot murid nyata; kumpulkan waktu pengerjaan, jawaban, laporan soal, dan pertanyaan ke Nara.
+5. Kalibrasi kesulitan berdasarkan respons yang dianonimkan. Jangan mengubah label hanya karena soal terlihat panjang.
+6. Review penggunaan tutor Mitsuko secara berkala: akurasi, bahasa anak, timeout, kuota, dan biaya.
+7. Tambahkan ringkasan topik dan filter yang membantu guru menentukan materi yang perlu diulang.
+8. Tambahkan monitor operasional untuk health API, backup, error rate, kapasitas disk, dan umur release.
 
 Daftar tugas dengan status lengkap ada di [TODO.md](TODO.md). Riwayat perubahan ada di [CHANGELOG.md](CHANGELOG.md).
 

@@ -350,5 +350,49 @@
     "title": "Rencana Jalur Sepeda",
     "source_kind": "original",
     "text": "Semester ini, Bagas mengikuti proyek rencana jalur sepeda. Proyek itu berlangsung di ruang serbaguna. Proyek tersebut melatih peserta membaca data. Peserta juga menguji alasan dan kesimpulan. Guru meminta pertanyaan berdasarkan pengamatan. Kelompok mencatat tujuan sejak awal. Panitia menyiapkan 63 unit bahan. Kelompok menggunakan 7 unit pada tahap awal. Mereka menyisakan 56 unit untuk tahap berikutnya. Kelompok mencatat semua perubahan bersama waktu dan kondisi. Bagas membandingkan catatan lapangan dengan rencana awal. Satu hasil terlihat berbeda pada pengukuran awal. Pengukuran itu dilakukan pada waktu berbeda. Kelompok memilih waktu pengukuran yang konsisten. Mereka menyimpan hasil awal sebagai pembanding. Rapat kedua membahas penjelasan yang mungkin. Anggota mencatat data yang masih diperlukan. Kelompok memeriksa catatan sebelum menyimpulkan. Proyek ditutup dengan rencana perbaikan. Mereka memilih kesimpulan yang lebih terbatas. Kesimpulan itu sesuai dengan data. Kelompok menjelaskan cara kerja mereka. Data tersebut dibahas bersama anggota. Catatan proyek disimpan di perpustakaan sekolah. Kelompok berikutnya dapat mengulang pengamatan. Bagas menilai data sebelum mengambil keputusan. Keputusan yang baik membutuhkan bukti. Pengamatan juga membutuhkan waktu yang jelas. Kelompok berani mengakui keterbatasan data. Anggota membandingkan catatan sebelum rapat. Guru meminta alasan ditulis dengan jelas. Semua peserta mengikuti aturan pengamatan. Anggota membandingkan hasil antarhari dengan tabel. Mereka menyimpan catatan mentah untuk pemeriksaan. Catatan lengkap membantu pembaca memahami proses."
+  },
+  {
+    "id": "sd-mtk-prediksi-kebun-hujan",
+    "grade": 6,
+    "genre": "informasi",
+    "title": "Denah Kebun Hujan",
+    "source_kind": "original",
+    "text": "Denah Kebun Hujan di sekolah menampilkan petak persegi panjang. Petak itu panjangnya 12 meter dan lebarnya 8 meter. Di sisi utara terdapat pintu selebar 2 meter. Siswa akan memasang pagar pada tiga sisi dan pada sisi utara di luar bukaan pintu. Mereka menanam cabai dalam 6 baris. Setiap baris berisi 8 tanaman dengan jarak yang sama. Guru meminta siswa memperkirakan kebutuhan tali sebelum membeli. Tali dijual dalam gulungan sepanjang 10 meter. Untuk menghitung biaya, siswa juga mencatat harga satu gulungan. Semua ukuran pada denah ditulis dalam meter dan gambar tidak dibuat berskala. Data ini dipakai untuk melatih siswa membaca ukuran, memilih informasi yang dibutuhkan, dan menjelaskan alasan perhitungannya. Siswa berdiskusi tentang perbedaan antara keliling dan luas. Mereka juga memeriksa apakah hasil perhitungan masuk akal sebelum menyampaikan jawaban kepada guru. Dengan cara itu, angka pada denah tidak sekadar dihitung, tetapi dihubungkan dengan keputusan nyata. Catatan itu disimpan di papan informasi kelas.",
+    "prediction_batch": "official-pattern-v1",
+    "source_basis": "official-framework-pattern",
+    "provenance": "original"
+  },
+  {
+    "id": "smp-mtk-prediksi-transformasi",
+    "grade": 9,
+    "genre": "informasi",
+    "title": "Peta Koordinat Pameran",
+    "source_kind": "original",
+    "text": "Panitia membuat peta koordinat untuk menata stan pameran karya siswa. Titik P adalah lokasi meja informasi, sedangkan titik Q adalah lokasi pintu masuk. Pada peta awal, P berada di kuadran pertama dan setiap satu satuan mewakili satu meter. Panitia mencoba beberapa rancangan agar jalur pengunjung tetap mudah dibaca. Pada rancangan kedua, seluruh titik dicerminkan terhadap sumbu-y. Pada rancangan ketiga, posisi hasil pencerminan diputar seperempat putaran berlawanan arah jarum jam dengan pusat di titik asal. Koordinat setiap rancangan dicatat dalam tabel agar petugas dapat memeriksa ketepatannya. Peta tersebut tidak menunjukkan ukuran stan secara nyata; peta hanya digunakan untuk menalar perubahan posisi. Siswa diminta membedakan aturan transformasi dari perubahan jarak, lalu menilai apakah kesimpulan petugas didukung oleh koordinat yang tercatat. Mereka menuliskan alasan setiap perubahan agar petugas dapat menelusuri langkahnya. Jika ada koordinat yang keliru, siswa harus menunjukkan aturan yang seharusnya digunakan. Kegiatan ini membantu mereka membaca tabel dan gambar koordinat secara teliti, bukan hanya menghafal nama transformasi. Mereka kemudian membandingkan hasil hitungan dengan letak titik pada gambar. Siswa memeriksa kembali tanda positif dan negatif sebelum membuat kesimpulan. Hasil kerja mereka ditempel untuk dibandingkan bersama sehingga kesalahan dapat dibahas dengan tenang. Guru meminta alasan ditulis lengkap pada setiap langkah agar mudah dipahami.",
+    "prediction_batch": "official-pattern-v1",
+    "source_basis": "official-framework-pattern",
+    "provenance": "original"
+  },
+  {
+    "id": "sd-bi-prediksi-kebun-kompos",
+    "grade": 6,
+    "genre": "fiksi",
+    "title": "Kotak Kompos di Belakang Kelas",
+    "source_kind": "original",
+    "text": "Setiap Jumat, Nara membawa sisa kulit buah dari rumah ke sekolah. Ia ingin membuat kotak kompos kecil di belakang kelas. Pada awalnya, beberapa teman mengira sisa makanan akan membuat halaman kotor. Nara mengajak mereka melihat contoh kompos milik penjaga sekolah. Di dalam kotak itu ada daun kering, kulit buah, dan sedikit tanah. Penjaga sekolah menjelaskan bahwa bahan tersebut perlu dicampur dan dijaga agar tidak terlalu basah.\n\nNara kemudian membuat catatan sederhana. Ia menulis tanggal penambahan bahan dan mengaduk isi kotak setiap tiga hari. Ketika hujan turun deras, ia memindahkan kotak ke bawah atap. Teman-temannya ikut membantu setelah melihat tidak ada bau menyengat. Mereka juga menempelkan gambar daun pada tutup kotak agar semua siswa tahu kegunaannya.\n\nSebulan kemudian, isi kotak berubah menjadi remah berwarna gelap. Penjaga sekolah memakai remah itu untuk menyuburkan tanaman cabai. Nara senang karena kebiasaan kecil mereka memberi manfaat. Ia mengusulkan agar kelas lain mencoba cara yang sama dengan tetap meminta izin dan mengikuti petunjuk perawatan.",
+    "prediction_batch": "official-pattern-v1",
+    "source_basis": "official-framework-pattern",
+    "provenance": "original"
+  },
+  {
+    "id": "smp-bi-prediksi-dua-sumber-air",
+    "grade": 9,
+    "genre": "informasi",
+    "title": "Dua Catatan tentang Taman Resapan",
+    "source_kind": "original",
+    "text": "Teks A\nTaman resapan di halaman sekolah dibuat untuk mengurangi genangan setelah hujan. Lubangnya diisi kerikil, pasir, dan tanah berpori. Menurut catatan pengelola, air dari talang mengalir ke taman melalui pipa pendek. Selama tiga bulan, pengelola mencatat bahwa genangan di dekat kantin lebih cepat surut. Namun, catatan itu tidak mencantumkan curah hujan setiap hari. Pengelola menyarankan agar daun dan sampah dibersihkan supaya pori-pori tidak tertutup.\n\nTeks B\nDalam laporan klub sains, taman resapan disebut sebagai salah satu cara mengelola air hujan. Anggota klub membandingkan dua titik halaman selama empat minggu. Mereka mengukur waktu surut setelah hujan dan mencatat curah hujan dengan alat sederhana. Titik yang memiliki taman resapan rata-rata surut lebih cepat, tetapi perbedaannya mengecil ketika hujan sangat deras. Laporan itu juga menyebutkan bahwa hasil pengamatan belum cukup untuk menyimpulkan taman resapan selalu menjadi penyebab tunggal. Kondisi kemiringan tanah dan kebersihan saluran mungkin ikut memengaruhi hasil. Karena itu, laporan menyarankan pengamatan diulang pada beberapa hujan dengan intensitas berbeda. Pengelola juga perlu mencatat kapan saluran dibersihkan dan apakah ada perubahan pada susunan kerikil. Data tambahan tersebut dapat membantu membedakan pengaruh taman dari pengaruh lingkungan lain. Pembaca sebaiknya memisahkan hasil pengamatan dari dugaan sebabnya. Dengan demikian, laporan tetap berguna sebagai dasar rencana perbaikan berikutnya. Pembaca dapat menggunakan kedua teks untuk membedakan fakta, hasil pengukuran, dan dugaan yang masih perlu diuji.",
+    "prediction_batch": "official-pattern-v1",
+    "source_basis": "official-framework-pattern",
+    "provenance": "original"
   }
 ]

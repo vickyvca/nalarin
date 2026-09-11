@@ -2,6 +2,14 @@
 
 Catatan ini mengikuti commit di branch `main`. Angka bank dan status di bawah adalah kondisi repository saat catatan dibuat, bukan klaim sebagai soal resmi atau bocoran TKA.
 
+## 2026-09-11 — batch prediksi official-pattern TKA
+
+- Menambahkan 40 soal orisinal baru: 10 SD Matematika, 10 SD Bahasa Indonesia, 10 SMP Matematika, dan 10 SMP Bahasa Indonesia.
+- Menulis empat stimulus baru dengan pola denah, koordinat, bacaan fiksi, dan dua teks informasi; setiap soal memiliki indikator dan subkompetensi.
+- Mengambil pola dari contoh resmi dan kerangka TKA tanpa menyalin stem, angka, bacaan, opsi, gambar, atau pembahasan.
+- Menahan semua butir di `pilot_daily` dengan `ranked_eligible=false` sampai review editorial dan review independen Mitsuko selesai.
+- Mencatat batch, sumber, gerbang kualitas, dan cara mengulang di [bank/OFFICIAL-PREDICTION-BATCH-20260911.md](bank/OFFICIAL-PREDICTION-BATCH-20260911.md).
+
 ## 2026-09-10 — kalibrasi bank dengan contoh resmi TKA
 
 - Menambahkan acuan [contoh resmi TKA](bank/OFFICIAL-TKA-CALIBRATION.md) untuk SD/SMP Matematika dan Bahasa Indonesia.

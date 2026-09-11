@@ -1,25 +1,25 @@
 {
   "status": "PASS",
-  "questions": 456,
+  "questions": 496,
   "counts_by_grade_subject": {
-    "6/matematika": 118,
-    "9/matematika": 118,
-    "6/bahasa_indonesia": 110,
-    "9/bahasa_indonesia": 110
+    "6/matematika": 128,
+    "9/matematika": 128,
+    "6/bahasa_indonesia": 120,
+    "9/bahasa_indonesia": 120
   },
   "counts_by_type": {
-    "PG": 282,
-    "PGK_MCMA": 88,
-    "PGK_CATEGORY": 86
+    "PG": 300,
+    "PGK_MCMA": 102,
+    "PGK_CATEGORY": 94
   },
   "pg_key_distribution": {
-    "B": 72,
-    "A": 70,
+    "B": 84,
+    "A": 74,
     "D": 74,
-    "C": 66
+    "C": 68
   },
-  "math_keys_recomputed": 236,
-  "text_evidence_spans_checked": 319,
+  "math_keys_recomputed": 252,
+  "text_evidence_spans_checked": 376,
   "passage_word_counts": {
     "sd-bi-payung": 162,
     "sd-bi-buku": 161,
@@ -64,11 +64,20 @@
     "r9-passage-15": 204,
     "r9-passage-16": 203,
     "r9-passage-17": 203,
-    "r9-passage-18": 205
+    "r9-passage-18": 205,
+    "sd-mtk-prediksi-kebun-hujan": 150,
+    "smp-mtk-prediksi-transformasi": 200,
+    "sd-bi-prediksi-kebun-kompos": 158,
+    "smp-bi-prediksi-dua-sumber-air": 214
   },
   "modules": 15,
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "sd-mtk-prediksi-kebun-hujan: 12/15 sentences outside framework indicative 3–7 words; pilot editorial review needed",
+    "smp-mtk-prediksi-transformasi: 15/16 sentences outside framework indicative 5–9 words; pilot editorial review needed",
+    "sd-bi-prediksi-kebun-kompos: 14/15 sentences outside framework indicative 3–7 words; pilot editorial review needed",
+    "smp-bi-prediksi-dua-sumber-air: 14/18 sentences outside framework indicative 5–9 words; pilot editorial review needed"
+  ],
   "official_sample_profiles": {
     "SD/matematika": {
       "observed_sample": {
@@ -78,15 +87,15 @@
       },
       "sample_total": 30,
       "bank_current": {
-        "PG": 74,
-        "PGK_MCMA": 22,
-        "PGK_CATEGORY": 22
+        "PG": 78,
+        "PGK_MCMA": 26,
+        "PGK_CATEGORY": 24
       },
-      "bank_total": 118,
+      "bank_total": 128,
       "delta_vs_sample": {
-        "PG": 56,
-        "PGK_MCMA": 19,
-        "PGK_CATEGORY": 13
+        "PG": 60,
+        "PGK_MCMA": 23,
+        "PGK_CATEGORY": 15
       },
       "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
     },
@@ -98,15 +107,15 @@
       },
       "sample_total": 30,
       "bank_current": {
-        "PG": 66,
-        "PGK_MCMA": 22,
-        "PGK_CATEGORY": 22
+        "PG": 72,
+        "PGK_MCMA": 24,
+        "PGK_CATEGORY": 24
       },
-      "bank_total": 110,
+      "bank_total": 120,
       "delta_vs_sample": {
-        "PG": 50,
-        "PGK_MCMA": 16,
-        "PGK_CATEGORY": 14
+        "PG": 56,
+        "PGK_MCMA": 18,
+        "PGK_CATEGORY": 16
       },
       "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
     },
@@ -118,15 +127,15 @@
       },
       "sample_total": 30,
       "bank_current": {
-        "PG": 76,
-        "PGK_MCMA": 22,
-        "PGK_CATEGORY": 20
+        "PG": 80,
+        "PGK_MCMA": 26,
+        "PGK_CATEGORY": 22
       },
-      "bank_total": 118,
+      "bank_total": 128,
       "delta_vs_sample": {
-        "PG": 60,
-        "PGK_MCMA": 15,
-        "PGK_CATEGORY": 13
+        "PG": 64,
+        "PGK_MCMA": 19,
+        "PGK_CATEGORY": 15
       },
       "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
     },
@@ -138,15 +147,15 @@
       },
       "sample_total": 30,
       "bank_current": {
-        "PG": 66,
-        "PGK_MCMA": 22,
-        "PGK_CATEGORY": 22
+        "PG": 70,
+        "PGK_MCMA": 26,
+        "PGK_CATEGORY": 24
       },
-      "bank_total": 110,
+      "bank_total": 120,
       "delta_vs_sample": {
-        "PG": 53,
-        "PGK_MCMA": 12,
-        "PGK_CATEGORY": 15
+        "PG": 57,
+        "PGK_MCMA": 16,
+        "PGK_CATEGORY": 17
       },
       "interpretation": "Informational editorial comparison; this does not enforce a quota or fail validation."
     }

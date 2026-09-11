@@ -1,10 +1,12 @@
 # Peta konten dan rencana bank
 
-## Status content — 9 September 2026
+## Status content — 11 September 2026
 
-Bank saat ini berisi **456 soal**: 360 soal ranking dan 96 soal latihan harian. Per jalur tersedia 118 Matematika kelas 6, 118 Matematika kelas 9, 110 Bahasa Indonesia kelas 6, dan 110 Bahasa Indonesia kelas 9. Semua jalur ranking memiliki 90 soal yang sudah direview untuk tiga paket simulasi 30 soal. Soal harian tetap `ranked_eligible=false`.
+Bank saat ini berisi **496 soal**: 360 soal ranking, 96 soal latihan harian sebelumnya, dan 40 soal pilot prediksi official-pattern v1. Per jalur tersedia 128 Matematika kelas 6, 128 Matematika kelas 9, 120 Bahasa Indonesia kelas 6, dan 120 Bahasa Indonesia kelas 9. Semua jalur ranking tetap memiliki 90 soal yang sudah direview untuk tiga paket simulasi 30 soal. Empat puluh soal baru hanya berada di pool harian dan tetap `ranked_eligible=false`.
 
 Tambahan harian SMP dan SD tetap dicatat di [SMP-DAILY-V2.md](bank/SMP-DAILY-V2.md), [SD-DAILY-V2.md](bank/SD-DAILY-V2.md), dan [DAILY-V2-RELEASE.md](bank/DAILY-V2-RELEASE.md). Soal tidak diklaim sebagai salinan arsip ujian atau bocoran. Kekurangan visual, genre, dan kalibrasi tingkat kesulitan masih menjadi pekerjaan berikutnya.
+
+Batch baru yang benar-benar memakai pola contoh resmi dicatat di [bank/OFFICIAL-PREDICTION-BATCH-20260911.md](bank/OFFICIAL-PREDICTION-BATCH-20260911.md). Batch ini menambah stimulus denah, peta koordinat, bacaan fiksi, dan dua teks informasi; seluruh butir masih menunggu review editorial dan review independen Mitsuko.
 
 Pemeliharaan: `python scripts/add-smp-daily-v2.py` menambahkan batch secara idempoten tanpa menimpa soal yang ada. Setelah generator/rebuild lain, jalankan kembali penambah ini sebelum validasi dan sync-content. Jika item dengan ID sama berbeda, skrip berhenti agar perubahan harus melalui versi baru secara eksplisit.
 
@@ -14,7 +16,7 @@ Mapel kelas 6/9 adalah Matematika dan Bahasa Indonesia. Tiga bentuk respons: sat
 
 Contoh resmi yang tampil di laman Pusmendik dipakai sebagai kalibrasi bentuk dan gaya, bukan untuk menyalin isi atau mengklaim kuota ujian. Profil 30 butir yang teramati adalah SD Matematika 18/3/9, SD Bahasa Indonesia 16/6/8, SMP Matematika 16/7/7, dan SMP Bahasa Indonesia 13/10/7 (PG/PGK-MCMA/PGK-Kategori). Rincian, pola stimulus, dan aturan provenance ada di [bank/OFFICIAL-TKA-CALIBRATION.md](bank/OFFICIAL-TKA-CALIBRATION.md). Validator hanya melaporkan jarak bank terhadap profil tersebut; paket ranking tetap mengikuti konfigurasi editorial sampai batch baru selesai ditinjau.
 
-Panjang stimulus ranking orisinal saat ini: SD 151–153 kata dengan kalimat 3–7 kata, SMP 203–205 kata dengan kalimat 5–9 kata. Rentang ini mengikuti batas indikatif kerangka membaca TKA. Stimulus awal harian tetap dipertahankan sebagai pool `pilot_daily`. Konteks sekolah, perpustakaan desa, kebun, dan kantin familier untuk anak; semua informasi yang dibutuhkan tersedia dalam soal. Anak tidak perlu pengetahuan tempat tertentu di Jawa Tengah untuk menjawab.
+Panjang stimulus ranking orisinal saat ini: SD 151–153 kata dengan kalimat 3–7 kata, SMP 203–205 kata dengan kalimat 5–9 kata. Empat stimulus batch prediksi baru berada pada rentang 150–200 kata untuk SD dan 200–250 kata untuk SMP; warning kalimatnya masih menunggu penyuntingan. Rentang ini mengikuti batas indikatif kerangka membaca TKA. Stimulus awal harian tetap dipertahankan sebagai pool `pilot_daily`. Konteks sekolah, perpustakaan desa, kebun, dan kantin familier untuk anak; semua informasi yang dibutuhkan tersedia dalam soal. Anak tidak perlu pengetahuan tempat tertentu di Jawa Tengah untuk menjawab.
 
 ## 2. Paket ranking dan seed awal
 
@@ -75,8 +77,9 @@ Kesulitan awal bersifat perkiraan. Setelah pilot, periksa proporsi benar pada re
 
 Target jangka menengah tetap 600 butir yang telah ditinjau AI dan divalidasi:
 150 per jalur, terdiri dari 60 harian + 90 peringkat. Saat ini 90 soal ranking
-per jalur sudah tersedia dan total bank mencapai 456; masih perlu 144 soal
-harian untuk mencapai target 600.
+per jalur sudah tersedia dan total bank mencapai 496; masih perlu 104 soal
+harian untuk mencapai target 600. Empat puluh soal pilot official-pattern
+belum dihitung sebagai soal yang telah ditinjau.
 
 - Pool peringkat cukup untuk membentuk tiga paket 30 sesuai blueprint pada setiap jalur tanpa mengulang butir selama satu minggu. Masing-masing paket matematika harus mempunyai 30 keluarga berbeda; variasi parameter tidak menambah hitungan keluarga.
 - Pool harian dan peringkat tidak berbagi family/stimulus; menukar nama tokoh atau angka saja tidak cukup untuk memisahkannya.
@@ -98,6 +101,6 @@ harian untuk mencapai target 600.
 
 ## 7. Batas verifikasi seed
 
-Validator memeriksa kunci 40 matematika dengan hitungan ulang, termasuk pencarian solusi/pembagi pada beberapa jenis soal; 66 kutipan bukti harus ditemukan persis pada bacaan. Seluruh referensi modul dan opsi diperiksa. Pemeriksaan ini tidak menguji UI, server, nilai resmi TKA, maupun perkembangan belajar anak.
+Validator memeriksa kunci matematika dengan hitungan ulang, termasuk pencarian solusi/pembagi pada beberapa jenis soal; kutipan bukti harus ditemukan persis pada bacaan. Seluruh referensi modul dan opsi diperiksa. Pemeriksaan ini tidak menguji UI, server, nilai resmi TKA, maupun perkembangan belajar anak.
 
 Bank seed dan modul tersedia sebagai JSON dan Markdown. Data kunci adalah bahan server/admin; jangan memasukkannya ke bundle frontend.
